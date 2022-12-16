@@ -1,0 +1,49 @@
+{
+  "problemCategory": "classification_binary_base",
+  "version": "1.0",
+  "inputDatasets": {
+    "binaryClassificationBaseMainInput": {
+      "idField": "id",
+      "targetField": "left",
+      "targetClass": 1,
+      "predictorFields": [
+        {
+          "fieldName": "satisfaction_level",
+          "dataType": "NUMERIC"
+        },
+        {
+          "fieldName": "last_evaluation",
+          "dataType": "NUMERIC"
+        },
+        {
+          "fieldName": "number_project",
+          "dataType": "NUMERIC"
+        },
+        {
+          "fieldName": "average_montly_hours",
+          "dataType": "NUMERIC"
+        },
+        {
+          "fieldName": "time_spend_company",
+          "dataType": "NUMERIC"
+        },
+        {
+          "fieldName": "Work_accident",
+          "dataType": "NUMERIC"
+        },
+        {
+          "fieldName": "promotion_last_5years",
+          "dataType": "NUMERIC"
+        },
+        {
+          "fieldName": "department",
+          "dataType": "CATEGORICAL"
+        },
+        {
+          "fieldName": "salary",
+          "dataType": "CATEGORICAL"
+        }
+      ]
+    }
+  }
+}

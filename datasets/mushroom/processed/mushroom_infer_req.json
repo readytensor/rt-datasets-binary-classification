@@ -1,0 +1,29 @@
+{
+  "instances": [
+    {
+      "id": 5885,
+      "cap-shape": "f",
+      "cap-surface": "y",
+      "cap-color": "y",
+      "bruises%3F": "f",
+      "odor": "f",
+      "gill-attachment": "f",
+      "gill-spacing": "c",
+      "gill-size": "b",
+      "gill-color": "p",
+      "stalk-shape": "e",
+      "stalk-root": "b",
+      "stalk-surface-above-ring": "k",
+      "stalk-surface-below-ring": "k",
+      "stalk-color-above-ring": "b",
+      "stalk-color-below-ring": "n",
+      "veil-type": "p",
+      "veil-color": "w",
+      "ring-number": "o",
+      "ring-type": "l",
+      "spore-print-color": "h",
+      "population": "v",
+      "habitat": "p"
+    }
+  ]
+}

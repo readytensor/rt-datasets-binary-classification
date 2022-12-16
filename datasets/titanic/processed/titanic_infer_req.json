@@ -1,0 +1,17 @@
+{
+  "instances": [
+    {
+      "PassengerId": 879,
+      "Pclass": 3,
+      "Name": "Laleff, Mr. Kristo",
+      "Sex": "male",
+      "Age": NaN,
+      "SibSp": 0,
+      "Parch": 0,
+      "Ticket": "349217",
+      "Fare": 7.8958,
+      "Cabin": NaN,
+      "Embarked": "S"
+    }
+  ]
+}

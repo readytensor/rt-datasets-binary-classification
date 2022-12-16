@@ -1,0 +1,26 @@
+{
+  "instances": [
+    {
+      "id": 1644.0,
+      "region-centroid-col": 9.0,
+      "region-centroid-row": 94.0,
+      "region-pixel-count": 9.0,
+      "short-line-density-5": 0.0,
+      "short-line-density-2": 0.0,
+      "vedge-mean": 0.611111,
+      "vegde-sd": 0.551852,
+      "hedge-mean": 1.0,
+      "hedge-sd": 0.666664,
+      "intensity-mean": 113.185,
+      "rawred-mean": 106.889,
+      "rawblue-mean": 127.556,
+      "rawgreen-mean": 105.111,
+      "exred-mean": -18.8889,
+      "exblue-mean": 43.1111,
+      "exgreen-mean": -24.2222,
+      "value-mean": 127.556,
+      "saturation-mean": 0.176789,
+      "hue-mean": -2.01531
+    }
+  ]
+}

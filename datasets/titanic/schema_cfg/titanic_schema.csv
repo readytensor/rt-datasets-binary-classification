@@ -1,0 +1,10 @@
+field_num,field_name,data_type,field_use_type
+1,PassengerId,TEXT,ID
+2,Survived,CATEGORICAL,TARGET
+3,Pclass,CATEGORICAL,INPUT
+4,Sex,CATEGORICAL,INPUT
+5,Age,NUMERIC,INPUT
+6,SibSp,NUMERIC,INPUT
+7,Parch,NUMERIC,INPUT
+8,Fare,NUMERIC,INPUT
+9,Embarked,CATEGORICAL,INPUT

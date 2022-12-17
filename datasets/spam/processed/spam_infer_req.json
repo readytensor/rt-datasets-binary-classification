@@ -1,7 +1,7 @@
 {
   "instances": [
     {
-      "id": 653.0,
+      "id": "653",
       "word_freq_make": 0.0,
       "word_freq_address": 0.0,
       "word_freq_all": 0.0,
@@ -57,8 +57,8 @@
       "char_freq_%24": 0.0,
       "char_freq_%23": 0.0,
       "capital_run_length_average": 6.611,
-      "capital_run_length_longest": 51.0,
-      "capital_run_length_total": 238.0
+      "capital_run_length_longest": 51,
+      "capital_run_length_total": 238
     }
   ]
 }

@@ -1,10 +1,10 @@
 {
   "instances": [
     {
-      "id": 1644.0,
-      "region-centroid-col": 9.0,
-      "region-centroid-row": 94.0,
-      "region-pixel-count": 9.0,
+      "id": "1644",
+      "region-centroid-col": 9,
+      "region-centroid-row": 94,
+      "region-pixel-count": 9,
       "short-line-density-5": 0.0,
       "short-line-density-2": 0.0,
       "vedge-mean": 0.611111,

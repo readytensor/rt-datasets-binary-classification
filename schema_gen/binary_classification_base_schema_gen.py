@@ -5,7 +5,7 @@ import pprint
 from pathlib import Path
 
 
-model_category = "classification_binary_base"
+model_category = "binary_classification_base"
 version = "1.0"
 
 

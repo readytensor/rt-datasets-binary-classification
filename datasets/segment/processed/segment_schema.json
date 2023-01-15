@@ -1,5 +1,5 @@
 {
-  "problemCategory": "classification_binary_base",
+  "problemCategory": "binary_classification_base",
   "version": "1.0",
   "inputDatasets": {
     "binaryClassificationBaseMainInput": {

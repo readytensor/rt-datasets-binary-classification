@@ -1,5 +1,5 @@
 model_categories:
-  classification_binary_base:
+  binary_classification_base:
     data_types:
       string: TEXT
       categorical: CATEGORICAL

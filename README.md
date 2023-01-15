@@ -5,7 +5,7 @@ This repo contains all files related to the datasets used in algorithm evaluatio
 The `datasets` folder contains the main data files and the schema files for all the benchmark datasets under Binary Classification - Base category. Within each dataset folder in `datasets`:
 
 - The `raw` folder contains the original data files from the source (see attributions below).
-- `processed` folder contains the compressed, processed files. These files are used in algorithm evaluations.
+- `processed` folder contains the processed files. These files are used in algorithm evaluations.
   - The CSV file with suffix "\_train.csv" is used for training
   - "\_test.csv" is used for testing (without the targets)
   - "\_test_key.csv" contains the targets for the test data. This test key file is used to generate scores by comparing with predictions.

@@ -1,0 +1,281 @@
+model_category,name,field_num,field_name,field_type,data_type,field_description
+binary_classification,breast_cancer,1,id,id,TEXT,ID number
+binary_classification,breast_cancer,2,diagnosis,target,CATEGORICAL,"diagnosis (M = malignant, B = benign)"
+binary_classification,breast_cancer,3,radius_mean,feature,NUMERIC,mean radius (mean of distances from center to points on the perimeter)
+binary_classification,breast_cancer,4,texture_mean,feature,NUMERIC,mean texture (standard deviation of gray-scale values)
+binary_classification,breast_cancer,5,perimeter_mean,feature,NUMERIC,mean perimeter
+binary_classification,breast_cancer,6,area_mean,feature,NUMERIC,mean area
+binary_classification,breast_cancer,7,smoothness_mean,feature,NUMERIC,mean smoothness (local variation in radius lengths)
+binary_classification,breast_cancer,8,compactness_mean,feature,NUMERIC,mean compactness (perimeter^2 / area - 1.0)
+binary_classification,breast_cancer,9,concavity_mean,feature,NUMERIC,mean concavity (severity of concave portions of the contour)
+binary_classification,breast_cancer,10,concave points_mean,feature,NUMERIC,mean concave points (number of concave portions of the contour)
+binary_classification,breast_cancer,11,symmetry_mean,feature,NUMERIC,mean symmetry
+binary_classification,breast_cancer,12,fractal_dimension_mean,feature,NUMERIC,"mean fractal dimension (""coastline approximation"" - 1)"
+binary_classification,breast_cancer,13,radius_se,feature,NUMERIC,std. error of  radius (mean of distances from center to points on the perimeter)
+binary_classification,breast_cancer,14,texture_se,feature,NUMERIC,std. error of  texture (standard deviation of gray-scale values)
+binary_classification,breast_cancer,15,perimeter_se,feature,NUMERIC,std. error of  perimeter
+binary_classification,breast_cancer,16,area_se,feature,NUMERIC,std. error of  area
+binary_classification,breast_cancer,17,smoothness_se,feature,NUMERIC,std. error of  smoothness (local variation in radius lengths)
+binary_classification,breast_cancer,18,compactness_se,feature,NUMERIC,std. error of  compactness (perimeter^2 / area - 1.0)
+binary_classification,breast_cancer,19,concavity_se,feature,NUMERIC,std. error of  concavity (severity of concave portions of the contour)
+binary_classification,breast_cancer,20,concave points_se,feature,NUMERIC,std. error of  concave points (number of concave portions of the contour)
+binary_classification,breast_cancer,21,symmetry_se,feature,NUMERIC,std. error of  symmetry
+binary_classification,breast_cancer,22,fractal_dimension_se,feature,NUMERIC,"std. error of  fractal dimension (""coastline approximation"" - 1)"
+binary_classification,breast_cancer,23,radius_worst,feature,NUMERIC,worst (largest)  radius (mean of distances from center to points on the perimeter)
+binary_classification,breast_cancer,24,texture_worst,feature,NUMERIC,worst (largest)  texture (standard deviation of gray-scale values)
+binary_classification,breast_cancer,25,perimeter_worst,feature,NUMERIC,worst (largest)  perimeter
+binary_classification,breast_cancer,26,area_worst,feature,NUMERIC,worst (largest)  area
+binary_classification,breast_cancer,27,smoothness_worst,feature,NUMERIC,worst (largest)  smoothness (local variation in radius lengths)
+binary_classification,breast_cancer,28,compactness_worst,feature,NUMERIC,worst (largest)  compactness (perimeter^2 / area - 1.0)
+binary_classification,breast_cancer,29,concavity_worst,feature,NUMERIC,worst (largest)  concavity (severity of concave portions of the contour)
+binary_classification,breast_cancer,30,concave points_worst,feature,NUMERIC,worst (largest)  concave points (number of concave portions of the contour)
+binary_classification,breast_cancer,31,symmetry_worst,feature,NUMERIC,worst (largest)  symmetry
+binary_classification,breast_cancer,32,fractal_dimension_worst,feature,NUMERIC,"worst (largest)  fractal dimension (""coastline approximation"" - 1)"
+binary_classification,titanic,1,PassengerId,id,TEXT,Unique passenger identifier
+binary_classification,titanic,2,Survived,target,CATEGORICAL,Whether passenger survived or not
+binary_classification,titanic,3,Pclass,feature,CATEGORICAL,Ticket class
+binary_classification,titanic,4,Sex,feature,CATEGORICAL,gender
+binary_classification,titanic,5,Age,feature,NUMERIC,Age in years
+binary_classification,titanic,6,SibSp,feature,NUMERIC,# of siblings / spouses aboard the Titanic
+binary_classification,titanic,7,Parch,feature,NUMERIC,# of parents / children aboard the Titanic
+binary_classification,titanic,8,Fare,feature,NUMERIC,Passenger fare
+binary_classification,titanic,9,Embarked,feature,CATEGORICAL,Port of embarkation
+binary_classification,credit_card,1,id,id,TEXT,id
+binary_classification,credit_card,2,checking_status,feature,CATEGORICAL,Status of existing checking account
+binary_classification,credit_card,3,duration,feature,NUMERIC,Duration in month
+binary_classification,credit_card,4,credit_history,feature,CATEGORICAL,Credit history
+binary_classification,credit_card,5,purpose,feature,CATEGORICAL,Purpose
+binary_classification,credit_card,6,credit_amount,feature,NUMERIC,Credit amount
+binary_classification,credit_card,7,savings_status,feature,CATEGORICAL,Savings account/bonds
+binary_classification,credit_card,8,employment,feature,CATEGORICAL,Present employment since
+binary_classification,credit_card,9,installment_rate,feature,NUMERIC,Installment rate in percentage of disposable income
+binary_classification,credit_card,10,personal_status,feature,CATEGORICAL,Personal status and sex
+binary_classification,credit_card,11,other_parties,feature,CATEGORICAL,Other debtors / guarantors
+binary_classification,credit_card,12,residence_since,feature,NUMERIC,Present residence since
+binary_classification,credit_card,13,property,feature,CATEGORICAL,Property
+binary_classification,credit_card,14,age,feature,NUMERIC,Age in years
+binary_classification,credit_card,15,other_payment_plans,feature,CATEGORICAL,Other installment plans 
+binary_classification,credit_card,16,housing,feature,CATEGORICAL,Housing
+binary_classification,credit_card,17,existing_credits,feature,NUMERIC,Number of existing credits at this bank
+binary_classification,credit_card,18,job,feature,CATEGORICAL,Job
+binary_classification,credit_card,19,num_dependents,feature,NUMERIC,Number of people being liable to provide maintenance for
+binary_classification,credit_card,20,own_telephone,feature,CATEGORICAL,Telephone
+binary_classification,credit_card,21,foreign_worker,feature,CATEGORICAL,Foreign worker
+binary_classification,credit_card,22,class,target,CATEGORICAL,Credit good/bad
+binary_classification,electrical_grid,1,id,id,TEXT,unique identifier 
+binary_classification,electrical_grid,2,tau1,feature,NUMERIC,"reaction time of participant (real from the range [0.5,10]s). Tau1 - the value for electricity producer."
+binary_classification,electrical_grid,3,tau2,feature,NUMERIC,"reaction time of participant (real from the range [0.5,10]s). Tau1 - the value for electricity producer."
+binary_classification,electrical_grid,4,tau3,feature,NUMERIC,"reaction time of participant (real from the range [0.5,10]s). Tau1 - the value for electricity producer."
+binary_classification,electrical_grid,5,tau4,feature,NUMERIC,"reaction time of participant (real from the range [0.5,10]s). Tau1 - the value for electricity producer."
+binary_classification,electrical_grid,6,p1,feature,NUMERIC,"nominal power consumed(negative)/produced(positive)(real). For consumers from the range [-0.5,-2]s^-2; p1 = abs(p2 + p3 + p4)"
+binary_classification,electrical_grid,7,p2,feature,NUMERIC,"nominal power consumed(negative)/produced(positive)(real). For consumers from the range [-0.5,-2]s^-2; p1 = abs(p2 + p3 + p4)"
+binary_classification,electrical_grid,8,p3,feature,NUMERIC,"nominal power consumed(negative)/produced(positive)(real). For consumers from the range [-0.5,-2]s^-2; p1 = abs(p2 + p3 + p4)"
+binary_classification,electrical_grid,9,p4,feature,NUMERIC,"nominal power consumed(negative)/produced(positive)(real). For consumers from the range [-0.5,-2]s^-2; p1 = abs(p2 + p3 + p4)"
+binary_classification,electrical_grid,10,g1,feature,NUMERIC,"coefficient (gamma) proportional to price elasticity (real from the range [0.05,1]s^-1). g1 - the value for electricity producer."
+binary_classification,electrical_grid,11,g2,feature,NUMERIC,"coefficient (gamma) proportional to price elasticity (real from the range [0.05,1]s^-1). g1 - the value for electricity producer."
+binary_classification,electrical_grid,12,g3,feature,NUMERIC,"coefficient (gamma) proportional to price elasticity (real from the range [0.05,1]s^-1). g1 - the value for electricity producer."
+binary_classification,electrical_grid,13,g4,feature,NUMERIC,"coefficient (gamma) proportional to price elasticity (real from the range [0.05,1]s^-1). g1 - the value for electricity producer."
+binary_classification,electrical_grid,14,stabf,target,CATEGORICAL,the stability label of the system (categorical: stable/unstable)
+binary_classification,employee_attrition,1,id,id,TEXT,unique identifier
+binary_classification,employee_attrition,2,satisfaction_level,feature,NUMERIC,not available
+binary_classification,employee_attrition,3,last_evaluation,feature,NUMERIC,not available
+binary_classification,employee_attrition,4,number_project,feature,NUMERIC,not available
+binary_classification,employee_attrition,5,average_montly_hours,feature,NUMERIC,not available
+binary_classification,employee_attrition,6,time_spend_company,feature,NUMERIC,not available
+binary_classification,employee_attrition,7,Work_accident,feature,CATEGORICAL,not available
+binary_classification,employee_attrition,8,promotion_last_5years,feature,CATEGORICAL,not available
+binary_classification,employee_attrition,9,department,feature,CATEGORICAL,not available
+binary_classification,employee_attrition,10,salary,feature,CATEGORICAL,not available
+binary_classification,employee_attrition,11,left,target,NUMERIC,"attrition (yes = 1, no = 0)"
+binary_classification,mushroom,1,id,id,TEXT,unique identifier
+binary_classification,mushroom,2,cap-shape,feature,CATEGORICAL,"cap-shape: bell=b,conical=c,convex=x,flat=f, knobbed=k,sunken=s "
+binary_classification,mushroom,3,cap-surface,feature,CATEGORICAL,"cap-surface: fibrous=f,grooves=g,scaly=y,smooth=s "
+binary_classification,mushroom,4,cap-color,feature,CATEGORICAL,"cap-color: brown=n,buff=b,cinnamon=c,gray=g,green=r, pink=p,purple=u,red=e,white=w,yellow=y "
+binary_classification,mushroom,5,bruises%3F,feature,CATEGORICAL,"bruises?: bruises=t,no=f "
+binary_classification,mushroom,6,odor,feature,CATEGORICAL,"odor: almond=a,anise=l,creosote=c,fishy=y,foul=f, musty=m,none=n,pungent=p,spicy=s "
+binary_classification,mushroom,7,gill-attachment,feature,CATEGORICAL,"gill-attachment: attached=a,descending=d,free=f,notched=n "
+binary_classification,mushroom,8,gill-spacing,feature,CATEGORICAL,"gill-spacing: close=c,crowded=w,distant=d "
+binary_classification,mushroom,9,gill-size,feature,CATEGORICAL,"gill-size: broad=b,narrow=n "
+binary_classification,mushroom,10,gill-color,feature,CATEGORICAL,"gill-color: black=k,brown=n,buff=b,chocolate=h,gray=g, green=r,orange=o,pink=p,purple=u,red=e, white=w,yellow=y "
+binary_classification,mushroom,11,stalk-shape,feature,CATEGORICAL,"stalk-shape: enlarging=e,tapering=t "
+binary_classification,mushroom,12,stalk-root,feature,CATEGORICAL,"stalk-root: bulbous=b,club=c,cup=u,equal=e, rhizomorphs=z,rooted=r,missing=? "
+binary_classification,mushroom,13,stalk-surface-above-ring,feature,CATEGORICAL,"stalk-surface-above-ring: fibrous=f,scaly=y,silky=k,smooth=s "
+binary_classification,mushroom,14,stalk-surface-below-ring,feature,CATEGORICAL,"stalk-surface-below-ring: fibrous=f,scaly=y,silky=k,smooth=s "
+binary_classification,mushroom,15,stalk-color-above-ring,feature,CATEGORICAL,"stalk-color-above-ring: brown=n,buff=b,cinnamon=c,gray=g,orange=o, pink=p,red=e,white=w,yellow=y "
+binary_classification,mushroom,16,stalk-color-below-ring,feature,CATEGORICAL,"stalk-color-below-ring: brown=n,buff=b,cinnamon=c,gray=g,orange=o, pink=p,red=e,white=w,yellow=y "
+binary_classification,mushroom,17,veil-type,feature,CATEGORICAL,"veil-type: partial=p,universal=u "
+binary_classification,mushroom,18,veil-color,feature,CATEGORICAL,"veil-color: brown=n,orange=o,white=w,yellow=y "
+binary_classification,mushroom,19,ring-number,feature,CATEGORICAL,"ring-number: none=n,one=o,two=t "
+binary_classification,mushroom,20,ring-type,feature,CATEGORICAL,"ring-type: cobwebby=c,evanescent=e,flaring=f,large=l, none=n,pendant=p,sheathing=s,zone=z "
+binary_classification,mushroom,21,spore-print-color,feature,CATEGORICAL,"spore-print-color: black=k,brown=n,buff=b,chocolate=h,green=r, orange=o,purple=u,white=w,yellow=y "
+binary_classification,mushroom,22,population,feature,CATEGORICAL,"population: abundant=a,clustered=c,numerous=n, scattered=s,several=v,solitary=y "
+binary_classification,mushroom,23,habitat,feature,CATEGORICAL,"habitat: grasses=g,leaves=l,meadows=m,paths=p, urban=u,waste=w,woods=d"
+binary_classification,mushroom,24,class,target,CATEGORICAL,edible (e) or poisonous (p)
+binary_classification,nba,1,Name,id,TEXT,unique identifier
+binary_classification,nba,2,GP,feature,NUMERIC,description not available
+binary_classification,nba,3,MIN,feature,NUMERIC,description not available
+binary_classification,nba,4,PTS,feature,NUMERIC,description not available
+binary_classification,nba,5,FGM,feature,NUMERIC,description not available
+binary_classification,nba,6,FGA,feature,NUMERIC,description not available
+binary_classification,nba,7,FG%,feature,NUMERIC,description not available
+binary_classification,nba,8,3P Made,feature,NUMERIC,description not available
+binary_classification,nba,9,3PA,feature,NUMERIC,description not available
+binary_classification,nba,10,3P%,feature,NUMERIC,description not available
+binary_classification,nba,11,FTM,feature,NUMERIC,description not available
+binary_classification,nba,12,FTA,feature,NUMERIC,description not available
+binary_classification,nba,13,FT%,feature,NUMERIC,description not available
+binary_classification,nba,14,OREB,feature,NUMERIC,description not available
+binary_classification,nba,15,DREB,feature,NUMERIC,description not available
+binary_classification,nba,16,REB,feature,NUMERIC,description not available
+binary_classification,nba,17,AST,feature,NUMERIC,description not available
+binary_classification,nba,18,STL,feature,NUMERIC,description not available
+binary_classification,nba,19,BLK,feature,NUMERIC,description not available
+binary_classification,nba,20,TOV,feature,NUMERIC,description not available
+binary_classification,nba,21,TARGET_5Yrs,target,NUMERIC,description not available
+binary_classification,image_segmentation,1,id,id,TEXT,description not available
+binary_classification,image_segmentation,2,region-centroid-col,feature,NUMERIC,the column of the center pixel of the region.
+binary_classification,image_segmentation,3,region-centroid-row,feature,NUMERIC,the row of the center pixel of the region.
+binary_classification,image_segmentation,4,region-pixel-count,feature,NUMERIC,the number of pixels in a region = 9.
+binary_classification,image_segmentation,5,short-line-density-5,feature,NUMERIC,"the results of a line extractoin algorithm that counts how many lines of length 5 (any orientation) with low contrast, less than or equal to 5, go through the region."
+binary_classification,image_segmentation,6,short-line-density-2,feature,NUMERIC,"same as short-line-density-5 but counts lines of high contrast, greater than 5."
+binary_classification,image_segmentation,7,vedge-mean,feature,NUMERIC,"measure the contrast of horizontally adjacent pixels in the region. There are 6, the mean and standard deviation are given. This attribute (mean) is used as a vertical edge detector."
+binary_classification,image_segmentation,8,vegde-sd,feature,NUMERIC,"measure the contrast of horizontally adjacent pixels in the region. There are 6, the mean and standard deviation are given. This attribute (std dev) is used as a vertical edge detector."
+binary_classification,image_segmentation,9,hedge-mean,feature,NUMERIC,measures the contrast of vertically adjacent pixels. This attribute (mean) is used for horizontal line detection.
+binary_classification,image_segmentation,10,hedge-sd,feature,NUMERIC,measures the contrast of vertically adjacent pixels. This attribute (std dev) is used for horizontal line detection.
+binary_classification,image_segmentation,11,intensity-mean,feature,NUMERIC,intensity-mean: the average over the region of (R + G + B)/3
+binary_classification,image_segmentation,12,rawred-mean,feature,NUMERIC,rawred-mean: the average over the region of the R value.
+binary_classification,image_segmentation,13,rawblue-mean,feature,NUMERIC,rawblue-mean: the average over the region of the B value.
+binary_classification,image_segmentation,14,rawgreen-mean,feature,NUMERIC,rawgreen-mean: the average over the region of the G value.
+binary_classification,image_segmentation,15,exred-mean,feature,NUMERIC,exred-mean: measure the excess red: (2R - (G + B))
+binary_classification,image_segmentation,16,exblue-mean,feature,NUMERIC,exblue-mean: measure the excess blue: (2B - (G + R))
+binary_classification,image_segmentation,17,exgreen-mean,feature,NUMERIC,exgreen-mean: measure the excess green: (2G - (R + B))
+binary_classification,image_segmentation,18,value-mean,feature,NUMERIC,"value-mean: 3-d nonlinear transformation of RGB. (Algorithm can be found in Foley and VanDam, Fundamentals of Interactive Computer Graphics)"
+binary_classification,image_segmentation,19,saturation-mean,feature,NUMERIC,"saturation: 3-d nonlinear transformation of RGB. (Algorithm can be found in Foley and VanDam, Fundamentals of Interactive Computer Graphics)"
+binary_classification,image_segmentation,20,hue-mean,feature,NUMERIC,"hue-mean: 3-d nonlinear transformation of RGB. (Algorithm can be found in Foley and VanDam, Fundamentals of Interactive Computer Graphics)"
+binary_classification,image_segmentation,21,binaryClass,target,CATEGORICAL,Positive class (P) and negative class (N)
+binary_classification,spambase,1,id,id,TEXT,
+binary_classification,spambase,2,word_freq_make,feature,NUMERIC,"Given 'word_freq_WORD': percentage of words in the e-mail that match WORD, i.e. 100 * (number of times the WORD appears in the e-mail) / total number of words in e-mail. A ""word"" in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string."
+binary_classification,spambase,3,word_freq_address,feature,NUMERIC,"Given 'word_freq_WORD': percentage of words in the e-mail that match WORD, i.e. 100 * (number of times the WORD appears in the e-mail) / total number of words in e-mail. A ""word"" in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string."
+binary_classification,spambase,4,word_freq_all,feature,NUMERIC,"Given 'word_freq_WORD': percentage of words in the e-mail that match WORD, i.e. 100 * (number of times the WORD appears in the e-mail) / total number of words in e-mail. A ""word"" in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string."
+binary_classification,spambase,5,word_freq_3d,feature,NUMERIC,"Given 'word_freq_WORD': percentage of words in the e-mail that match WORD, i.e. 100 * (number of times the WORD appears in the e-mail) / total number of words in e-mail. A ""word"" in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string."
+binary_classification,spambase,6,word_freq_our,feature,NUMERIC,"Given 'word_freq_WORD': percentage of words in the e-mail that match WORD, i.e. 100 * (number of times the WORD appears in the e-mail) / total number of words in e-mail. A ""word"" in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string."
+binary_classification,spambase,7,word_freq_over,feature,NUMERIC,"Given 'word_freq_WORD': percentage of words in the e-mail that match WORD, i.e. 100 * (number of times the WORD appears in the e-mail) / total number of words in e-mail. A ""word"" in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string."
+binary_classification,spambase,8,word_freq_remove,feature,NUMERIC,"Given 'word_freq_WORD': percentage of words in the e-mail that match WORD, i.e. 100 * (number of times the WORD appears in the e-mail) / total number of words in e-mail. A ""word"" in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string."
+binary_classification,spambase,9,word_freq_internet,feature,NUMERIC,"Given 'word_freq_WORD': percentage of words in the e-mail that match WORD, i.e. 100 * (number of times the WORD appears in the e-mail) / total number of words in e-mail. A ""word"" in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string."
+binary_classification,spambase,10,word_freq_order,feature,NUMERIC,"Given 'word_freq_WORD': percentage of words in the e-mail that match WORD, i.e. 100 * (number of times the WORD appears in the e-mail) / total number of words in e-mail. A ""word"" in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string."
+binary_classification,spambase,11,word_freq_mail,feature,NUMERIC,"Given 'word_freq_WORD': percentage of words in the e-mail that match WORD, i.e. 100 * (number of times the WORD appears in the e-mail) / total number of words in e-mail. A ""word"" in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string."
+binary_classification,spambase,12,word_freq_receive,feature,NUMERIC,"Given 'word_freq_WORD': percentage of words in the e-mail that match WORD, i.e. 100 * (number of times the WORD appears in the e-mail) / total number of words in e-mail. A ""word"" in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string."
+binary_classification,spambase,13,word_freq_will,feature,NUMERIC,"Given 'word_freq_WORD': percentage of words in the e-mail that match WORD, i.e. 100 * (number of times the WORD appears in the e-mail) / total number of words in e-mail. A ""word"" in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string."
+binary_classification,spambase,14,word_freq_people,feature,NUMERIC,"Given 'word_freq_WORD': percentage of words in the e-mail that match WORD, i.e. 100 * (number of times the WORD appears in the e-mail) / total number of words in e-mail. A ""word"" in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string."
+binary_classification,spambase,15,word_freq_report,feature,NUMERIC,"Given 'word_freq_WORD': percentage of words in the e-mail that match WORD, i.e. 100 * (number of times the WORD appears in the e-mail) / total number of words in e-mail. A ""word"" in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string."
+binary_classification,spambase,16,word_freq_addresses,feature,NUMERIC,"Given 'word_freq_WORD': percentage of words in the e-mail that match WORD, i.e. 100 * (number of times the WORD appears in the e-mail) / total number of words in e-mail. A ""word"" in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string."
+binary_classification,spambase,17,word_freq_free,feature,NUMERIC,"Given 'word_freq_WORD': percentage of words in the e-mail that match WORD, i.e. 100 * (number of times the WORD appears in the e-mail) / total number of words in e-mail. A ""word"" in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string."
+binary_classification,spambase,18,word_freq_business,feature,NUMERIC,"Given 'word_freq_WORD': percentage of words in the e-mail that match WORD, i.e. 100 * (number of times the WORD appears in the e-mail) / total number of words in e-mail. A ""word"" in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string."
+binary_classification,spambase,19,word_freq_email,feature,NUMERIC,"Given 'word_freq_WORD': percentage of words in the e-mail that match WORD, i.e. 100 * (number of times the WORD appears in the e-mail) / total number of words in e-mail. A ""word"" in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string."
+binary_classification,spambase,20,word_freq_you,feature,NUMERIC,"Given 'word_freq_WORD': percentage of words in the e-mail that match WORD, i.e. 100 * (number of times the WORD appears in the e-mail) / total number of words in e-mail. A ""word"" in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string."
+binary_classification,spambase,21,word_freq_credit,feature,NUMERIC,"Given 'word_freq_WORD': percentage of words in the e-mail that match WORD, i.e. 100 * (number of times the WORD appears in the e-mail) / total number of words in e-mail. A ""word"" in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string."
+binary_classification,spambase,22,word_freq_your,feature,NUMERIC,"Given 'word_freq_WORD': percentage of words in the e-mail that match WORD, i.e. 100 * (number of times the WORD appears in the e-mail) / total number of words in e-mail. A ""word"" in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string."
+binary_classification,spambase,23,word_freq_font,feature,NUMERIC,"Given 'word_freq_WORD': percentage of words in the e-mail that match WORD, i.e. 100 * (number of times the WORD appears in the e-mail) / total number of words in e-mail. A ""word"" in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string."
+binary_classification,spambase,24,word_freq_000,feature,NUMERIC,"Given 'word_freq_WORD': percentage of words in the e-mail that match WORD, i.e. 100 * (number of times the WORD appears in the e-mail) / total number of words in e-mail. A ""word"" in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string."
+binary_classification,spambase,25,word_freq_money,feature,NUMERIC,"Given 'word_freq_WORD': percentage of words in the e-mail that match WORD, i.e. 100 * (number of times the WORD appears in the e-mail) / total number of words in e-mail. A ""word"" in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string."
+binary_classification,spambase,26,word_freq_hp,feature,NUMERIC,"Given 'word_freq_WORD': percentage of words in the e-mail that match WORD, i.e. 100 * (number of times the WORD appears in the e-mail) / total number of words in e-mail. A ""word"" in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string."
+binary_classification,spambase,27,word_freq_hpl,feature,NUMERIC,"Given 'word_freq_WORD': percentage of words in the e-mail that match WORD, i.e. 100 * (number of times the WORD appears in the e-mail) / total number of words in e-mail. A ""word"" in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string."
+binary_classification,spambase,28,word_freq_george,feature,NUMERIC,"Given 'word_freq_WORD': percentage of words in the e-mail that match WORD, i.e. 100 * (number of times the WORD appears in the e-mail) / total number of words in e-mail. A ""word"" in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string."
+binary_classification,spambase,29,word_freq_650,feature,NUMERIC,"Given 'word_freq_WORD': percentage of words in the e-mail that match WORD, i.e. 100 * (number of times the WORD appears in the e-mail) / total number of words in e-mail. A ""word"" in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string."
+binary_classification,spambase,30,word_freq_lab,feature,NUMERIC,"Given 'word_freq_WORD': percentage of words in the e-mail that match WORD, i.e. 100 * (number of times the WORD appears in the e-mail) / total number of words in e-mail. A ""word"" in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string."
+binary_classification,spambase,31,word_freq_labs,feature,NUMERIC,"Given 'word_freq_WORD': percentage of words in the e-mail that match WORD, i.e. 100 * (number of times the WORD appears in the e-mail) / total number of words in e-mail. A ""word"" in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string."
+binary_classification,spambase,32,word_freq_telnet,feature,NUMERIC,"Given 'word_freq_WORD': percentage of words in the e-mail that match WORD, i.e. 100 * (number of times the WORD appears in the e-mail) / total number of words in e-mail. A ""word"" in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string."
+binary_classification,spambase,33,word_freq_857,feature,NUMERIC,"Given 'word_freq_WORD': percentage of words in the e-mail that match WORD, i.e. 100 * (number of times the WORD appears in the e-mail) / total number of words in e-mail. A ""word"" in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string."
+binary_classification,spambase,34,word_freq_data,feature,NUMERIC,"Given 'word_freq_WORD': percentage of words in the e-mail that match WORD, i.e. 100 * (number of times the WORD appears in the e-mail) / total number of words in e-mail. A ""word"" in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string."
+binary_classification,spambase,35,word_freq_415,feature,NUMERIC,"Given 'word_freq_WORD': percentage of words in the e-mail that match WORD, i.e. 100 * (number of times the WORD appears in the e-mail) / total number of words in e-mail. A ""word"" in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string."
+binary_classification,spambase,36,word_freq_85,feature,NUMERIC,"Given 'word_freq_WORD': percentage of words in the e-mail that match WORD, i.e. 100 * (number of times the WORD appears in the e-mail) / total number of words in e-mail. A ""word"" in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string."
+binary_classification,spambase,37,word_freq_technology,feature,NUMERIC,"Given 'word_freq_WORD': percentage of words in the e-mail that match WORD, i.e. 100 * (number of times the WORD appears in the e-mail) / total number of words in e-mail. A ""word"" in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string."
+binary_classification,spambase,38,word_freq_1999,feature,NUMERIC,"Given 'word_freq_WORD': percentage of words in the e-mail that match WORD, i.e. 100 * (number of times the WORD appears in the e-mail) / total number of words in e-mail. A ""word"" in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string."
+binary_classification,spambase,39,word_freq_parts,feature,NUMERIC,"Given 'word_freq_WORD': percentage of words in the e-mail that match WORD, i.e. 100 * (number of times the WORD appears in the e-mail) / total number of words in e-mail. A ""word"" in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string."
+binary_classification,spambase,40,word_freq_pm,feature,NUMERIC,"Given 'word_freq_WORD': percentage of words in the e-mail that match WORD, i.e. 100 * (number of times the WORD appears in the e-mail) / total number of words in e-mail. A ""word"" in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string."
+binary_classification,spambase,41,word_freq_direct,feature,NUMERIC,"Given 'word_freq_WORD': percentage of words in the e-mail that match WORD, i.e. 100 * (number of times the WORD appears in the e-mail) / total number of words in e-mail. A ""word"" in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string."
+binary_classification,spambase,42,word_freq_cs,feature,NUMERIC,"Given 'word_freq_WORD': percentage of words in the e-mail that match WORD, i.e. 100 * (number of times the WORD appears in the e-mail) / total number of words in e-mail. A ""word"" in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string."
+binary_classification,spambase,43,word_freq_meeting,feature,NUMERIC,"Given 'word_freq_WORD': percentage of words in the e-mail that match WORD, i.e. 100 * (number of times the WORD appears in the e-mail) / total number of words in e-mail. A ""word"" in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string."
+binary_classification,spambase,44,word_freq_original,feature,NUMERIC,"Given 'word_freq_WORD': percentage of words in the e-mail that match WORD, i.e. 100 * (number of times the WORD appears in the e-mail) / total number of words in e-mail. A ""word"" in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string."
+binary_classification,spambase,45,word_freq_project,feature,NUMERIC,"Given 'word_freq_WORD': percentage of words in the e-mail that match WORD, i.e. 100 * (number of times the WORD appears in the e-mail) / total number of words in e-mail. A ""word"" in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string."
+binary_classification,spambase,46,word_freq_re,feature,NUMERIC,"Given 'word_freq_WORD': percentage of words in the e-mail that match WORD, i.e. 100 * (number of times the WORD appears in the e-mail) / total number of words in e-mail. A ""word"" in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string."
+binary_classification,spambase,47,word_freq_edu,feature,NUMERIC,"Given 'word_freq_WORD': percentage of words in the e-mail that match WORD, i.e. 100 * (number of times the WORD appears in the e-mail) / total number of words in e-mail. A ""word"" in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string."
+binary_classification,spambase,48,word_freq_table,feature,NUMERIC,"Given 'word_freq_WORD': percentage of words in the e-mail that match WORD, i.e. 100 * (number of times the WORD appears in the e-mail) / total number of words in e-mail. A ""word"" in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string."
+binary_classification,spambase,49,word_freq_conference,feature,NUMERIC,"Given 'word_freq_WORD': percentage of words in the e-mail that match WORD, i.e. 100 * (number of times the WORD appears in the e-mail) / total number of words in e-mail. A ""word"" in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string."
+binary_classification,spambase,50,char_freq_%3B,feature,NUMERIC,"Given 'char_freq_CHAR]', percentage of characters in the e-mail that match CHAR, i.e. 100 * (number of CHAR occurences) / total characters in e-mail"
+binary_classification,spambase,51,char_freq_%28,feature,NUMERIC,"Given 'char_freq_CHAR]', percentage of characters in the e-mail that match CHAR, i.e. 100 * (number of CHAR occurences) / total characters in e-mail"
+binary_classification,spambase,52,char_freq_%5B,feature,NUMERIC,"Given 'char_freq_CHAR]', percentage of characters in the e-mail that match CHAR, i.e. 100 * (number of CHAR occurences) / total characters in e-mail"
+binary_classification,spambase,53,char_freq_%21,feature,NUMERIC,"Given 'char_freq_CHAR]', percentage of characters in the e-mail that match CHAR, i.e. 100 * (number of CHAR occurences) / total characters in e-mail"
+binary_classification,spambase,54,char_freq_%24,feature,NUMERIC,"Given 'char_freq_CHAR]', percentage of characters in the e-mail that match CHAR, i.e. 100 * (number of CHAR occurences) / total characters in e-mail"
+binary_classification,spambase,55,char_freq_%23,feature,NUMERIC,"Given 'char_freq_CHAR]', percentage of characters in the e-mail that match CHAR, i.e. 100 * (number of CHAR occurences) / total characters in e-mail"
+binary_classification,spambase,56,capital_run_length_average,feature,NUMERIC,average length of uninterrupted sequences of capital letters
+binary_classification,spambase,57,capital_run_length_longest,feature,NUMERIC,length of longest uninterrupted sequence of capital letters
+binary_classification,spambase,58,capital_run_length_total,feature,NUMERIC,total number of capital letters in the e-mail
+binary_classification,spambase,59,class,target,NUMERIC,"denotes whether the e-mail was considered spam (1) i.e. an unsolicited commercial e-mail, or not (0)."
+binary_classification,telco_churn,1,customerID,id,TEXT,customer id
+binary_classification,telco_churn,2,gender,feature,CATEGORICAL,"The customer's gender: Male, Female"
+binary_classification,telco_churn,3,SeniorCitizen,feature,CATEGORICAL,"Indicates if the customer is 65 or older: Yes, No"
+binary_classification,telco_churn,4,Partner,feature,CATEGORICAL,"Whether the customer has a partner or not (Yes, No)"
+binary_classification,telco_churn,5,Dependents,feature,CATEGORICAL,"Indicates if the customer lives with any dependents: Yes, No. Dependents could be children, parents, grandparents, etc."
+binary_classification,telco_churn,6,tenure,feature,NUMERIC,Indicates the total amount of months that the customer has been with the company by the end of the quarter specified above.
+binary_classification,telco_churn,7,PhoneService,feature,CATEGORICAL,"Whether the customer has a phone service or not (Yes, No)"
+binary_classification,telco_churn,8,MultipleLines,feature,CATEGORICAL,"Whether the customer has multiple lines or not (Yes, No, No phone service)"
+binary_classification,telco_churn,9,InternetService,feature,CATEGORICAL,"Customer's internet service provider (DSL, Fiber optic, No)"
+binary_classification,telco_churn,10,OnlineSecurity,feature,CATEGORICAL,"Whether the customer has online security or not (Yes, No, No internet service)"
+binary_classification,telco_churn,11,OnlineBackup,feature,CATEGORICAL,"Indicates if the customer subscribes to an additional online backup service provided by the company: Yes, No"
+binary_classification,telco_churn,12,DeviceProtection,feature,CATEGORICAL,"Indicates if the customer subscribes to an additional device protection plan for their Internet equipment provided by the company: Yes, No"
+binary_classification,telco_churn,13,TechSupport,feature,CATEGORICAL,"Indicates if the customer subscribes to an additional technical support plan from the company with reduced wait times: Yes, No"
+binary_classification,telco_churn,14,StreamingTV,feature,CATEGORICAL,"Indicates if the customer uses their Internet service to stream television programing from a third party provider: Yes, No. The company does not charge an additional fee for this service."
+binary_classification,telco_churn,15,StreamingMovies,feature,CATEGORICAL,"Indicates if the customer uses their Internet service to stream movies from a third party provider: Yes, No. The company does not charge an additional fee for this service."
+binary_classification,telco_churn,16,Contract,feature,CATEGORICAL,"Indicates the customer's current contract type: Month-to-Month, One Year, Two Year."
+binary_classification,telco_churn,17,PaperlessBilling,feature,CATEGORICAL,"Indicates if the customer has chosen paperless billing: Yes, No"
+binary_classification,telco_churn,18,PaymentMethod,feature,CATEGORICAL,"Indicates how the customer pays their bill: Bank Withdrawal, Credit Card, Mailed Check"
+binary_classification,telco_churn,19,MonthlyCharges,feature,NUMERIC,Indicates the customer's current total monthly charge for all their services from the company.
+binary_classification,telco_churn,20,TotalCharges,feature,NUMERIC,"Indicates the customer's total charges, calculated to the end of the quarter specified above."
+binary_classification,telco_churn,21,Churn,target,CATEGORICAL,Customers who left within the last month
+binary_classification,coupon_recommendations,1,id,id,TEXT,unique identifier 
+binary_classification,coupon_recommendations,2,destination,feature,CATEGORICAL,"destination: No Urgent Place, Home, Work"
+binary_classification,coupon_recommendations,3,passenger,feature,CATEGORICAL,"passenger: Alone, Friend(s), Kid(s), Partner (who are the passengers in the car)"
+binary_classification,coupon_recommendations,4,weather,feature,CATEGORICAL,"weather: Sunny, Rainy, Snowy"
+binary_classification,coupon_recommendations,5,temperature,feature,CATEGORICAL,"temperature:55, 80, 30"
+binary_classification,coupon_recommendations,6,time,feature,CATEGORICAL,"time: 2PM, 10AM, 6PM, 7AM, 10PM"
+binary_classification,coupon_recommendations,7,coupon,feature,CATEGORICAL,"coupon: Restaurant(<$20), Coffee House, Carry out & Take away, Bar, Restaurant($20-$50)"
+binary_classification,coupon_recommendations,8,expiration,feature,CATEGORICAL,"expiration: 1d, 2h (the coupon expires in 1 day or in 2 hours)"
+binary_classification,coupon_recommendations,9,gender,feature,CATEGORICAL,"gender: Female, Male"
+binary_classification,coupon_recommendations,10,age,feature,CATEGORICAL,"age: 21, 46, 26, 31, 41, 50plus, 36, below21"
+binary_classification,coupon_recommendations,11,maritalStatus,feature,CATEGORICAL,"maritalStatus: Unmarried partner, Single, Married partner, Divorced, Widowed"
+binary_classification,coupon_recommendations,12,has_children,feature,CATEGORICAL,"has_Children:1, 0"
+binary_classification,coupon_recommendations,13,education,feature,CATEGORICAL,"education: Some college - no degree, Bachelors degree, Associates degree, High School Graduate, Graduate degree (Masters or Doctorate), Some High School"
+binary_classification,coupon_recommendations,14,occupation,feature,CATEGORICAL,"occupation: Unemployed, Architecture & Engineering, Student,"
+binary_classification,coupon_recommendations,15,income,feature,CATEGORICAL,"income: $37500 - $49999, $62500 - $74999, $12500 - $24999, $75000 - $87499,"
+binary_classification,coupon_recommendations,16,car,feature,CATEGORICAL,"$50000 - $62499, $25000 - $37499, $100000 or More, $87500 - $99999, Less than $12500"
+binary_classification,coupon_recommendations,17,Bar,feature,CATEGORICAL,"Bar: never, less1, 1~3, gt8, nan4~8 (feature meaning: how many times do you go to a bar every month?)"
+binary_classification,coupon_recommendations,18,CoffeeHouse,feature,CATEGORICAL,"CoffeeHouse: never, less1, 4~8, 1~3, gt8, nan (feature meaning: how many times do you go to a coffeehouse every month?)"
+binary_classification,coupon_recommendations,19,CarryAway,feature,CATEGORICAL,"CarryAway:n4~8, 1~3, gt8, less1, never (feature meaning: how many times do you get take-away food every month?)"
+binary_classification,coupon_recommendations,20,RestaurantLessThan20,feature,CATEGORICAL,"RestaurantLessThan20: 4~8, 1~3, less1, gt8, never (feature meaning: how many times do you go to a restaurant with an average expense per person of less than $20 every month?)"
+binary_classification,coupon_recommendations,21,Restaurant20To50,feature,CATEGORICAL,"Restaurant20To50: 1~3, less1, never, gt8, 4~8, nan (feature meaning: how many times do you go to a restaurant with average expense per person of $20 - $50 every month?)"
+binary_classification,coupon_recommendations,22,toCoupon_GEQ5min,feature,CATEGORICAL,"toCoupon_GEQ5min:0,1 (feature meaning: driving distance to the restaurant/bar for using the coupon is greater than 5 minutes)"
+binary_classification,coupon_recommendations,23,toCoupon_GEQ15min,feature,CATEGORICAL,"toCoupon_GEQ15min:0,1 (feature meaning: driving distance to the restaurant/bar for using the coupon is greater than 15 minutes)"
+binary_classification,coupon_recommendations,24,toCoupon_GEQ25min,feature,CATEGORICAL,"toCoupon_GEQ25min:0, 1 (feature meaning: driving distance to the restaurant/bar for using the coupon is greater than 25 minutes)"
+binary_classification,coupon_recommendations,25,direction_same,feature,CATEGORICAL,"direction_same:0, 1 (feature meaning: whether the restaurant/bar is in the same direction as your current destination)"
+binary_classification,coupon_recommendations,26,direction_opp,feature,CATEGORICAL,"direction_opp:1, 0 (feature meaning: whether the restaurant/bar is in the same direction as your current destination)"
+binary_classification,coupon_recommendations,27,accept_coupon,target,CATEGORICAL,"accept_coupon:1, 0 (whether the coupon is accepted)"
+binary_classification,online_shopping,1,id,id,TEXT,
+binary_classification,online_shopping,2,Administrative,feature,NUMERIC,
+binary_classification,online_shopping,3,Administrative_Duration,feature,NUMERIC,
+binary_classification,online_shopping,4,Informational,feature,NUMERIC,
+binary_classification,online_shopping,5,Informational_Duration,feature,NUMERIC,
+binary_classification,online_shopping,6,ProductRelated,feature,NUMERIC,
+binary_classification,online_shopping,7,ProductRelated_Duration,feature,NUMERIC,
+binary_classification,online_shopping,8,BounceRates,feature,NUMERIC,
+binary_classification,online_shopping,9,ExitRates,feature,NUMERIC,
+binary_classification,online_shopping,10,PageValues,feature,NUMERIC,
+binary_classification,online_shopping,11,SpecialDay,feature,NUMERIC,
+binary_classification,online_shopping,12,Month,feature,CATEGORICAL,
+binary_classification,online_shopping,13,OperatingSystems,feature,CATEGORICAL,
+binary_classification,online_shopping,14,Browser,feature,CATEGORICAL,
+binary_classification,online_shopping,15,Region,feature,CATEGORICAL,
+binary_classification,online_shopping,16,TrafficType,feature,CATEGORICAL,
+binary_classification,online_shopping,17,VisitorType,feature,CATEGORICAL,
+binary_classification,online_shopping,18,Weekend,feature,CATEGORICAL,
+binary_classification,online_shopping,19,Revenue,target,CATEGORICAL,

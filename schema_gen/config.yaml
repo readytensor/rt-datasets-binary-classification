@@ -9,6 +9,7 @@ model_categories:
       id: ID
       input: INPUT
       target: TARGET
+      info: INFO
 
     schemaFields:
       fieldName: field_name
@@ -46,3 +47,6 @@ model_categories:
       titanic:
         fname: titanic_schema_cfg.csv
         targetClass: 1
+      uci_churn:
+        fname: uci_churn_schema_cfg.csv
+        targetClass: "True"

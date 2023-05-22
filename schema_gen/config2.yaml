@@ -1,0 +1,844 @@
+problemCategory: binary_classification
+version: 1.0
+inputDataFormat: CSV
+datasets:
+  cancer:
+    title: Breast Cancer - Wisconsin
+    description: "Dataset for breast tumor diagnosis. Predict diagnosis: B = benign, M = malignant. Features are computed from a digitized image of a fine needle aspirate (FNA) of a breast mass. They describe characteristics of the cell nuclei present in the image."
+    idField:
+      name: ID
+      description: A unique identifier for each sample in the dataset.
+    targetField:
+      name: diagnosis
+      description: A binary variable indicating the diagnosis of the breast tissue (M = malignant, B = benign).
+      positiveClass: "M"
+    predictorFields:
+      - name: radius_mean
+        description: mean radius (mean of distances from center to points on the perimeter)
+        dataType: NUMERIC
+      - name: texture_mean
+        description: mean texture (standard deviation of gray-scale values)
+        dataType: NUMERIC
+      - name: perimeter_mean
+        description: mean perimeter
+        dataType: NUMERIC
+      - name: area_mean
+        description: mean area
+        dataType: NUMERIC
+      - name: smoothness_mean
+        description: mean smoothness (local variation in radius lengths)
+        dataType: NUMERIC
+      - name: compactness_mean
+        description: mean compactness (perimeter^2 / area - 1.0)
+        dataType: NUMERIC
+      - name: concavity_mean
+        description: mean concavity (severity of concave portions of the contour)
+        dataType: NUMERIC
+      - name: concave points_mean
+        description: mean concave points (number of concave portions of the contour)
+        dataType: NUMERIC
+      - name: symmetry_mean
+        description: mean symmetry
+        dataType: NUMERIC
+      - name: fractal_dimension_mean
+        description: mean fractal dimension ("coastline approximation" - 1)
+        dataType: NUMERIC
+      - name: radius_se
+        description: std. error of  radius (mean of distances from center to points on the perimeter)
+        dataType: NUMERIC
+      - name: texture_se
+        description: std. error of  texture (standard deviation of gray-scale values)
+        dataType: NUMERIC
+      - name: perimeter_se
+        description: std. error of  perimeter
+        dataType: NUMERIC
+      - name: area_se
+        description: std. error of  area
+        dataType: NUMERIC
+      - name: smoothness_se
+        description: std. error of  smoothness (local variation in radius lengths)
+        dataType: NUMERIC
+      - name: compactness_se
+        description: std. error of  compactness (perimeter^2 / area - 1.0)
+        dataType: NUMERIC
+      - name: concavity_se
+        description: std. error of  concavity (severity of concave portions of the contour)
+        dataType: NUMERIC
+      - name: concave points_se
+        description: std. error of  concave points (number of concave portions of the contour)
+        dataType: NUMERIC
+      - name: symmetry_se
+        description: std. error of  symmetry
+        dataType: NUMERIC
+      - name: fractal_dimension_se
+        description: std. error of  fractal dimension ("coastline approximation" - 1)
+        dataType: NUMERIC
+      - name: radius_worst
+        description: worst (largest)  radius (mean of distances from center to points on
+        dataType: NUMERIC
+  credit_card:
+    title: German credit dataset
+    description: This dataset classifies people described by a set of attributes as good or bad credit risks.
+    idField:
+      name: id
+      description: id
+    targetField:
+      name: class
+      description: Credit good/bad
+      positiveClass: bad
+    predictorFields:
+      - name: checking_status
+        description: Status of existing checking account
+        dataType: CATEGORICAL
+      - name: duration
+        description: Duration in month
+        dataType: NUMERIC
+      - name: credit_history
+        description: Credit history
+        dataType: CATEGORICAL
+      - name: purpose
+        description: Purpose
+        dataType: CATEGORICAL
+      - name: credit_amount
+        description: Credit amount
+        dataType: NUMERIC
+      - name: savings_status
+        description: Savings account/bonds
+        dataType: CATEGORICAL
+      - name: employment
+        description: Present employment since
+        dataType: CATEGORICAL
+      - name: installment_rate
+        description: Installment rate in percentage of disposable income
+        dataType: NUMERIC
+      - name: personal_status
+        description: Personal status and sex
+        dataType: CATEGORICAL
+      - name: other_parties
+        description: Other debtors / guarantors
+        dataType: CATEGORICAL
+      - name: residence_since
+        description: Present residence since
+        dataType: NUMERIC
+      - name: property
+        description: Property
+        dataType: CATEGORICAL
+      - name: age
+        description: Age in years
+        dataType: NUMERIC
+      - name: other_payment_plans
+        description: "Other installment plans "
+        dataType: CATEGORICAL
+      - name: housing
+        description: Housing
+        dataType: CATEGORICAL
+      - name: existing_credits
+        description: Number of existing credits at this bank
+        dataType: NUMERIC
+      - name: job
+        description: Job
+        dataType: CATEGORICAL
+      - name: num_dependents
+        description: Number of people being liable to provide maintenance for
+        dataType: NUMERIC
+      - name: own_telephone
+        description: Telephone
+        dataType: CATEGORICAL
+      - name: foreign_worker
+        description: Foreign worker
+        dataType: CATEGORICAL
+  electrical_grid:
+    title: Electrical Grid Stability Simulated Data Data Set
+    description: The local stability analysis of the 4-node star system (electricity producer is in the center) implementing Decentral Smart Grid Control concept.
+    idField:
+      name: id
+      description: "unique identifier"
+    targetField:
+      name: stabf
+      description: "the stability label of the system (categorical: stable/unstable)"
+      positiveClass: unstable
+    predictorFields:
+      - name: tau1
+        description:
+          reaction time of participant (real from the range [0.5,10]s). Tau1
+          - the value for electricity producer.
+        dataType: NUMERIC
+      - name: tau2
+        description:
+          reaction time of participant (real from the range [0.5,10]s). Tau1
+          - the value for electricity producer.
+        dataType: NUMERIC
+      - name: tau3
+        description:
+          reaction time of participant (real from the range [0.5,10]s). Tau1
+          - the value for electricity producer.
+        dataType: NUMERIC
+      - name: tau4
+        description:
+          reaction time of participant (real from the range [0.5,10]s). Tau1
+          - the value for electricity producer.
+        dataType: NUMERIC
+      - name: p1
+        description:
+          nominal power consumed(negative)/produced(positive)(real). For consumers
+          from the range [-0.5,-2]s^-2; p1 = abs(p2 + p3 + p4)
+        dataType: NUMERIC
+      - name: p2
+        description:
+          nominal power consumed(negative)/produced(positive)(real). For consumers
+          from the range [-0.5,-2]s^-2; p1 = abs(p2 + p3 + p4)
+        dataType: NUMERIC
+      - name: p3
+        description:
+          nominal power consumed(negative)/produced(positive)(real). For consumers
+          from the range [-0.5,-2]s^-2; p1 = abs(p2 + p3 + p4)
+        dataType: NUMERIC
+      - name: p4
+        description:
+          nominal power consumed(negative)/produced(positive)(real). For consumers
+          from the range [-0.5,-2]s^-2; p1 = abs(p2 + p3 + p4)
+        dataType: NUMERIC
+      - name: g1
+        description:
+          coefficient (gamma) proportional to price elasticity (real from the
+          range [0.05,1]s^-1). g1 - the value for electricity producer.
+        dataType: NUMERIC
+      - name: g2
+        description:
+          coefficient (gamma) proportional to price elasticity (real from the
+          range [0.05,1]s^-1). g1 - the value for electricity producer.
+        dataType: NUMERIC
+      - name: g3
+        description:
+          coefficient (gamma) proportional to price elasticity (real from the
+          range [0.05,1]s^-1). g1 - the value for electricity producer.
+        dataType: NUMERIC
+      - name: g4
+        description:
+          coefficient (gamma) proportional to price elasticity (real from the
+          range [0.05,1]s^-1). g1 - the value for electricity producer.
+        dataType: NUMERIC
+  employee_attrition:
+    title: Employee Attrition dataset from PyCaret
+    description: The task is to predict whether an employee underwent attrition using predictor features such as satisfaction_level, salary category, department, average monthly hours, promotion in last 5 years, etc.
+    idField:
+      name: id
+      description: unique identifier
+    targetField:
+      name: left
+      description: attrition (yes = 1, no = 0)
+      positiveClass: "1"
+    predictorFields:
+      - name: satisfaction_level
+        description: not available
+        dataType: NUMERIC
+      - name: last_evaluation
+        description: not available
+        dataType: NUMERIC
+      - name: number_project
+        description: not available
+        dataType: NUMERIC
+      - name: average_montly_hours
+        description: not available
+        dataType: NUMERIC
+      - name: time_spend_company
+        description: not available
+        dataType: NUMERIC
+      - name: Work_accident
+        description: not available
+        dataType: CATEGORICAL
+      - name: promotion_last_5years
+        description: not available
+        dataType: CATEGORICAL
+      - name: department
+        description: not available
+        dataType: CATEGORICAL
+      - name: salary
+        description: not available
+        dataType: CATEGORICAL
+  mushroom:
+    title: Mushroom Data Set
+    description: "From Audobon Society Field Guide; mushrooms described in terms of physical characteristics; classification: poisonous or edible"
+    idField:
+      name: id
+      description: unique identifier
+    targetField:
+      name: class
+      description: "classification of mushrooms - poisonous or edible"
+      positiveClass: p
+    predictorFields:
+      - name: cap-shape
+        description: cap-shape
+        dataType: CATEGORICAL
+      - name: cap-surface
+        description: cap-surface
+        dataType: CATEGORICAL
+      - name: cap-color
+        description: cap-color
+        dataType: CATEGORICAL
+      - name: bruises%3F
+        description: bruises%3F
+        dataType: CATEGORICAL
+      - name: odor
+        description: odor
+        dataType: CATEGORICAL
+      - name: gill-attachment
+        description: gill-attachment
+        dataType: CATEGORICAL
+      - name: gill-spacing
+        description: gill-spacing
+        dataType: CATEGORICAL
+      - name: gill-size
+        description: gill-size
+        dataType: CATEGORICAL
+      - name: gill-color
+        description: gill-color
+        dataType: CATEGORICAL
+      - name: stalk-shape
+        description: stalk-shape
+        dataType: CATEGORICAL
+      - name: stalk-root
+        description: stalk-root
+        dataType: CATEGORICAL
+      - name: stalk-surface-above-ring
+        description: stalk-surface-above-ring
+        dataType: CATEGORICAL
+      - name: stalk-surface-below-ring
+        description: stalk-surface-below-ring
+        dataType: CATEGORICAL
+      - name: stalk-color-above-ring
+        description: stalk-color-above-ring
+        dataType: CATEGORICAL
+      - name: stalk-color-below-ring
+        description: stalk-color-below-ring
+        dataType: CATEGORICAL
+      - name: veil-type
+        description: veil-type
+        dataType: CATEGORICAL
+      - name: veil-color
+        description: veil-color
+        dataType: CATEGORICAL
+      - name: ring-number
+        description: ring-number
+        dataType: CATEGORICAL
+      - name: ring-type
+        description: ring-type
+        dataType: CATEGORICAL
+      - name: spore-print-color
+        description: spore-print-color
+        dataType: CATEGORICAL
+      - name: population
+        description: population
+        dataType: CATEGORICAL
+      - name: habitat
+        description: habitat
+        dataType: CATEGORICAL
+  nba:
+    title: nba
+    description: NBA binary classification dataset from Pycaret
+    idField:
+      name: Name
+      description: unique identifier
+    targetField:
+      name: TARGET_5Yrs
+      description: description not available
+      positiveClass: "1"
+    predictorFields:
+      - name: GP
+        description: description not available
+        dataType: NUMERIC
+      - name: MIN
+        description: description not available
+        dataType: NUMERIC
+      - name: PTS
+        description: description not available
+        dataType: NUMERIC
+      - name: FGM
+        description: description not available
+        dataType: NUMERIC
+      - name: FGA
+        description: description not available
+        dataType: NUMERIC
+      - name: FG%
+        description: description not available
+        dataType: NUMERIC
+      - name: 3P Made
+        description: description not available
+        dataType: NUMERIC
+      - name: 3PA
+        description: description not available
+        dataType: NUMERIC
+      - name: 3P%
+        description: description not available
+        dataType: NUMERIC
+      - name: FTM
+        description: description not available
+        dataType: NUMERIC
+      - name: FTA
+        description: description not available
+        dataType: NUMERIC
+      - name: FT%
+        description: description not available
+        dataType: NUMERIC
+      - name: OREB
+        description: description not available
+        dataType: NUMERIC
+      - name: DREB
+        description: description not available
+        dataType: NUMERIC
+      - name: REB
+        description: description not available
+        dataType: NUMERIC
+      - name: AST
+        description: description not available
+        dataType: NUMERIC
+      - name: STL
+        description: description not available
+        dataType: NUMERIC
+      - name: BLK
+        description: description not available
+        dataType: NUMERIC
+      - name: TOV
+        description: description not available
+        dataType: NUMERIC
+  segment:
+    title: segment dataset from openml.org
+    description: Description unavailable
+    idField:
+      name: id
+      description: unique identifier
+    targetField:
+      name: binaryClass
+      description: description n/a
+      positiveClass: P
+    predictorFields:
+      - name: region-centroid-col
+        description: description n/a
+        dataType: NUMERIC
+      - name: region-centroid-row
+        description: description n/a
+        dataType: NUMERIC
+      - name: region-pixel-count
+        description: description n/a
+        dataType: NUMERIC
+      - name: short-line-density-5
+        description: description n/a
+        dataType: NUMERIC
+      - name: short-line-density-2
+        description: description n/a
+        dataType: NUMERIC
+      - name: vedge-mean
+        description: description n/a
+        dataType: NUMERIC
+      - name: vegde-sd
+        description: description n/a
+        dataType: NUMERIC
+      - name: hedge-mean
+        description: description n/a
+        dataType: NUMERIC
+      - name: hedge-sd
+        description: description n/a
+        dataType: NUMERIC
+      - name: intensity-mean
+        description: description n/a
+        dataType: NUMERIC
+      - name: rawred-mean
+        description: description n/a
+        dataType: NUMERIC
+      - name: rawblue-mean
+        description: description n/a
+        dataType: NUMERIC
+      - name: rawgreen-mean
+        description: description n/a
+        dataType: NUMERIC
+      - name: exred-mean
+        description: description n/a
+        dataType: NUMERIC
+      - name: exblue-mean
+        description: description n/a
+        dataType: NUMERIC
+      - name: exgreen-mean
+        description: description n/a
+        dataType: NUMERIC
+      - name: value-mean
+        description: description n/a
+        dataType: NUMERIC
+      - name: saturation-mean
+        description: description n/a
+        dataType: NUMERIC
+      - name: hue-mean
+        description: description n/a
+        dataType: NUMERIC
+  spam:
+    title: Spambase Data Set
+    description: Classifying Email as Spam or Non-Spam
+    idField:
+      name: id
+      description: unique identifier
+    targetField:
+      name: class
+      description: spam(1) or not(0)
+      positiveClass: "1"
+    predictorFields:
+      - name: word_freq_make
+        description: word_freq_make
+        dataType: NUMERIC
+      - name: word_freq_address
+        description: word_freq_address
+        dataType: NUMERIC
+      - name: word_freq_all
+        description: word_freq_all
+        dataType: NUMERIC
+      - name: word_freq_3d
+        description: word_freq_3d
+        dataType: NUMERIC
+      - name: word_freq_our
+        description: word_freq_our
+        dataType: NUMERIC
+      - name: word_freq_over
+        description: word_freq_over
+        dataType: NUMERIC
+      - name: word_freq_remove
+        description: word_freq_remove
+        dataType: NUMERIC
+      - name: word_freq_internet
+        description: word_freq_internet
+        dataType: NUMERIC
+      - name: word_freq_order
+        description: word_freq_order
+        dataType: NUMERIC
+      - name: word_freq_mail
+        description: word_freq_mail
+        dataType: NUMERIC
+      - name: word_freq_receive
+        description: word_freq_receive
+        dataType: NUMERIC
+      - name: word_freq_will
+        description: word_freq_will
+        dataType: NUMERIC
+      - name: word_freq_people
+        description: word_freq_people
+        dataType: NUMERIC
+      - name: word_freq_report
+        description: word_freq_report
+        dataType: NUMERIC
+      - name: word_freq_addresses
+        description: word_freq_addresses
+        dataType: NUMERIC
+      - name: word_freq_free
+        description: word_freq_free
+        dataType: NUMERIC
+      - name: word_freq_business
+        description: word_freq_business
+        dataType: NUMERIC
+      - name: word_freq_email
+        description: word_freq_email
+        dataType: NUMERIC
+      - name: word_freq_you
+        description: word_freq_you
+        dataType: NUMERIC
+      - name: word_freq_credit
+        description: word_freq_credit
+        dataType: NUMERIC
+      - name: word_freq_your
+        description: word_freq_your
+        dataType: NUMERIC
+      - name: word_freq_font
+        description: word_freq_font
+        dataType: NUMERIC
+      - name: word_freq_000
+        description: word_freq_000
+        dataType: NUMERIC
+      - name: word_freq_money
+        description: word_freq_money
+        dataType: NUMERIC
+      - name: word_freq_hp
+        description: word_freq_hp
+        dataType: NUMERIC
+      - name: word_freq_hpl
+        description: word_freq_hpl
+        dataType: NUMERIC
+      - name: word_freq_george
+        description: word_freq_george
+        dataType: NUMERIC
+      - name: word_freq_650
+        description: word_freq_650
+        dataType: NUMERIC
+      - name: word_freq_lab
+        description: word_freq_lab
+        dataType: NUMERIC
+      - name: word_freq_labs
+        description: word_freq_labs
+        dataType: NUMERIC
+      - name: word_freq_telnet
+        description: word_freq_telnet
+        dataType: NUMERIC
+      - name: word_freq_857
+        description: word_freq_857
+        dataType: NUMERIC
+      - name: word_freq_data
+        description: word_freq_data
+        dataType: NUMERIC
+      - name: word_freq_415
+        description: word_freq_415
+        dataType: NUMERIC
+      - name: word_freq_85
+        description: word_freq_85
+        dataType: NUMERIC
+      - name: word_freq_technology
+        description: word_freq_technology
+        dataType: NUMERIC
+      - name: word_freq_1999
+        description: word_freq_1999
+        dataType: NUMERIC
+      - name: word_freq_parts
+        description: word_freq_parts
+        dataType: NUMERIC
+      - name: word_freq_pm
+        description: word_freq_pm
+        dataType: NUMERIC
+      - name: word_freq_direct
+        description: word_freq_direct
+        dataType: NUMERIC
+      - name: word_freq_cs
+        description: word_freq_cs
+        dataType: NUMERIC
+      - name: word_freq_meeting
+        description: word_freq_meeting
+        dataType: NUMERIC
+      - name: word_freq_original
+        description: word_freq_original
+        dataType: NUMERIC
+      - name: word_freq_project
+        description: word_freq_project
+        dataType: NUMERIC
+      - name: word_freq_re
+        description: word_freq_re
+        dataType: NUMERIC
+      - name: word_freq_edu
+        description: word_freq_edu
+        dataType: NUMERIC
+      - name: word_freq_table
+        description: word_freq_table
+        dataType: NUMERIC
+      - name: word_freq_conference
+        description: word_freq_conference
+        dataType: NUMERIC
+      - name: char_freq_%3B
+        description: char_freq_%3B
+        dataType: NUMERIC
+      - name: char_freq_%28
+        description: char_freq_%28
+        dataType: NUMERIC
+      - name: char_freq_%5B
+        description: char_freq_%5B
+        dataType: NUMERIC
+      - name: char_freq_%21
+        description: char_freq_%21
+        dataType: NUMERIC
+      - name: char_freq_%24
+        description: char_freq_%24
+        dataType: NUMERIC
+      - name: char_freq_%23
+        description: char_freq_%23
+        dataType: NUMERIC
+      - name: capital_run_length_average
+        description: capital_run_length_average
+        dataType: NUMERIC
+      - name: capital_run_length_longest
+        description: capital_run_length_longest
+        dataType: NUMERIC
+      - name: capital_run_length_total
+        description: capital_run_length_total
+        dataType: NUMERIC
+  telco_churn:
+    title: Telco customer churn
+    description: A fictional telco company's customer churn based on a variety of possible factors. The churn column indicates whether or not the customer left within the last month.
+    idField:
+      name: customerID
+      description: customer id
+    targetField:
+      name: Churn
+      description: Customers who left within the last month
+      positiveClass: "Yes"
+    predictorFields:
+      - name: gender
+        description: "The customer's gender: Male, Female"
+        dataType: CATEGORICAL
+      - name: SeniorCitizen
+        description: "Indicates if the customer is 65 or older: Yes, No"
+        dataType: CATEGORICAL
+      - name: Partner
+        description: Whether the customer has a partner or not (Yes, No)
+        dataType: CATEGORICAL
+      - name: Dependents
+        description:
+          "Indicates if the customer lives with any dependents: Yes, No. Dependents
+          could be children, parents, grandparents, etc."
+        dataType: CATEGORICAL
+      - name: tenure
+        description:
+          Indicates the total amount of months that the customer has been with
+          the company by the end of the quarter specified above.
+        dataType: NUMERIC
+      - name: PhoneService
+        description: Whether the customer has a phone service or not (Yes, No)
+        dataType: CATEGORICAL
+      - name: MultipleLines
+        description: Whether the customer has multiple lines or not (Yes, No, No phone service)
+        dataType: CATEGORICAL
+      - name: InternetService
+        description: Customer's internet service provider (DSL, Fiber optic, No)
+        dataType: CATEGORICAL
+      - name: OnlineSecurity
+        description:
+          Whether the customer has online security or not (Yes, No, No internet
+          service)
+        dataType: CATEGORICAL
+      - name: OnlineBackup
+        description:
+          "Indicates if the customer subscribes to an additional online backup
+          service provided by the company: Yes, No"
+        dataType: CATEGORICAL
+      - name: DeviceProtection
+        description:
+          "Indicates if the customer subscribes to an additional device protection
+          plan for their Internet equipment provided by the company: Yes, No"
+        dataType: CATEGORICAL
+      - name: TechSupport
+        description:
+          "Indicates if the customer subscribes to an additional technical support
+          plan from the company with reduced wait times: Yes, No"
+        dataType: CATEGORICAL
+      - name: StreamingTV
+        description:
+          "Indicates if the customer uses their Internet service to stream television
+          programing from a third party provider: Yes, No. The company does not charge an
+          additional fee for this service."
+        dataType: CATEGORICAL
+      - name: StreamingMovies
+        description:
+          "Indicates if the customer uses their Internet service to stream movies
+          from a third party provider: Yes, No. The company does not charge an additional
+          fee for this service."
+        dataType: CATEGORICAL
+      - name: Contract
+        description:
+          "Indicates the customer's current contract type: Month-to-Month, One
+          Year, Two Year."
+        dataType: CATEGORICAL
+      - name: PaperlessBilling
+        description: "Indicates if the customer has chosen paperless billing: Yes, No"
+        dataType: CATEGORICAL
+      - name: PaymentMethod
+        description:
+          "Indicates how the customer pays their bill: Bank Withdrawal, Credit
+          Card, Mailed Check"
+        dataType: CATEGORICAL
+      - name: MonthlyCharges
+        description:
+          Indicates the customer's current total monthly charge for all their
+          services from the company.
+        dataType: NUMERIC
+      - name: TotalCharges
+        description:
+          Indicates the customer's total charges, calculated to the end of the
+          quarter specified above.
+        dataType: NUMERIC
+  titanic:
+    title: Titanic dataset
+    description: The titanic dataset used to predict survival of passengers given information such as age, sex, sibling counts, etc.
+    idField:
+      name: PassengerId
+      description: A unique identifier for each passenger in the dataset.
+    targetField:
+      name: Survived
+      description: A binary variable indicating whether or not the passenger survived (0 = No, 1 = Yes).
+      positiveClass: "1"
+    predictorFields:
+      - name: Pclass
+        description: A categorical variable indicating the passenger class (1 = 1st, 2 = 2nd, 3 = 3rd).
+        dataType: CATEGORICAL
+      - name: Sex
+        description: A categorical variable indicating the passenger's gender (male or female).
+        dataType: CATEGORICAL
+      - name: Age
+        description: A numeric variable indicating the passenger's age in years.
+        dataType: NUMERIC
+      - name: SibSp
+        description: A numeric variable indicating the number of siblings/spouses aboard the Titanic.
+        dataType: NUMERIC
+      - name: Parch
+        description: A numeric variable indicating the number of parents/children aboard the Titanic.
+        dataType: NUMERIC
+      - name: Fare
+        description: A numeric variable indicating the passenger's fare.
+        dataType: NUMERIC
+      - name: Embarked
+        description: A categorical variable indicating the port of embarkation (C = Cherbourg, Q = Queenstown, S = Southampton).
+        dataType: CATEGORICAL
+  uci_churn:
+    title: UCI_churn
+    description: No description available
+    idField:
+      name: phone number
+      description: No description available
+    targetField:
+      name: churn
+      description: No description available
+      positiveClass: "True"
+    predictorFields:
+      - name: state
+        description: No description available
+        dataType: CATEGORICAL
+      - name: account length
+        description: No description available
+        dataType: NUMERIC
+      - name: international plan
+        description: No description available
+        dataType: CATEGORICAL
+      - name: voice mail plan
+        description: No description available
+        dataType: CATEGORICAL
+      - name: number vmail messages
+        description: No description available
+        dataType: NUMERIC
+      - name: total day minutes
+        description: No description available
+        dataType: NUMERIC
+      - name: total day calls
+        description: No description available
+        dataType: NUMERIC
+      - name: total day charge
+        description: No description available
+        dataType: NUMERIC
+      - name: total eve minutes
+        description: No description available
+        dataType: NUMERIC
+      - name: total eve calls
+        description: No description available
+        dataType: NUMERIC
+      - name: total eve charge
+        description: No description available
+        dataType: NUMERIC
+      - name: total night minutes
+        description: No description available
+        dataType: NUMERIC
+      - name: total night calls
+        description: No description available
+        dataType: NUMERIC
+      - name: total night charge
+        description: No description available
+        dataType: NUMERIC
+      - name: total intl minutes
+        description: No description available
+        dataType: NUMERIC
+      - name: total intl calls
+        description: No description available
+        dataType: NUMERIC
+      - name: total intl charge
+        description: No description available
+        dataType: NUMERIC
+      - name: customer service calls
+        description: No description available
+        dataType: NUMERIC

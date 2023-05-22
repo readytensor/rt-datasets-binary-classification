@@ -1,0 +1,212 @@
+{
+  "title": "Online Shoppers Purchasing Intention ",
+  "description": "Dataset for real-time prediction of online shoppers purchasing intention",
+  "modelCategory": "binary_classification",
+  "schemaVersion": 1.0,
+  "inputDataFormat": "CSV",
+  "id": {
+    "name": "id",
+    "description": "unique session id"
+  },
+  "target": {
+    "name": "Revenue",
+    "description": "Binary variable indicating visitor session ending in shopping (1) or not (0)",
+    "classes": [
+      "0",
+      "1"
+    ]
+  },
+  "features": [
+    {
+      "name": "Administrative",
+      "description": NaN,
+      "dataType": "NUMERIC",
+      "example": 0,
+      "nullable": false
+    },
+    {
+      "name": "Administrative_Duration",
+      "description": NaN,
+      "dataType": "NUMERIC",
+      "example": 0.0,
+      "nullable": false
+    },
+    {
+      "name": "Informational",
+      "description": NaN,
+      "dataType": "NUMERIC",
+      "example": 0,
+      "nullable": false
+    },
+    {
+      "name": "Informational_Duration",
+      "description": NaN,
+      "dataType": "NUMERIC",
+      "example": 0.0,
+      "nullable": false
+    },
+    {
+      "name": "ProductRelated",
+      "description": NaN,
+      "dataType": "NUMERIC",
+      "example": 1,
+      "nullable": false
+    },
+    {
+      "name": "ProductRelated_Duration",
+      "description": NaN,
+      "dataType": "NUMERIC",
+      "example": 0.0,
+      "nullable": false
+    },
+    {
+      "name": "BounceRates",
+      "description": NaN,
+      "dataType": "NUMERIC",
+      "example": 0.2,
+      "nullable": false
+    },
+    {
+      "name": "ExitRates",
+      "description": NaN,
+      "dataType": "NUMERIC",
+      "example": 0.2,
+      "nullable": false
+    },
+    {
+      "name": "PageValues",
+      "description": NaN,
+      "dataType": "NUMERIC",
+      "example": 0.0,
+      "nullable": false
+    },
+    {
+      "name": "SpecialDay",
+      "description": NaN,
+      "dataType": "NUMERIC",
+      "example": 0.0,
+      "nullable": false
+    },
+    {
+      "name": "Month",
+      "description": NaN,
+      "dataType": "CATEGORICAL",
+      "categories": [
+        "Aug",
+        "Dec",
+        "Feb",
+        "Jul",
+        "June",
+        "Mar",
+        "May",
+        "Nov",
+        "Oct",
+        "Sep"
+      ],
+      "nullable": false
+    },
+    {
+      "name": "OperatingSystems",
+      "description": NaN,
+      "dataType": "CATEGORICAL",
+      "categories": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "nullable": false
+    },
+    {
+      "name": "Browser",
+      "description": NaN,
+      "dataType": "CATEGORICAL",
+      "categories": [
+        1,
+        10,
+        11,
+        12,
+        13,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "nullable": false
+    },
+    {
+      "name": "Region",
+      "description": NaN,
+      "dataType": "CATEGORICAL",
+      "categories": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "nullable": false
+    },
+    {
+      "name": "TrafficType",
+      "description": NaN,
+      "dataType": "CATEGORICAL",
+      "categories": [
+        1,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        2,
+        20,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "nullable": false
+    },
+    {
+      "name": "VisitorType",
+      "description": NaN,
+      "dataType": "CATEGORICAL",
+      "categories": [
+        "New_Visitor",
+        "Other",
+        "Returning_Visitor"
+      ],
+      "nullable": false
+    },
+    {
+      "name": "Weekend",
+      "description": NaN,
+      "dataType": "CATEGORICAL",
+      "categories": [
+        0,
+        1
+      ],
+      "nullable": false
+    }
+  ]
+}

@@ -146,7 +146,7 @@ Dataset can be loaded through PyCaret as follows:
 
 ```
 from pycaret.datasets import get_data
-nba_data = get_data(“employee”)
+employee_data = get_data(“employee”)
 ```
 
 ---
@@ -175,7 +175,7 @@ Mushroom records drawn from The Audubon Society Field Guide to North American Mu
 Donor: Jeff Schlimmer (Jeffrey.Schlimmer '@' a.gp.cs.cmu.edu)
 
 Dataset can be found here:
-UCI Machine Learning Repository: Mushroom Data Set
+UCI Machine Learning Repository: Mushroom Data Set - https://archive.ics.uci.edu/ml/datasets/mushroom
 UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, School of Information and Computer Science.
 
 ---
@@ -256,7 +256,7 @@ Mark Hopkins, Erik Reeber, George Forman, Jaap Suermondt
 Hewlett-Packard Labs, 1501 Page Mill Rd., Palo Alto, CA 94304
 
 Dataset can be found here:
-UCI Machine Learning Repository: Spambase Data Set
+UCI Machine Learning Repository: Spambase Data Set - https://archive.ics.uci.edu/ml/datasets/spambase
 UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, School of Information and Computer Science.
 
 ---

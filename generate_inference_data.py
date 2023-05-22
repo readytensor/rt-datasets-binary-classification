@@ -39,7 +39,3 @@ def generate_inference_request_data():
 if __name__ == "__main__":
     generate_inference_request_data()
 
-
-
-if __name__ == "__main__":
-    generate_inference_request_data()

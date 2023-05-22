@@ -108,15 +108,15 @@ In the original dataset, the target classes were marked as “+” and “-”. 
 #### Attribution
 
 Source: <br/>
-Professor Dr. Hans Hofmann
-Institut f"ur Statistik und "Okonometrie
-Universit"at Hamburg
-FB Wirtschaftswissenschaften
-Von-Melle-Park 5
-2000 Hamburg 13
+Professor Dr. Hans Hofmann <br/>
+Institut f"ur Statistik und "Okonometrie <br/>
+Universit"at Hamburg <br/>
+FB Wirtschaftswissenschaften <br/>
+Von-Melle-Park 5 <br/>
+2000 Hamburg 13 <br/>
 
 Dataset can be found here: <br/>
-https://archive.ics.uci.edu/ml/datasets/statlog+(german+credit+data)
+https://archive.ics.uci.edu/ml/datasets/statlog+(german+credit+data) <br/>
 UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, School of Information and Computer Science.
 
 ---
@@ -148,7 +148,7 @@ Karlsruhe Institute of Technology; <br/>
 Karlsruhe, 76131; Germany
 
 Dataset can be found here: <br/>
-https://archive.ics.uci.edu/ml/datasets/Electrical+Grid+Stability+Simulated+Data+
+https://archive.ics.uci.edu/ml/datasets/Electrical+Grid+Stability+Simulated+Data+ <br/>
 UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, School of Information and Computer Science.
 
 ---
@@ -233,7 +233,7 @@ Donor: Jeff Schlimmer (Jeffrey.Schlimmer '@' a.gp.cs.cmu.edu)
 
 Dataset can be found here: <br/>
 UCI Machine Learning Repository: Mushroom Data Set - https://archive.ics.uci.edu/ml/datasets/mushroom <br/>
-UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, School of Information and Computer Science.
+UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, School of Information and Computer Science. <br/>
 
 ---
 
@@ -324,7 +324,7 @@ This dataset contains collection of spam and non-spam emails converted to numeri
 #### Attribution
 
 Creators: <br/>
-Mark Hopkins, Erik Reeber, George Forman, Jaap Suermondt v
+Mark Hopkins, Erik Reeber, George Forman, Jaap Suermondt <br/>
 Hewlett-Packard Labs, 1501 Page Mill Rd., Palo Alto, CA 94304
 
 Dataset can be found here: <br/>

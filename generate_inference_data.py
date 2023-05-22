@@ -31,7 +31,8 @@ def generate_inference_request_data():
         inference_request_data = {"instances": [sample_data]}
 
         # Write the inference request data to a JSON file
-        output_path = os.path.join(processed_datasets_path, dataset_name, f"{dataset_name}_inference_request_sample.json")
+        output_path = os.path.join(
+            processed_datasets_path, dataset_name, f"{dataset_name}_inference_request_sample.json")
         with open(output_path, "w", encoding="utf-8") as file:
             json.dump(inference_request_data, file, indent=2)
 

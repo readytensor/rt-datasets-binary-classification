@@ -2,9 +2,10 @@ import os
 from sklearn.model_selection import train_test_split
 from pandas import DataFrame
 from typing import Tuple
-import utils  
+import utils
 
-def split_dataset(dataset: DataFrame, test_size: float = 0.2) -> Tuple[DataFrame, DataFrame]:
+def split_dataset(
+        dataset: DataFrame, test_size: float = 0.2) -> Tuple[DataFrame, DataFrame]:
     """
     Splits the dataset into train and test set.
     
@@ -18,7 +19,8 @@ def split_dataset(dataset: DataFrame, test_size: float = 0.2) -> Tuple[DataFrame
     train_df, test_df = train_test_split(dataset, test_size=test_size, random_state=42)
     return train_df, test_df
 
-def save_train_data(train_df: DataFrame, dataset_name: str, processed_datasets_path: str) -> None:
+def save_train_data(
+        train_df: DataFrame, dataset_name: str, processed_datasets_path: str) -> None:
     """
     Saves the train data to a CSV file.
 
@@ -27,9 +29,14 @@ def save_train_data(train_df: DataFrame, dataset_name: str, processed_datasets_p
         dataset_name (str): The name of the dataset.
         processed_datasets_path (str): The path where the processed datasets are stored.
     """
-    train_df.to_csv(os.path.join(processed_datasets_path, dataset_name, f"{dataset_name}_train.csv"), index=False)
+    train_df.to_csv(os.path.join(
+        processed_datasets_path, dataset_name, f"{dataset_name}_train.csv"), index=False)
 
-def save_test_no_target_data(test_df: DataFrame, target_name: str, dataset_name: str, processed_datasets_path: str) -> None:
+def save_test_no_target_data(
+        test_df: DataFrame,
+        target_name: str,
+        dataset_name: str,
+        processed_datasets_path: str) -> None:
     """
     Saves the test data without the target column to a CSV file.
 
@@ -40,9 +47,15 @@ def save_test_no_target_data(test_df: DataFrame, target_name: str, dataset_name:
         processed_datasets_path (str): The path where the processed datasets are stored.
     """
     test_no_target_df = test_df.drop(target_name, axis=1)
-    test_no_target_df.to_csv(os.path.join(processed_datasets_path, dataset_name, f"{dataset_name}_test.csv"), index=False)
+    test_no_target_df.to_csv(
+        os.path.join(processed_datasets_path, dataset_name, f"{dataset_name}_test.csv"), index=False)
 
-def save_test_key_data(test_df: DataFrame, id_name: str, target_name: str, dataset_name: str, processed_datasets_path: str) -> None:
+def save_test_key_data(
+        test_df: DataFrame,
+        id_name: str,
+        target_name: str,
+        dataset_name: str,
+        processed_datasets_path: str) -> None:
     """
     Saves the test key data to a CSV file.
 
@@ -54,7 +67,8 @@ def save_test_key_data(test_df: DataFrame, id_name: str, target_name: str, datas
         processed_datasets_path (str): The path where the processed datasets are stored.
     """
     test_key_df = test_df[[id_name, target_name]]
-    test_key_df.to_csv(os.path.join(processed_datasets_path, dataset_name, f"{dataset_name}_test_key.csv"), index=False)
+    test_key_df.to_csv(
+        os.path.join(processed_datasets_path, dataset_name, f"{dataset_name}_test_key.csv"), index=False)
 
 def create_train_test_testkey_files() -> None:
     """
@@ -81,10 +95,12 @@ def create_train_test_testkey_files() -> None:
         save_train_data(train_df, dataset_name, processed_datasets_path)
 
         # Save test data without target
-        save_test_no_target_data(test_df, dataset_row["target_name"], dataset_name, processed_datasets_path)
+        save_test_no_target_data(
+            test_df, dataset_row["target_name"], dataset_name, processed_datasets_path)
 
         # Save test key data
-        save_test_key_data(test_df, dataset_row["id_name"], dataset_row["target_name"], dataset_name, processed_datasets_path)
+        save_test_key_data(
+            test_df, dataset_row["id_name"], dataset_row["target_name"], dataset_name, processed_datasets_path)
 
 
 if __name__ == "__main__":

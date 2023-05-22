@@ -8,7 +8,11 @@ processed_datasets_path = "./datasets/processed/"
 features_cfg_path = "./config/binary_classification_datasets_fields.csv"
 
 
-def create_feature_section(dataset_name: str, dataset_row: pd.Series, dataset: pd.DataFrame) -> List[Dict]:
+def create_feature_section(
+        dataset_name: str, 
+        dataset_row: pd.Series, 
+        dataset: pd.DataFrame, 
+        features_config: pd.DataFrame) -> List[Dict]:
     """
     Create the feature section of the schema.
 
@@ -16,18 +20,18 @@ def create_feature_section(dataset_name: str, dataset_row: pd.Series, dataset: p
     dataset_name (str): The name of the dataset.
     dataset_row (pd.Series): The metadata for the dataset.
     dataset (pd.DataFrame): The dataset.
+    features_config (pd.DataFrame): The features configuration data.
 
     Returns:
     List[Dict]: The features section of the schema.
     """
     # Filter features related to this dataset
-    features_config = load_features_config(features_cfg_path)
-    features_config = features_config.applymap(strip_quotes)
     features_config = features_config[features_config['name'] == dataset_row['name']]
 
     # create the features section
     features = []
-    features_df = features_config[(features_config["name"]==dataset_name) & (features_config["field_type"]=="feature")]
+    features_df = features_config[(features_config["name"]==dataset_name)
+                                  & (features_config["field_type"]=="feature")]
     for _, feature_row in features_df.iterrows():
         feature = {
             "name": feature_row['field_name'],
@@ -35,7 +39,8 @@ def create_feature_section(dataset_name: str, dataset_row: pd.Series, dataset: p
             "dataType": feature_row['data_type'].upper(),
         }
         if feature_row['data_type'].upper() == "CATEGORICAL":
-            feature["categories"] = sorted(dataset[feature_row['field_name']].dropna().unique().tolist(), key=str)
+            feature["categories"] = sorted(dataset[feature_row['field_name']]\
+                                           .dropna().unique().tolist(), key=str)
         else:
             feature["example"] = dataset[feature_row['field_name']].dropna().iloc[0]
         feature["nullable"] = dataset[feature_row['field_name']].isnull().any()
@@ -44,19 +49,25 @@ def create_feature_section(dataset_name: str, dataset_row: pd.Series, dataset: p
     return features
 
 
-def generate_schemas(dataset_metadata: pd.DataFrame, processed_datasets_path: str):
+def generate_schemas(
+        dataset_metadata: pd.DataFrame, 
+        processed_datasets_path: str, 
+        features_config: pd.DataFrame):
     """
     Generate the schema for each dataset.
 
     Args:
     dataset_metadata (pd.DataFrame): The metadata for all the datasets.
     processed_datasets_path (str): The path where the processed datasets are stored.
+    features_config (pd.DataFrame): The features configuration data.
     """
     schemas=[]
     dataset_names=[]
 
     # Iterate through all datasets marked for use in the metadata
-    for _, dataset_row in dataset_metadata[dataset_metadata['use_dataset'] == 1].iterrows():
+    for _, dataset_row in \
+        dataset_metadata[dataset_metadata['use_dataset'] == 1].iterrows():
+
 
         dataset_name = dataset_row["name"]
         print("Creating schema for dataset", dataset_name)
@@ -82,7 +93,9 @@ def generate_schemas(dataset_metadata: pd.DataFrame, processed_datasets_path: st
         dataset = pd.read_csv(os.path.join(
             processed_datasets_path, dataset_name, f"{dataset_name}.csv"))
 
-        schema["features"] = create_feature_section(dataset_name, dataset_row, dataset)
+        schema["features"] = create_feature_section(
+            dataset_name, dataset_row, dataset, features_config)
+
 
         schemas.append(schema)
         dataset_names.append(dataset_name)
@@ -101,8 +114,10 @@ def generate_schemas(dataset_metadata: pd.DataFrame, processed_datasets_path: st
 def run_schema_gen():
     dataset_cfg_path = "./config/binary_classification_datasets_metadata.csv"
     dataset_metadata = load_metadata(dataset_cfg_path)
-    generate_schemas(dataset_metadata, processed_datasets_path)
-
+    features_config = load_features_config(features_cfg_path)
+    features_config = features_config.applymap(strip_quotes)
+    generate_schemas(
+        dataset_metadata, processed_datasets_path, features_config)
 
 if __name__ == "__main__":
     run_schema_gen()

@@ -57,6 +57,39 @@ UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: Uni
 
 ---
 
+## Concentric spheres
+
+#### Alias (in scorecards): concentric_spheres
+
+#### Domain / Industry: None (synthetic data) 
+
+#### Description
+
+A synthetic dataset consisting of two concentric spheres, meant to mimic a binary classification problem in a 3-dimensional space. The spheres are represented by two sets of data points, one set for each class, with each set forming a sphere of different radius in a 3D space.
+
+Two sets of points are generated on the surfaces of two spheres with different radii. Each point on a sphere's surface is computed using randomly generated azimuthal angles and z-coordinates, which are then converted to x, y, and z coordinates using spherical to Cartesian coordinate transformation. A small Gaussian noise is added to these coordinates to simulate real-world measurement errors. These `x`, `y`, and `z` coordinates are the main three features in the dataset.
+
+Next, dummy features are added to the dataset. These features are randomly generated and are not related to the target class, simulating irrelevant or noise features often present in real-world datasets.
+
+Then, correlated features are added. These are derived from the original `x`, `y`, and `z` coordinates, being a linear combination of the original feature and some added noise. This mimics scenarios where features are not entirely independent of each other.
+
+Finally, a portion of the values in the dataset is replaced with null values to simulate missing data, which is a common challenge in real-world datasets.
+
+The final dataset includes the x, y, z coordinates, the target class, an id for each data point, three dummy features, and three correlated features with a small percentage of missing values for each of the features.
+
+#### Dataset characteristics
+
+- Number of samples = 3,000
+- Number of input features = 9
+- Has categorical features = No
+- Has missing values = Yes
+
+#### Attribution
+
+Synthetically generated data.
+
+---
+
 ## In-vehicle coupon recommendation
 
 #### Alias (in scorecards): coupon_recommendations
@@ -334,6 +367,39 @@ UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: Uni
 
 ---
 
+## Spiral Dataset
+
+#### Alias (in scorecards): spiral
+
+#### Domain / Industry: None (synthetic data) 
+
+#### Description
+
+This dataset is synthetically generated. This dataset consists of two spiral patterns in a 2D space, each representing a unique class.
+
+The dataset creation takes inspiration from polar coordinates, which is a two-dimensional coordinate system where each point on a plane is determined by a distance from a reference point (usually the origin) and an angle from a reference direction.
+
+The spirals are created using the equation of a logarithmic spiral in polar coordinates, `r = a _ e^(b _ θ)`. In this equation, r is the distance of a point from the origin, `θ` is the angle, and `a` and `b` are real numbers which affect the size and tightness of the spiral. We're setting `a = 780` and `b = 1`, but by playing around with these numbers you can get different spiral shapes.
+
+The function first generates a random set of n_points_each distances (radii) from the origin. It then calculates the corresponding angle for each point using the formula for a spiral. Then, these polar coordinates are converted to Cartesian coordinates (i.e., x and y coordinates) using the sin and cos functions, with some added random noise to make the data more realistic and less perfectly spiral-shaped. The function generates two spirals: one in the positive direction and one in the negative direction.
+
+See generated data:
+
+![concentric circles](datasets/spiral/processed/spiral.png)
+
+#### Dataset characteristics
+
+- Number of samples = 400
+- Number of input features = 2
+- Has categorical features = No
+- Has missing values = No
+
+#### Attribution
+
+Synthetically generated data
+
+---
+
 ## Telco Churn
 
 #### Alias (in scorecards): telco_churn
@@ -383,5 +449,36 @@ Dataset regarding attributes of passengers on the Titanic. Data can be used to b
 
 Sourced from: <br/>
 https://www.kaggle.com/competitions/titanic/data
+
+---
+
+## Exclusive-Or Dataset
+
+#### Alias (in scorecards): xor
+
+#### Domain / Industry: None (synthetic data) 
+
+#### Description
+
+This synthetic dataset is based on the n-dimensional XOR problem. Each sample in the dataset has an identifier, a set of 5 features (x1, x2, ..., x5), and a target class label.
+
+The features are continuous values drawn from a uniform distribution between 0 and 1. Each feature value is independent of the others. They are generated such that they are evenly distributed over the interval [0, 1].
+
+The class label for each sample is determined by the number of features in that sample which have values less than 0.5. If the number of features less than 0.5 is odd, the sample is labeled as Class 1. If the number of features less than 0.5 is even, the sample is labeled as Class 0. This creates an n-dimensional XOR classification problem.
+
+The identifiers in the `id` field for the samples are randomly generated alphanumeric strings. They are used to uniquely identify each sample in the dataset.
+
+In summary, this dataset presents an n-dimensional XOR problem, where the task is to classify samples based on whether the number of their features less than 0.5 is odd or even. The relationship between features and target would be unknown to us. This makes it a challenging task for binary classification algorithms, especially when the number of dimensions is high.
+
+#### Dataset characteristics
+
+- Number of samples = 600
+- Numberof input features = 5
+- Has categorical features = No
+- Has missing values = Yes
+
+#### Attribution
+
+Synthetically generated data
 
 ---

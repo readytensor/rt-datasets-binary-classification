@@ -153,7 +153,7 @@ binary_classification,image_segmentation,18,value-mean,feature,NUMERIC,"value-me
 binary_classification,image_segmentation,19,saturation-mean,feature,NUMERIC,"saturation: 3-d nonlinear transformation of RGB. (Algorithm can be found in Foley and VanDam, Fundamentals of Interactive Computer Graphics)"
 binary_classification,image_segmentation,20,hue-mean,feature,NUMERIC,"hue-mean: 3-d nonlinear transformation of RGB. (Algorithm can be found in Foley and VanDam, Fundamentals of Interactive Computer Graphics)"
 binary_classification,image_segmentation,21,binaryClass,target,CATEGORICAL,Positive class (P) and negative class (N)
-binary_classification,spambase,1,id,id,TEXT,
+binary_classification,spambase,1,id,id,TEXT,unique identifier
 binary_classification,spambase,2,word_freq_make,feature,NUMERIC,"Given 'word_freq_WORD': percentage of words in the e-mail that match WORD, i.e. 100 * (number of times the WORD appears in the e-mail) / total number of words in e-mail. A ""word"" in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string."
 binary_classification,spambase,3,word_freq_address,feature,NUMERIC,"Given 'word_freq_WORD': percentage of words in the e-mail that match WORD, i.e. 100 * (number of times the WORD appears in the e-mail) / total number of words in e-mail. A ""word"" in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string."
 binary_classification,spambase,4,word_freq_all,feature,NUMERIC,"Given 'word_freq_WORD': percentage of words in the e-mail that match WORD, i.e. 100 * (number of times the WORD appears in the e-mail) / total number of words in e-mail. A ""word"" in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string."
@@ -260,22 +260,44 @@ binary_classification,coupon_recommendations,24,toCoupon_GEQ25min,feature,CATEGO
 binary_classification,coupon_recommendations,25,direction_same,feature,CATEGORICAL,"direction_same:0, 1 (feature meaning: whether the restaurant/bar is in the same direction as your current destination)"
 binary_classification,coupon_recommendations,26,direction_opp,feature,CATEGORICAL,"direction_opp:1, 0 (feature meaning: whether the restaurant/bar is in the same direction as your current destination)"
 binary_classification,coupon_recommendations,27,accept_coupon,target,CATEGORICAL,"accept_coupon:1, 0 (whether the coupon is accepted)"
-binary_classification,online_shopping,1,id,id,TEXT,
-binary_classification,online_shopping,2,Administrative,feature,NUMERIC,
-binary_classification,online_shopping,3,Administrative_Duration,feature,NUMERIC,
-binary_classification,online_shopping,4,Informational,feature,NUMERIC,
-binary_classification,online_shopping,5,Informational_Duration,feature,NUMERIC,
-binary_classification,online_shopping,6,ProductRelated,feature,NUMERIC,
-binary_classification,online_shopping,7,ProductRelated_Duration,feature,NUMERIC,
-binary_classification,online_shopping,8,BounceRates,feature,NUMERIC,
-binary_classification,online_shopping,9,ExitRates,feature,NUMERIC,
-binary_classification,online_shopping,10,PageValues,feature,NUMERIC,
-binary_classification,online_shopping,11,SpecialDay,feature,NUMERIC,
-binary_classification,online_shopping,12,Month,feature,CATEGORICAL,
-binary_classification,online_shopping,13,OperatingSystems,feature,CATEGORICAL,
-binary_classification,online_shopping,14,Browser,feature,CATEGORICAL,
-binary_classification,online_shopping,15,Region,feature,CATEGORICAL,
-binary_classification,online_shopping,16,TrafficType,feature,CATEGORICAL,
-binary_classification,online_shopping,17,VisitorType,feature,CATEGORICAL,
-binary_classification,online_shopping,18,Weekend,feature,CATEGORICAL,
-binary_classification,online_shopping,19,Revenue,target,CATEGORICAL,
+binary_classification,online_shopping,1,id,id,TEXT,unique identifier
+binary_classification,online_shopping,2,Administrative,feature,NUMERIC,"Number of different ""Administrative"" pages visited in the session"
+binary_classification,online_shopping,3,Administrative_Duration,feature,NUMERIC,"Total time spent on ""Administrative"" pages in the session"
+binary_classification,online_shopping,4,Informational,feature,NUMERIC,"Number of different ""Informational"" pages visited in the session"
+binary_classification,online_shopping,5,Informational_Duration,feature,NUMERIC,"Total time spent on ""Informational"" pages in the session"
+binary_classification,online_shopping,6,ProductRelated,feature,NUMERIC,"Number of different ""ProductRelated"" pages visited in the session"
+binary_classification,online_shopping,7,ProductRelated_Duration,feature,NUMERIC,"Total time spent on ""ProductRelated"" pages in the session"
+binary_classification,online_shopping,8,BounceRates,feature,NUMERIC,"Bounce Rate metric from Google Analytics - refers to percentage of visitors who enter the site from that page and then leave (""bounce"") without triggering any other requests to the analytics server during that session"
+binary_classification,online_shopping,9,ExitRates,feature,NUMERIC,"Exit Rate metric from Google Analytics. The value of ""Exit Rate"" feature for a specific web page is calculated as for all pageviews to the page, the percentage that were the last in the session."
+binary_classification,online_shopping,10,PageValues,feature,NUMERIC,Page Value metric from google Analytics - represents the average value for a web page that a user visited before completing an e-commerce transaction
+binary_classification,online_shopping,11,SpecialDay,feature,NUMERIC,"Indicates the closeness of the site visiting time to a specific special day (e.g. Mother's Day, Valentine's Day) in which the sessions are more likely to be finalized with transaction"
+binary_classification,online_shopping,12,Month,feature,CATEGORICAL,Month of the year
+binary_classification,online_shopping,13,OperatingSystems,feature,CATEGORICAL,Operating system of the visitor
+binary_classification,online_shopping,14,Browser,feature,CATEGORICAL,Browser type of the visitor
+binary_classification,online_shopping,15,Region,feature,CATEGORICAL,Region of the visitor
+binary_classification,online_shopping,16,TrafficType,feature,CATEGORICAL,Traffic type (categories 1 to 20) - information of types not provided in dataset
+binary_classification,online_shopping,17,VisitorType,feature,CATEGORICAL,Returning or new visitor
+binary_classification,online_shopping,18,Weekend,feature,CATEGORICAL,Is the session on weekend or weekday
+binary_classification,online_shopping,19,Revenue,target,CATEGORICAL,Target variable indicating whether the session resulted in shopping or not.
+binary_classification,x_or,1,id,id,TEXT,unique identifier 
+binary_classification,x_or,2,target,target,CATEGORICAL,binary class (0 or 1)
+binary_classification,x_or,3,x1,feature,NUMERIC,feature 1 of synthetic XOR data
+binary_classification,x_or,4,x2,feature,NUMERIC,feature 2 of synthetic XOR data
+binary_classification,x_or,5,x3,feature,NUMERIC,feature 3 of synthetic XOR data
+binary_classification,x_or,6,x4,feature,NUMERIC,feature 4 of synthetic XOR data
+binary_classification,x_or,7,x5,feature,NUMERIC,feature 5 of synthetic XOR data
+binary_classification,concentric_spheres,1,id,id,TEXT,unique identifier 
+binary_classification,concentric_spheres,2,target,target,CATEGORICAL,binary class (0 or 1)
+binary_classification,concentric_spheres,3,x,feature,NUMERIC,x coordinate
+binary_classification,concentric_spheres,4,y,feature,NUMERIC,y coordinate
+binary_classification,concentric_spheres,5,z,feature,NUMERIC,z coordinate
+binary_classification,concentric_spheres,6,dummy_1,feature,NUMERIC,dummy feature 1
+binary_classification,concentric_spheres,7,dummy_2,feature,NUMERIC,dummy feature 2
+binary_classification,concentric_spheres,8,dummy_3,feature,NUMERIC,dummy feature 3
+binary_classification,concentric_spheres,9,corr_x,feature,NUMERIC,feature correlated with x coordinate
+binary_classification,concentric_spheres,10,corr_y,feature,NUMERIC,feature correlated with y coordinate
+binary_classification,concentric_spheres,11,corr_z,feature,NUMERIC,feature correlated with z coordinate
+binary_classification,spiral,1,id,id,TEXT,unique identifier 
+binary_classification,spiral,2,target,target,CATEGORICAL,binary class (0 or 1)
+binary_classification,spiral,3,x,feature,NUMERIC,x coordinate
+binary_classification,spiral,4,y,feature,NUMERIC,y coordinate

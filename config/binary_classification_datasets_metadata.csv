@@ -11,6 +11,6 @@ binary_classification,7,online_shopping,Online Shoppers Purchasing Intention ,Da
 binary_classification,9,spambase,Spambase Data Set,Classifying Email as Spam or Non-Spam,id,unique record identifier,class,spam (1) or not (0),0|1,1
 binary_classification,10,telco_churn,Telco customer churn,A fictional telco company's customer churn based on a variety of possible factors. The churn column indicates whether or not the customer left within the last month.,customerID,unique customer identifier,Churn,Whether customer churned within the last month (1) or not (0),0|1,1
 binary_classification,11,titanic,Titanic Passenger Survival dataset,PassengerId,PassengerId,A unique identifier for each passenger in the dataset.,Survived,"A binary variable indicating whether or not the passenger survived (0 = No, 1 = Yes).",0|1,1
-binary_classification,13,x_or,Exclusive-Or dataset,Synthetically generated 5-dimensional Exclusive-Or (XOR) dataset. ,id,unique identifier,target,binary class (0 or 1),0|1,1
+binary_classification,13,xor,Exclusive-Or dataset,Synthetically generated 5-dimensional Exclusive-Or (XOR) dataset. ,id,unique identifier,target,binary class (0 or 1),0|1,1
 binary_classification,14,concentric_spheres,Concentric Spheres Dataset,Synthetically generated concentric spheres dataset,id,unique identifier,target,binary class (0 or 1),0|1,1
 binary_classification,15,spiral,Spiral Dataset,Synthetically generated spiral dataset,id,unique identifier,target,binary class (0 or 1),0|1,1

@@ -279,13 +279,13 @@ binary_classification,online_shopping,16,TrafficType,feature,CATEGORICAL,Traffic
 binary_classification,online_shopping,17,VisitorType,feature,CATEGORICAL,Returning or new visitor
 binary_classification,online_shopping,18,Weekend,feature,CATEGORICAL,Is the session on weekend or weekday
 binary_classification,online_shopping,19,Revenue,target,CATEGORICAL,Target variable indicating whether the session resulted in shopping or not.
-binary_classification,x_or,1,id,id,TEXT,unique identifier 
-binary_classification,x_or,2,target,target,CATEGORICAL,binary class (0 or 1)
-binary_classification,x_or,3,x1,feature,NUMERIC,feature 1 of synthetic XOR data
-binary_classification,x_or,4,x2,feature,NUMERIC,feature 2 of synthetic XOR data
-binary_classification,x_or,5,x3,feature,NUMERIC,feature 3 of synthetic XOR data
-binary_classification,x_or,6,x4,feature,NUMERIC,feature 4 of synthetic XOR data
-binary_classification,x_or,7,x5,feature,NUMERIC,feature 5 of synthetic XOR data
+binary_classification,xor,1,id,id,TEXT,unique identifier 
+binary_classification,xor,2,target,target,CATEGORICAL,binary class (0 or 1)
+binary_classification,xor,3,x1,feature,NUMERIC,feature 1 of synthetic XOR data
+binary_classification,xor,4,x2,feature,NUMERIC,feature 2 of synthetic XOR data
+binary_classification,xor,5,x3,feature,NUMERIC,feature 3 of synthetic XOR data
+binary_classification,xor,6,x4,feature,NUMERIC,feature 4 of synthetic XOR data
+binary_classification,xor,7,x5,feature,NUMERIC,feature 5 of synthetic XOR data
 binary_classification,concentric_spheres,1,id,id,TEXT,unique identifier 
 binary_classification,concentric_spheres,2,target,target,CATEGORICAL,binary class (0 or 1)
 binary_classification,concentric_spheres,3,x,feature,NUMERIC,x coordinate

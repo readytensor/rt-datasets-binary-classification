@@ -31,37 +31,61 @@ binary_classification,breast_cancer,29,concavity_worst,feature,NUMERIC,worst (la
 binary_classification,breast_cancer,30,concave points_worst,feature,NUMERIC,worst (largest)  concave points (number of concave portions of the contour)
 binary_classification,breast_cancer,31,symmetry_worst,feature,NUMERIC,worst (largest)  symmetry
 binary_classification,breast_cancer,32,fractal_dimension_worst,feature,NUMERIC,"worst (largest)  fractal dimension (""coastline approximation"" - 1)"
-binary_classification,titanic,1,PassengerId,id,TEXT,Unique passenger identifier
-binary_classification,titanic,2,Survived,target,CATEGORICAL,Whether passenger survived or not
-binary_classification,titanic,3,Pclass,feature,CATEGORICAL,Ticket class
-binary_classification,titanic,4,Sex,feature,CATEGORICAL,gender
-binary_classification,titanic,5,Age,feature,NUMERIC,Age in years
-binary_classification,titanic,6,SibSp,feature,NUMERIC,# of siblings / spouses aboard the Titanic
-binary_classification,titanic,7,Parch,feature,NUMERIC,# of parents / children aboard the Titanic
-binary_classification,titanic,8,Fare,feature,NUMERIC,Passenger fare
-binary_classification,titanic,9,Embarked,feature,CATEGORICAL,Port of embarkation
-binary_classification,credit_card,1,id,id,TEXT,id
-binary_classification,credit_card,2,checking_status,feature,CATEGORICAL,Status of existing checking account
-binary_classification,credit_card,3,duration,feature,NUMERIC,Duration in month
-binary_classification,credit_card,4,credit_history,feature,CATEGORICAL,Credit history
-binary_classification,credit_card,5,purpose,feature,CATEGORICAL,Purpose
-binary_classification,credit_card,6,credit_amount,feature,NUMERIC,Credit amount
-binary_classification,credit_card,7,savings_status,feature,CATEGORICAL,Savings account/bonds
-binary_classification,credit_card,8,employment,feature,CATEGORICAL,Present employment since
-binary_classification,credit_card,9,installment_rate,feature,NUMERIC,Installment rate in percentage of disposable income
-binary_classification,credit_card,10,personal_status,feature,CATEGORICAL,Personal status and sex
-binary_classification,credit_card,11,other_parties,feature,CATEGORICAL,Other debtors / guarantors
-binary_classification,credit_card,12,residence_since,feature,NUMERIC,Present residence since
-binary_classification,credit_card,13,property,feature,CATEGORICAL,Property
-binary_classification,credit_card,14,age,feature,NUMERIC,Age in years
-binary_classification,credit_card,15,other_payment_plans,feature,CATEGORICAL,Other installment plans 
-binary_classification,credit_card,16,housing,feature,CATEGORICAL,Housing
-binary_classification,credit_card,17,existing_credits,feature,NUMERIC,Number of existing credits at this bank
-binary_classification,credit_card,18,job,feature,CATEGORICAL,Job
-binary_classification,credit_card,19,num_dependents,feature,NUMERIC,Number of people being liable to provide maintenance for
-binary_classification,credit_card,20,own_telephone,feature,CATEGORICAL,Telephone
-binary_classification,credit_card,21,foreign_worker,feature,CATEGORICAL,Foreign worker
-binary_classification,credit_card,22,class,target,CATEGORICAL,Credit good/bad
+binary_classification,concentric_spheres,1,id,id,TEXT,unique identifier 
+binary_classification,concentric_spheres,2,target,target,CATEGORICAL,binary class (0 or 1)
+binary_classification,concentric_spheres,3,x,feature,NUMERIC,x coordinate
+binary_classification,concentric_spheres,4,y,feature,NUMERIC,y coordinate
+binary_classification,concentric_spheres,5,z,feature,NUMERIC,z coordinate
+binary_classification,concentric_spheres,6,dummy_1,feature,NUMERIC,dummy feature 1
+binary_classification,concentric_spheres,7,dummy_2,feature,NUMERIC,dummy feature 2
+binary_classification,concentric_spheres,8,dummy_3,feature,NUMERIC,dummy feature 3
+binary_classification,concentric_spheres,9,corr_x,feature,NUMERIC,feature correlated with x coordinate
+binary_classification,concentric_spheres,10,corr_y,feature,NUMERIC,feature correlated with y coordinate
+binary_classification,concentric_spheres,11,corr_z,feature,NUMERIC,feature correlated with z coordinate
+binary_classification,coupon_recommendations,1,id,id,TEXT,unique identifier 
+binary_classification,coupon_recommendations,2,destination,feature,CATEGORICAL,"destination: No Urgent Place, Home, Work"
+binary_classification,coupon_recommendations,3,passenger,feature,CATEGORICAL,"passenger: Alone, Friend(s), Kid(s), Partner (who are the passengers in the car)"
+binary_classification,coupon_recommendations,4,weather,feature,CATEGORICAL,"weather: Sunny, Rainy, Snowy"
+binary_classification,coupon_recommendations,5,temperature,feature,CATEGORICAL,"temperature:55, 80, 30"
+binary_classification,coupon_recommendations,6,time,feature,CATEGORICAL,"time: 2PM, 10AM, 6PM, 7AM, 10PM"
+binary_classification,coupon_recommendations,7,coupon,feature,CATEGORICAL,"coupon: Restaurant(<$20), Coffee House, Carry out & Take away, Bar, Restaurant($20-$50)"
+binary_classification,coupon_recommendations,8,expiration,feature,CATEGORICAL,"expiration: 1d, 2h (the coupon expires in 1 day or in 2 hours)"
+binary_classification,coupon_recommendations,9,gender,feature,CATEGORICAL,"gender: Female, Male"
+binary_classification,coupon_recommendations,10,age,feature,CATEGORICAL,"age: 21, 46, 26, 31, 41, 50plus, 36, below21"
+binary_classification,coupon_recommendations,11,maritalStatus,feature,CATEGORICAL,"maritalStatus: Unmarried partner, Single, Married partner, Divorced, Widowed"
+binary_classification,coupon_recommendations,12,has_children,feature,CATEGORICAL,"has_Children:1, 0"
+binary_classification,coupon_recommendations,13,education,feature,CATEGORICAL,"education: Some college - no degree, Bachelors degree, Associates degree, High School Graduate, Graduate degree (Masters or Doctorate), Some High School"
+binary_classification,coupon_recommendations,14,occupation,feature,CATEGORICAL,"occupation: Unemployed, Architecture & Engineering, Student,"
+binary_classification,coupon_recommendations,15,income,feature,CATEGORICAL,"income: $37500 - $49999, $62500 - $74999, $12500 - $24999, $75000 - $87499,"
+binary_classification,coupon_recommendations,16,car,feature,CATEGORICAL,"$50000 - $62499, $25000 - $37499, $100000 or More, $87500 - $99999, Less than $12500"
+binary_classification,coupon_recommendations,17,Bar,feature,CATEGORICAL,"Bar: never, less1, 1~3, gt8, nan4~8 (feature meaning: how many times do you go to a bar every month?)"
+binary_classification,coupon_recommendations,18,CoffeeHouse,feature,CATEGORICAL,"CoffeeHouse: never, less1, 4~8, 1~3, gt8, nan (feature meaning: how many times do you go to a coffeehouse every month?)"
+binary_classification,coupon_recommendations,19,CarryAway,feature,CATEGORICAL,"CarryAway:n4~8, 1~3, gt8, less1, never (feature meaning: how many times do you get take-away food every month?)"
+binary_classification,coupon_recommendations,20,RestaurantLessThan20,feature,CATEGORICAL,"RestaurantLessThan20: 4~8, 1~3, less1, gt8, never (feature meaning: how many times do you go to a restaurant with an average expense per person of less than $20 every month?)"
+binary_classification,coupon_recommendations,21,Restaurant20To50,feature,CATEGORICAL,"Restaurant20To50: 1~3, less1, never, gt8, 4~8, nan (feature meaning: how many times do you go to a restaurant with average expense per person of $20 - $50 every month?)"
+binary_classification,coupon_recommendations,22,toCoupon_GEQ5min,feature,CATEGORICAL,"toCoupon_GEQ5min:0,1 (feature meaning: driving distance to the restaurant/bar for using the coupon is greater than 5 minutes)"
+binary_classification,coupon_recommendations,23,toCoupon_GEQ15min,feature,CATEGORICAL,"toCoupon_GEQ15min:0,1 (feature meaning: driving distance to the restaurant/bar for using the coupon is greater than 15 minutes)"
+binary_classification,coupon_recommendations,24,toCoupon_GEQ25min,feature,CATEGORICAL,"toCoupon_GEQ25min:0, 1 (feature meaning: driving distance to the restaurant/bar for using the coupon is greater than 25 minutes)"
+binary_classification,coupon_recommendations,25,direction_same,feature,CATEGORICAL,"direction_same:0, 1 (feature meaning: whether the restaurant/bar is in the same direction as your current destination)"
+binary_classification,coupon_recommendations,26,direction_opp,feature,CATEGORICAL,"direction_opp:1, 0 (feature meaning: whether the restaurant/bar is in the same direction as your current destination)"
+binary_classification,coupon_recommendations,27,accept_coupon,target,CATEGORICAL,"accept_coupon:1, 0 (whether the coupon is accepted)"
+binary_classification,credit_approval,1,id,id,TEXT,
+binary_classification,credit_approval,2,A1,feature,CATEGORICAL,
+binary_classification,credit_approval,3,A2,feature,NUMERIC,
+binary_classification,credit_approval,4,A3,feature,NUMERIC,
+binary_classification,credit_approval,5,A4,feature,CATEGORICAL,
+binary_classification,credit_approval,6,A5,feature,CATEGORICAL,
+binary_classification,credit_approval,7,A6,feature,CATEGORICAL,
+binary_classification,credit_approval,8,A7,feature,CATEGORICAL,
+binary_classification,credit_approval,9,A8,feature,NUMERIC,
+binary_classification,credit_approval,10,A9,feature,CATEGORICAL,
+binary_classification,credit_approval,11,A10,feature,CATEGORICAL,
+binary_classification,credit_approval,12,A11,feature,NUMERIC,
+binary_classification,credit_approval,13,A12,feature,CATEGORICAL,
+binary_classification,credit_approval,14,A13,feature,CATEGORICAL,
+binary_classification,credit_approval,15,A14,feature,NUMERIC,
+binary_classification,credit_approval,16,A15,feature,NUMERIC,
+binary_classification,credit_approval,17,A16,target,CATEGORICAL,
 binary_classification,electrical_grid,1,id,id,TEXT,unique identifier 
 binary_classification,electrical_grid,2,tau1,feature,NUMERIC,"reaction time of participant (real from the range [0.5,10]s). Tau1 - the value for electricity producer."
 binary_classification,electrical_grid,3,tau2,feature,NUMERIC,"reaction time of participant (real from the range [0.5,10]s). Tau1 - the value for electricity producer."
@@ -87,6 +111,27 @@ binary_classification,employee_attrition,8,promotion_last_5years,feature,CATEGOR
 binary_classification,employee_attrition,9,department,feature,CATEGORICAL,not available
 binary_classification,employee_attrition,10,salary,feature,CATEGORICAL,not available
 binary_classification,employee_attrition,11,left,target,NUMERIC,"attrition (yes = 1, no = 0)"
+binary_classification,image_segmentation,1,id,id,TEXT,description not available
+binary_classification,image_segmentation,2,region-centroid-col,feature,NUMERIC,the column of the center pixel of the region.
+binary_classification,image_segmentation,3,region-centroid-row,feature,NUMERIC,the row of the center pixel of the region.
+binary_classification,image_segmentation,4,region-pixel-count,feature,NUMERIC,the number of pixels in a region = 9.
+binary_classification,image_segmentation,5,short-line-density-5,feature,NUMERIC,"the results of a line extractoin algorithm that counts how many lines of length 5 (any orientation) with low contrast, less than or equal to 5, go through the region."
+binary_classification,image_segmentation,6,short-line-density-2,feature,NUMERIC,"same as short-line-density-5 but counts lines of high contrast, greater than 5."
+binary_classification,image_segmentation,7,vedge-mean,feature,NUMERIC,"measure the contrast of horizontally adjacent pixels in the region. There are 6, the mean and standard deviation are given. This attribute (mean) is used as a vertical edge detector."
+binary_classification,image_segmentation,8,vegde-sd,feature,NUMERIC,"measure the contrast of horizontally adjacent pixels in the region. There are 6, the mean and standard deviation are given. This attribute (std dev) is used as a vertical edge detector."
+binary_classification,image_segmentation,9,hedge-mean,feature,NUMERIC,measures the contrast of vertically adjacent pixels. This attribute (mean) is used for horizontal line detection.
+binary_classification,image_segmentation,10,hedge-sd,feature,NUMERIC,measures the contrast of vertically adjacent pixels. This attribute (std dev) is used for horizontal line detection.
+binary_classification,image_segmentation,11,intensity-mean,feature,NUMERIC,intensity-mean: the average over the region of (R + G + B)/3
+binary_classification,image_segmentation,12,rawred-mean,feature,NUMERIC,rawred-mean: the average over the region of the R value.
+binary_classification,image_segmentation,13,rawblue-mean,feature,NUMERIC,rawblue-mean: the average over the region of the B value.
+binary_classification,image_segmentation,14,rawgreen-mean,feature,NUMERIC,rawgreen-mean: the average over the region of the G value.
+binary_classification,image_segmentation,15,exred-mean,feature,NUMERIC,exred-mean: measure the excess red: (2R - (G + B))
+binary_classification,image_segmentation,16,exblue-mean,feature,NUMERIC,exblue-mean: measure the excess blue: (2B - (G + R))
+binary_classification,image_segmentation,17,exgreen-mean,feature,NUMERIC,exgreen-mean: measure the excess green: (2G - (R + B))
+binary_classification,image_segmentation,18,value-mean,feature,NUMERIC,"value-mean: 3-d nonlinear transformation of RGB. (Algorithm can be found in Foley and VanDam, Fundamentals of Interactive Computer Graphics)"
+binary_classification,image_segmentation,19,saturation-mean,feature,NUMERIC,"saturation: 3-d nonlinear transformation of RGB. (Algorithm can be found in Foley and VanDam, Fundamentals of Interactive Computer Graphics)"
+binary_classification,image_segmentation,20,hue-mean,feature,NUMERIC,"hue-mean: 3-d nonlinear transformation of RGB. (Algorithm can be found in Foley and VanDam, Fundamentals of Interactive Computer Graphics)"
+binary_classification,image_segmentation,21,binaryClass,target,CATEGORICAL,Positive class (P) and negative class (N)
 binary_classification,mushroom,1,id,id,TEXT,unique identifier
 binary_classification,mushroom,2,cap-shape,feature,CATEGORICAL,"cap-shape: bell=b,conical=c,convex=x,flat=f, knobbed=k,sunken=s "
 binary_classification,mushroom,3,cap-surface,feature,CATEGORICAL,"cap-surface: fibrous=f,grooves=g,scaly=y,smooth=s "
@@ -132,27 +177,25 @@ binary_classification,nba,18,STL,feature,NUMERIC,description not available
 binary_classification,nba,19,BLK,feature,NUMERIC,description not available
 binary_classification,nba,20,TOV,feature,NUMERIC,description not available
 binary_classification,nba,21,TARGET_5Yrs,target,NUMERIC,description not available
-binary_classification,image_segmentation,1,id,id,TEXT,description not available
-binary_classification,image_segmentation,2,region-centroid-col,feature,NUMERIC,the column of the center pixel of the region.
-binary_classification,image_segmentation,3,region-centroid-row,feature,NUMERIC,the row of the center pixel of the region.
-binary_classification,image_segmentation,4,region-pixel-count,feature,NUMERIC,the number of pixels in a region = 9.
-binary_classification,image_segmentation,5,short-line-density-5,feature,NUMERIC,"the results of a line extractoin algorithm that counts how many lines of length 5 (any orientation) with low contrast, less than or equal to 5, go through the region."
-binary_classification,image_segmentation,6,short-line-density-2,feature,NUMERIC,"same as short-line-density-5 but counts lines of high contrast, greater than 5."
-binary_classification,image_segmentation,7,vedge-mean,feature,NUMERIC,"measure the contrast of horizontally adjacent pixels in the region. There are 6, the mean and standard deviation are given. This attribute (mean) is used as a vertical edge detector."
-binary_classification,image_segmentation,8,vegde-sd,feature,NUMERIC,"measure the contrast of horizontally adjacent pixels in the region. There are 6, the mean and standard deviation are given. This attribute (std dev) is used as a vertical edge detector."
-binary_classification,image_segmentation,9,hedge-mean,feature,NUMERIC,measures the contrast of vertically adjacent pixels. This attribute (mean) is used for horizontal line detection.
-binary_classification,image_segmentation,10,hedge-sd,feature,NUMERIC,measures the contrast of vertically adjacent pixels. This attribute (std dev) is used for horizontal line detection.
-binary_classification,image_segmentation,11,intensity-mean,feature,NUMERIC,intensity-mean: the average over the region of (R + G + B)/3
-binary_classification,image_segmentation,12,rawred-mean,feature,NUMERIC,rawred-mean: the average over the region of the R value.
-binary_classification,image_segmentation,13,rawblue-mean,feature,NUMERIC,rawblue-mean: the average over the region of the B value.
-binary_classification,image_segmentation,14,rawgreen-mean,feature,NUMERIC,rawgreen-mean: the average over the region of the G value.
-binary_classification,image_segmentation,15,exred-mean,feature,NUMERIC,exred-mean: measure the excess red: (2R - (G + B))
-binary_classification,image_segmentation,16,exblue-mean,feature,NUMERIC,exblue-mean: measure the excess blue: (2B - (G + R))
-binary_classification,image_segmentation,17,exgreen-mean,feature,NUMERIC,exgreen-mean: measure the excess green: (2G - (R + B))
-binary_classification,image_segmentation,18,value-mean,feature,NUMERIC,"value-mean: 3-d nonlinear transformation of RGB. (Algorithm can be found in Foley and VanDam, Fundamentals of Interactive Computer Graphics)"
-binary_classification,image_segmentation,19,saturation-mean,feature,NUMERIC,"saturation: 3-d nonlinear transformation of RGB. (Algorithm can be found in Foley and VanDam, Fundamentals of Interactive Computer Graphics)"
-binary_classification,image_segmentation,20,hue-mean,feature,NUMERIC,"hue-mean: 3-d nonlinear transformation of RGB. (Algorithm can be found in Foley and VanDam, Fundamentals of Interactive Computer Graphics)"
-binary_classification,image_segmentation,21,binaryClass,target,CATEGORICAL,Positive class (P) and negative class (N)
+binary_classification,online_shopping,1,id,id,TEXT,unique identifier
+binary_classification,online_shopping,2,Administrative,feature,NUMERIC,"Number of different ""Administrative"" pages visited in the session"
+binary_classification,online_shopping,3,Administrative_Duration,feature,NUMERIC,"Total time spent on ""Administrative"" pages in the session"
+binary_classification,online_shopping,4,Informational,feature,NUMERIC,"Number of different ""Informational"" pages visited in the session"
+binary_classification,online_shopping,5,Informational_Duration,feature,NUMERIC,"Total time spent on ""Informational"" pages in the session"
+binary_classification,online_shopping,6,ProductRelated,feature,NUMERIC,"Number of different ""ProductRelated"" pages visited in the session"
+binary_classification,online_shopping,7,ProductRelated_Duration,feature,NUMERIC,"Total time spent on ""ProductRelated"" pages in the session"
+binary_classification,online_shopping,8,BounceRates,feature,NUMERIC,"Bounce Rate metric from Google Analytics - refers to percentage of visitors who enter the site from that page and then leave (""bounce"") without triggering any other requests to the analytics server during that session"
+binary_classification,online_shopping,9,ExitRates,feature,NUMERIC,"Exit Rate metric from Google Analytics. The value of ""Exit Rate"" feature for a specific web page is calculated as for all pageviews to the page, the percentage that were the last in the session."
+binary_classification,online_shopping,10,PageValues,feature,NUMERIC,Page Value metric from google Analytics - represents the average value for a web page that a user visited before completing an e-commerce transaction
+binary_classification,online_shopping,11,SpecialDay,feature,NUMERIC,"Indicates the closeness of the site visiting time to a specific special day (e.g. Mother's Day, Valentine's Day) in which the sessions are more likely to be finalized with transaction"
+binary_classification,online_shopping,12,Month,feature,CATEGORICAL,Month of the year
+binary_classification,online_shopping,13,OperatingSystems,feature,CATEGORICAL,Operating system of the visitor
+binary_classification,online_shopping,14,Browser,feature,CATEGORICAL,Browser type of the visitor
+binary_classification,online_shopping,15,Region,feature,CATEGORICAL,Region of the visitor
+binary_classification,online_shopping,16,TrafficType,feature,CATEGORICAL,Traffic type (categories 1 to 20) - information of types not provided in dataset
+binary_classification,online_shopping,17,VisitorType,feature,CATEGORICAL,Returning or new visitor
+binary_classification,online_shopping,18,Weekend,feature,CATEGORICAL,Is the session on weekend or weekday
+binary_classification,online_shopping,19,Revenue,target,CATEGORICAL,Target variable indicating whether the session resulted in shopping or not.
 binary_classification,spambase,1,id,id,TEXT,unique identifier
 binary_classification,spambase,2,word_freq_make,feature,NUMERIC,"Given 'word_freq_WORD': percentage of words in the e-mail that match WORD, i.e. 100 * (number of times the WORD appears in the e-mail) / total number of words in e-mail. A ""word"" in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string."
 binary_classification,spambase,3,word_freq_address,feature,NUMERIC,"Given 'word_freq_WORD': percentage of words in the e-mail that match WORD, i.e. 100 * (number of times the WORD appears in the e-mail) / total number of words in e-mail. A ""word"" in this case is any string of alphanumeric characters bounded by non-alphanumeric characters or end-of-string."
@@ -212,6 +255,10 @@ binary_classification,spambase,56,capital_run_length_average,feature,NUMERIC,ave
 binary_classification,spambase,57,capital_run_length_longest,feature,NUMERIC,length of longest uninterrupted sequence of capital letters
 binary_classification,spambase,58,capital_run_length_total,feature,NUMERIC,total number of capital letters in the e-mail
 binary_classification,spambase,59,class,target,NUMERIC,"denotes whether the e-mail was considered spam (1) i.e. an unsolicited commercial e-mail, or not (0)."
+binary_classification,spiral,1,id,id,TEXT,unique identifier 
+binary_classification,spiral,2,target,target,CATEGORICAL,binary class (0 or 1)
+binary_classification,spiral,3,x,feature,NUMERIC,x coordinate
+binary_classification,spiral,4,y,feature,NUMERIC,y coordinate
 binary_classification,telco_churn,1,customerID,id,TEXT,customer id
 binary_classification,telco_churn,2,gender,feature,CATEGORICAL,"The customer's gender: Male, Female"
 binary_classification,telco_churn,3,SeniorCitizen,feature,CATEGORICAL,"Indicates if the customer is 65 or older: Yes, No"
@@ -233,52 +280,15 @@ binary_classification,telco_churn,18,PaymentMethod,feature,CATEGORICAL,"Indicate
 binary_classification,telco_churn,19,MonthlyCharges,feature,NUMERIC,Indicates the customer's current total monthly charge for all their services from the company.
 binary_classification,telco_churn,20,TotalCharges,feature,NUMERIC,"Indicates the customer's total charges, calculated to the end of the quarter specified above."
 binary_classification,telco_churn,21,Churn,target,CATEGORICAL,Whether customer churned within the last month (Yes) or not (No)
-binary_classification,coupon_recommendations,1,id,id,TEXT,unique identifier 
-binary_classification,coupon_recommendations,2,destination,feature,CATEGORICAL,"destination: No Urgent Place, Home, Work"
-binary_classification,coupon_recommendations,3,passenger,feature,CATEGORICAL,"passenger: Alone, Friend(s), Kid(s), Partner (who are the passengers in the car)"
-binary_classification,coupon_recommendations,4,weather,feature,CATEGORICAL,"weather: Sunny, Rainy, Snowy"
-binary_classification,coupon_recommendations,5,temperature,feature,CATEGORICAL,"temperature:55, 80, 30"
-binary_classification,coupon_recommendations,6,time,feature,CATEGORICAL,"time: 2PM, 10AM, 6PM, 7AM, 10PM"
-binary_classification,coupon_recommendations,7,coupon,feature,CATEGORICAL,"coupon: Restaurant(<$20), Coffee House, Carry out & Take away, Bar, Restaurant($20-$50)"
-binary_classification,coupon_recommendations,8,expiration,feature,CATEGORICAL,"expiration: 1d, 2h (the coupon expires in 1 day or in 2 hours)"
-binary_classification,coupon_recommendations,9,gender,feature,CATEGORICAL,"gender: Female, Male"
-binary_classification,coupon_recommendations,10,age,feature,CATEGORICAL,"age: 21, 46, 26, 31, 41, 50plus, 36, below21"
-binary_classification,coupon_recommendations,11,maritalStatus,feature,CATEGORICAL,"maritalStatus: Unmarried partner, Single, Married partner, Divorced, Widowed"
-binary_classification,coupon_recommendations,12,has_children,feature,CATEGORICAL,"has_Children:1, 0"
-binary_classification,coupon_recommendations,13,education,feature,CATEGORICAL,"education: Some college - no degree, Bachelors degree, Associates degree, High School Graduate, Graduate degree (Masters or Doctorate), Some High School"
-binary_classification,coupon_recommendations,14,occupation,feature,CATEGORICAL,"occupation: Unemployed, Architecture & Engineering, Student,"
-binary_classification,coupon_recommendations,15,income,feature,CATEGORICAL,"income: $37500 - $49999, $62500 - $74999, $12500 - $24999, $75000 - $87499,"
-binary_classification,coupon_recommendations,16,car,feature,CATEGORICAL,"$50000 - $62499, $25000 - $37499, $100000 or More, $87500 - $99999, Less than $12500"
-binary_classification,coupon_recommendations,17,Bar,feature,CATEGORICAL,"Bar: never, less1, 1~3, gt8, nan4~8 (feature meaning: how many times do you go to a bar every month?)"
-binary_classification,coupon_recommendations,18,CoffeeHouse,feature,CATEGORICAL,"CoffeeHouse: never, less1, 4~8, 1~3, gt8, nan (feature meaning: how many times do you go to a coffeehouse every month?)"
-binary_classification,coupon_recommendations,19,CarryAway,feature,CATEGORICAL,"CarryAway:n4~8, 1~3, gt8, less1, never (feature meaning: how many times do you get take-away food every month?)"
-binary_classification,coupon_recommendations,20,RestaurantLessThan20,feature,CATEGORICAL,"RestaurantLessThan20: 4~8, 1~3, less1, gt8, never (feature meaning: how many times do you go to a restaurant with an average expense per person of less than $20 every month?)"
-binary_classification,coupon_recommendations,21,Restaurant20To50,feature,CATEGORICAL,"Restaurant20To50: 1~3, less1, never, gt8, 4~8, nan (feature meaning: how many times do you go to a restaurant with average expense per person of $20 - $50 every month?)"
-binary_classification,coupon_recommendations,22,toCoupon_GEQ5min,feature,CATEGORICAL,"toCoupon_GEQ5min:0,1 (feature meaning: driving distance to the restaurant/bar for using the coupon is greater than 5 minutes)"
-binary_classification,coupon_recommendations,23,toCoupon_GEQ15min,feature,CATEGORICAL,"toCoupon_GEQ15min:0,1 (feature meaning: driving distance to the restaurant/bar for using the coupon is greater than 15 minutes)"
-binary_classification,coupon_recommendations,24,toCoupon_GEQ25min,feature,CATEGORICAL,"toCoupon_GEQ25min:0, 1 (feature meaning: driving distance to the restaurant/bar for using the coupon is greater than 25 minutes)"
-binary_classification,coupon_recommendations,25,direction_same,feature,CATEGORICAL,"direction_same:0, 1 (feature meaning: whether the restaurant/bar is in the same direction as your current destination)"
-binary_classification,coupon_recommendations,26,direction_opp,feature,CATEGORICAL,"direction_opp:1, 0 (feature meaning: whether the restaurant/bar is in the same direction as your current destination)"
-binary_classification,coupon_recommendations,27,accept_coupon,target,CATEGORICAL,"accept_coupon:1, 0 (whether the coupon is accepted)"
-binary_classification,online_shopping,1,id,id,TEXT,unique identifier
-binary_classification,online_shopping,2,Administrative,feature,NUMERIC,"Number of different ""Administrative"" pages visited in the session"
-binary_classification,online_shopping,3,Administrative_Duration,feature,NUMERIC,"Total time spent on ""Administrative"" pages in the session"
-binary_classification,online_shopping,4,Informational,feature,NUMERIC,"Number of different ""Informational"" pages visited in the session"
-binary_classification,online_shopping,5,Informational_Duration,feature,NUMERIC,"Total time spent on ""Informational"" pages in the session"
-binary_classification,online_shopping,6,ProductRelated,feature,NUMERIC,"Number of different ""ProductRelated"" pages visited in the session"
-binary_classification,online_shopping,7,ProductRelated_Duration,feature,NUMERIC,"Total time spent on ""ProductRelated"" pages in the session"
-binary_classification,online_shopping,8,BounceRates,feature,NUMERIC,"Bounce Rate metric from Google Analytics - refers to percentage of visitors who enter the site from that page and then leave (""bounce"") without triggering any other requests to the analytics server during that session"
-binary_classification,online_shopping,9,ExitRates,feature,NUMERIC,"Exit Rate metric from Google Analytics. The value of ""Exit Rate"" feature for a specific web page is calculated as for all pageviews to the page, the percentage that were the last in the session."
-binary_classification,online_shopping,10,PageValues,feature,NUMERIC,Page Value metric from google Analytics - represents the average value for a web page that a user visited before completing an e-commerce transaction
-binary_classification,online_shopping,11,SpecialDay,feature,NUMERIC,"Indicates the closeness of the site visiting time to a specific special day (e.g. Mother's Day, Valentine's Day) in which the sessions are more likely to be finalized with transaction"
-binary_classification,online_shopping,12,Month,feature,CATEGORICAL,Month of the year
-binary_classification,online_shopping,13,OperatingSystems,feature,CATEGORICAL,Operating system of the visitor
-binary_classification,online_shopping,14,Browser,feature,CATEGORICAL,Browser type of the visitor
-binary_classification,online_shopping,15,Region,feature,CATEGORICAL,Region of the visitor
-binary_classification,online_shopping,16,TrafficType,feature,CATEGORICAL,Traffic type (categories 1 to 20) - information of types not provided in dataset
-binary_classification,online_shopping,17,VisitorType,feature,CATEGORICAL,Returning or new visitor
-binary_classification,online_shopping,18,Weekend,feature,CATEGORICAL,Is the session on weekend or weekday
-binary_classification,online_shopping,19,Revenue,target,CATEGORICAL,Target variable indicating whether the session resulted in shopping or not.
+binary_classification,titanic,1,PassengerId,id,TEXT,Unique passenger identifier
+binary_classification,titanic,2,Survived,target,CATEGORICAL,Whether passenger survived or not
+binary_classification,titanic,3,Pclass,feature,CATEGORICAL,Ticket class
+binary_classification,titanic,4,Sex,feature,CATEGORICAL,gender
+binary_classification,titanic,5,Age,feature,NUMERIC,Age in years
+binary_classification,titanic,6,SibSp,feature,NUMERIC,# of siblings / spouses aboard the Titanic
+binary_classification,titanic,7,Parch,feature,NUMERIC,# of parents / children aboard the Titanic
+binary_classification,titanic,8,Fare,feature,NUMERIC,Passenger fare
+binary_classification,titanic,9,Embarked,feature,CATEGORICAL,Port of embarkation
 binary_classification,xor,1,id,id,TEXT,unique identifier 
 binary_classification,xor,2,target,target,CATEGORICAL,binary class (0 or 1)
 binary_classification,xor,3,x1,feature,NUMERIC,feature 1 of synthetic XOR data
@@ -286,18 +296,3 @@ binary_classification,xor,4,x2,feature,NUMERIC,feature 2 of synthetic XOR data
 binary_classification,xor,5,x3,feature,NUMERIC,feature 3 of synthetic XOR data
 binary_classification,xor,6,x4,feature,NUMERIC,feature 4 of synthetic XOR data
 binary_classification,xor,7,x5,feature,NUMERIC,feature 5 of synthetic XOR data
-binary_classification,concentric_spheres,1,id,id,TEXT,unique identifier 
-binary_classification,concentric_spheres,2,target,target,CATEGORICAL,binary class (0 or 1)
-binary_classification,concentric_spheres,3,x,feature,NUMERIC,x coordinate
-binary_classification,concentric_spheres,4,y,feature,NUMERIC,y coordinate
-binary_classification,concentric_spheres,5,z,feature,NUMERIC,z coordinate
-binary_classification,concentric_spheres,6,dummy_1,feature,NUMERIC,dummy feature 1
-binary_classification,concentric_spheres,7,dummy_2,feature,NUMERIC,dummy feature 2
-binary_classification,concentric_spheres,8,dummy_3,feature,NUMERIC,dummy feature 3
-binary_classification,concentric_spheres,9,corr_x,feature,NUMERIC,feature correlated with x coordinate
-binary_classification,concentric_spheres,10,corr_y,feature,NUMERIC,feature correlated with y coordinate
-binary_classification,concentric_spheres,11,corr_z,feature,NUMERIC,feature correlated with z coordinate
-binary_classification,spiral,1,id,id,TEXT,unique identifier 
-binary_classification,spiral,2,target,target,CATEGORICAL,binary class (0 or 1)
-binary_classification,spiral,3,x,feature,NUMERIC,x coordinate
-binary_classification,spiral,4,y,feature,NUMERIC,y coordinate

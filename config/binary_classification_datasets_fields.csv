@@ -232,7 +232,7 @@ binary_classification,telco_churn,17,PaperlessBilling,feature,CATEGORICAL,"Indic
 binary_classification,telco_churn,18,PaymentMethod,feature,CATEGORICAL,"Indicates how the customer pays their bill: Bank Withdrawal, Credit Card, Mailed Check"
 binary_classification,telco_churn,19,MonthlyCharges,feature,NUMERIC,Indicates the customer's current total monthly charge for all their services from the company.
 binary_classification,telco_churn,20,TotalCharges,feature,NUMERIC,"Indicates the customer's total charges, calculated to the end of the quarter specified above."
-binary_classification,telco_churn,21,Churn,target,CATEGORICAL,Customers who left within the last month
+binary_classification,telco_churn,21,Churn,target,CATEGORICAL,Whether customer churned within the last month (Yes) or not (No)
 binary_classification,coupon_recommendations,1,id,id,TEXT,unique identifier 
 binary_classification,coupon_recommendations,2,destination,feature,CATEGORICAL,"destination: No Urgent Place, Home, Work"
 binary_classification,coupon_recommendations,3,passenger,feature,CATEGORICAL,"passenger: Alone, Friend(s), Kid(s), Partner (who are the passengers in the car)"

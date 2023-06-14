@@ -10,10 +10,10 @@
   },
   "target": {
     "name": "Churn",
-    "description": "Whether customer churned within the last month (1) or not (0)",
+    "description": "Whether customer churned within the last month (Yes) or not (No)",
     "classes": [
-      "0",
-      "1"
+      "Yes",
+      "No"
     ]
   },
   "features": [

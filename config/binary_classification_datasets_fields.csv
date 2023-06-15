@@ -69,23 +69,23 @@ binary_classification,coupon_recommendations,24,toCoupon_GEQ25min,feature,CATEGO
 binary_classification,coupon_recommendations,25,direction_same,feature,CATEGORICAL,"direction_same:0, 1 (feature meaning: whether the restaurant/bar is in the same direction as your current destination)"
 binary_classification,coupon_recommendations,26,direction_opp,feature,CATEGORICAL,"direction_opp:1, 0 (feature meaning: whether the restaurant/bar is in the same direction as your current destination)"
 binary_classification,coupon_recommendations,27,accept_coupon,target,CATEGORICAL,"accept_coupon:1, 0 (whether the coupon is accepted)"
-binary_classification,credit_approval,1,id,id,TEXT,
-binary_classification,credit_approval,2,A1,feature,CATEGORICAL,
-binary_classification,credit_approval,3,A2,feature,NUMERIC,
-binary_classification,credit_approval,4,A3,feature,NUMERIC,
-binary_classification,credit_approval,5,A4,feature,CATEGORICAL,
-binary_classification,credit_approval,6,A5,feature,CATEGORICAL,
-binary_classification,credit_approval,7,A6,feature,CATEGORICAL,
-binary_classification,credit_approval,8,A7,feature,CATEGORICAL,
-binary_classification,credit_approval,9,A8,feature,NUMERIC,
-binary_classification,credit_approval,10,A9,feature,CATEGORICAL,
-binary_classification,credit_approval,11,A10,feature,CATEGORICAL,
-binary_classification,credit_approval,12,A11,feature,NUMERIC,
-binary_classification,credit_approval,13,A12,feature,CATEGORICAL,
-binary_classification,credit_approval,14,A13,feature,CATEGORICAL,
-binary_classification,credit_approval,15,A14,feature,NUMERIC,
-binary_classification,credit_approval,16,A15,feature,NUMERIC,
-binary_classification,credit_approval,17,A16,target,CATEGORICAL,
+binary_classification,credit_approval,1,id,id,TEXT,unique identifier
+binary_classification,credit_approval,2,A1,feature,CATEGORICAL,"b, a."
+binary_classification,credit_approval,3,A2,feature,NUMERIC,continuous
+binary_classification,credit_approval,4,A3,feature,NUMERIC,continuous
+binary_classification,credit_approval,5,A4,feature,CATEGORICAL,"u, y, l, t."
+binary_classification,credit_approval,6,A5,feature,CATEGORICAL,"g, p, gg."
+binary_classification,credit_approval,7,A6,feature,CATEGORICAL,"c, d, cc, i, j, k, m, r, q, w, x, e, aa, ff."
+binary_classification,credit_approval,8,A7,feature,CATEGORICAL,"v, h, bb, j, n, z, dd, ff, o."
+binary_classification,credit_approval,9,A8,feature,NUMERIC,continuous
+binary_classification,credit_approval,10,A9,feature,CATEGORICAL,"t, f."
+binary_classification,credit_approval,11,A10,feature,CATEGORICAL,"t, f."
+binary_classification,credit_approval,12,A11,feature,NUMERIC,continuous
+binary_classification,credit_approval,13,A12,feature,CATEGORICAL,"t, f."
+binary_classification,credit_approval,14,A13,feature,CATEGORICAL,"g, p, s."
+binary_classification,credit_approval,15,A14,feature,NUMERIC,continuous
+binary_classification,credit_approval,16,A15,feature,NUMERIC,continuous
+binary_classification,credit_approval,17,A16,target,CATEGORICAL,"class attribute (positive, negative)"
 binary_classification,electrical_grid,1,id,id,TEXT,unique identifier 
 binary_classification,electrical_grid,2,tau1,feature,NUMERIC,"reaction time of participant (real from the range [0.5,10]s). Tau1 - the value for electricity producer."
 binary_classification,electrical_grid,3,tau2,feature,NUMERIC,"reaction time of participant (real from the range [0.5,10]s). Tau1 - the value for electricity producer."
@@ -267,7 +267,7 @@ binary_classification,telco_churn,5,Dependents,feature,CATEGORICAL,"Indicates if
 binary_classification,telco_churn,6,tenure,feature,NUMERIC,Indicates the total amount of months that the customer has been with the company by the end of the quarter specified above.
 binary_classification,telco_churn,7,PhoneService,feature,CATEGORICAL,"Whether the customer has a phone service or not (Yes, No)"
 binary_classification,telco_churn,8,MultipleLines,feature,CATEGORICAL,"Whether the customer has multiple lines or not (Yes, No, No phone service)"
-binary_classification,telco_churn,9,InternetService,feature,CATEGORICAL,"Customer's internet service provider (DSL, Fiber optic, No)"
+binary_classification,telco_churn,9,InternetService,feature,CATEGORICAL,"Customers internet service provider (DSL, Fiber optic, No)"
 binary_classification,telco_churn,10,OnlineSecurity,feature,CATEGORICAL,"Whether the customer has online security or not (Yes, No, No internet service)"
 binary_classification,telco_churn,11,OnlineBackup,feature,CATEGORICAL,"Indicates if the customer subscribes to an additional online backup service provided by the company: Yes, No"
 binary_classification,telco_churn,12,DeviceProtection,feature,CATEGORICAL,"Indicates if the customer subscribes to an additional device protection plan for their Internet equipment provided by the company: Yes, No"
@@ -296,3 +296,7 @@ binary_classification,xor,4,x2,feature,NUMERIC,feature 2 of synthetic XOR data
 binary_classification,xor,5,x3,feature,NUMERIC,feature 3 of synthetic XOR data
 binary_classification,xor,6,x4,feature,NUMERIC,feature 4 of synthetic XOR data
 binary_classification,xor,7,x5,feature,NUMERIC,feature 5 of synthetic XOR data
+binary_classification,smoke_test_bc,1,id,id,TEXT,unique identifier 
+binary_classification,smoke_test_bc,2,color,feature,CATEGORICAL,color feature
+binary_classification,smoke_test_bc,3,number,feature,NUMERIC,number feature
+binary_classification,smoke_test_bc,4,target,target,CATEGORICAL,binary class (0 or 1)

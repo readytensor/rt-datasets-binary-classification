@@ -19,7 +19,7 @@
   "features": [
     {
       "name": "A1",
-      "description": NaN,
+      "description": "b, a.",
       "dataType": "CATEGORICAL",
       "categories": [
         "a",
@@ -29,21 +29,21 @@
     },
     {
       "name": "A2",
-      "description": NaN,
+      "description": "continuous",
       "dataType": "NUMERIC",
       "example": 30.83,
       "nullable": true
     },
     {
       "name": "A3",
-      "description": NaN,
+      "description": "continuous",
       "dataType": "NUMERIC",
       "example": 0.0,
       "nullable": false
     },
     {
       "name": "A4",
-      "description": NaN,
+      "description": "u, y, l, t.",
       "dataType": "CATEGORICAL",
       "categories": [
         "l",
@@ -54,7 +54,7 @@
     },
     {
       "name": "A5",
-      "description": NaN,
+      "description": "g, p, gg.",
       "dataType": "CATEGORICAL",
       "categories": [
         "g",
@@ -65,7 +65,7 @@
     },
     {
       "name": "A6",
-      "description": NaN,
+      "description": "c, d, cc, i, j, k, m, r, q, w, x, e, aa, ff.",
       "dataType": "CATEGORICAL",
       "categories": [
         "aa",
@@ -87,7 +87,7 @@
     },
     {
       "name": "A7",
-      "description": NaN,
+      "description": "v, h, bb, j, n, z, dd, ff, o.",
       "dataType": "CATEGORICAL",
       "categories": [
         "bb",
@@ -104,14 +104,14 @@
     },
     {
       "name": "A8",
-      "description": NaN,
+      "description": "continuous",
       "dataType": "NUMERIC",
       "example": 1.25,
       "nullable": false
     },
     {
       "name": "A9",
-      "description": NaN,
+      "description": "t, f.",
       "dataType": "CATEGORICAL",
       "categories": [
         "f",
@@ -121,7 +121,7 @@
     },
     {
       "name": "A10",
-      "description": NaN,
+      "description": "t, f.",
       "dataType": "CATEGORICAL",
       "categories": [
         "f",
@@ -131,14 +131,14 @@
     },
     {
       "name": "A11",
-      "description": NaN,
+      "description": "continuous",
       "dataType": "NUMERIC",
       "example": 1,
       "nullable": false
     },
     {
       "name": "A12",
-      "description": NaN,
+      "description": "t, f.",
       "dataType": "CATEGORICAL",
       "categories": [
         "f",
@@ -148,7 +148,7 @@
     },
     {
       "name": "A13",
-      "description": NaN,
+      "description": "g, p, s.",
       "dataType": "CATEGORICAL",
       "categories": [
         "g",
@@ -159,14 +159,14 @@
     },
     {
       "name": "A14",
-      "description": NaN,
+      "description": "continuous",
       "dataType": "NUMERIC",
       "example": 202.0,
       "nullable": true
     },
     {
       "name": "A15",
-      "description": NaN,
+      "description": "continuous",
       "dataType": "NUMERIC",
       "example": 0,
       "nullable": false

@@ -87,7 +87,7 @@
     },
     {
       "name": "InternetService",
-      "description": "Customer's internet service provider (DSL, Fiber optic, No)",
+      "description": "Customers internet service provider (DSL, Fiber optic, No)",
       "dataType": "CATEGORICAL",
       "categories": [
         "DSL",

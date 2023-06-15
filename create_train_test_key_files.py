@@ -74,7 +74,7 @@ def create_train_test_testkey_files() -> None:
     """
     Creates train, test, and test key files for each dataset marked for use in the metadata.
     """
-    dataset_cfg_path = "./config/binary_classification_datasets_metadata.csv"
+    dataset_cfg_path = "./config/binary_classification_datasets.csv"
     processed_datasets_path = "./datasets/processed/"
 
     # Load the metadata

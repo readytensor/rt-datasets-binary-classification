@@ -4,7 +4,7 @@ import pandas as pd
 import utils
 
 def generate_inference_request_data():
-    dataset_cfg_path = "./config/binary_classification_datasets_metadata.csv"
+    dataset_cfg_path = "./config/binary_classification_datasets.csv"
     processed_datasets_path = "./datasets/processed/"
 
     # Load the metadata

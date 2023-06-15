@@ -112,7 +112,7 @@ def generate_schemas(
 
 
 def run_schema_gen():
-    dataset_cfg_path = "./config/binary_classification_datasets_metadata.csv"
+    dataset_cfg_path = "./config/binary_classification_datasets.csv"
     dataset_metadata = load_metadata(dataset_cfg_path)
     features_config = load_features_config(features_cfg_path)
     features_config = features_config.applymap(strip_quotes)

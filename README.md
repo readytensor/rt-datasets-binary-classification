@@ -90,6 +90,40 @@ Synthetically generated data.
 
 ---
 
+## Credit Card
+
+#### Alias (in scorecards): credit_card
+
+#### Domain / Industry: Financial services
+
+#### Description
+
+This file concerns credit card applications. All attribute names and values have been changed to meaningless symbols to protect confidentiality of the data.
+In the original dataset, the target classes were marked as “+” and “-”. These have been replaced by “positive” and “negative”.
+
+#### Dataset characteristics
+
+- Number of samples = 690
+- Number of input features = 15
+- Has categorical features = Yes
+- Has missing values = Yes
+
+#### Attribution
+
+Submitted by: quinlan@cs.su.oz.au
+
+Usage: <br/>
+See Quinlan:
+
+- "Simplifying decision trees", Int J Man-Machine Studies 27, Dec 1987, pp. 221-234.
+- "C4.5: Programs for Machine Learning", Morgan Kaufmann, Oct 1992
+
+Dataset can be found here: <br/>
+https://archive.ics.uci.edu/dataset/27/credit+approval <br/>
+UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, School of Information and Computer Science.
+
+---
+
 ## In-vehicle coupon recommendation
 
 #### Alias (in scorecards): coupon_recommendations
@@ -115,41 +149,6 @@ Wang, Tong, Cynthia Rudin, Finale Doshi-Velez, Yimin Liu, Erica Klampfl, and Per
 Dataset can be found here: <br/>
 https://archive.ics.uci.edu/ml/datasets/in-vehicle+coupon+recommendation
 
-UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, School of Information and Computer Science.
-
----
-
-## Credit Card
-
-#### Alias (in scorecards): credit_card
-
-#### Domain / Industry: Financial services
-
-#### Description
-
-This dataset classifies people described by a set of attributes as good or bad credit risks.
-The original dataset comes with a cost matrix. However, it is ignored in this evaluation since the Binary-Classification-Base category does not incorporate cost matrix.
-In the original dataset, the target classes were marked as “+” and “-”. These have been replaced by “positive” and “negative”.
-
-#### Dataset characteristics
-
-- Number of samples = 690
-- Number of input features = 16
-- Has categorical features = Yes
-- Has missing values = Yes
-
-#### Attribution
-
-Source: <br/>
-Professor Dr. Hans Hofmann <br/>
-Institut f"ur Statistik und "Okonometrie <br/>
-Universit"at Hamburg <br/>
-FB Wirtschaftswissenschaften <br/>
-Von-Melle-Park 5 <br/>
-2000 Hamburg 13 <br/>
-
-Dataset can be found here: <br/>
-https://archive.ics.uci.edu/ml/datasets/statlog+(german+credit+data) <br/>
 UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: University of California, School of Information and Computer Science.
 
 ---
@@ -334,6 +333,29 @@ Sakar, C.O., Polat, S.O., Katircioglu, M. et al. Real-time prediction of online 
 
 Dataset can be found here: <br/>
 https://archive.ics.uci.edu/ml/datasets/Online+Shoppers+Purchasing+Intention+Dataset#
+
+---
+
+## Smoke Test - BC Dataset
+
+#### Alias (in scorecards): smoke_test_bc
+
+#### Domain / Industry: None (synthetic data)
+
+#### Description
+
+Synthetically generated dataset for binary classification. This dataset is used for smoke testing the binary classification algorithms.
+
+#### Dataset characteristics
+
+- Number of samples = 200
+- Number of input features = 2
+- Has categorical features = yes
+- Has missing values = yes
+
+#### Attribution
+
+This dataset is synthetically generated.
 
 ---
 

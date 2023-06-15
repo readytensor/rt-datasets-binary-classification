@@ -1,6 +1,6 @@
 {
   "title": "Spiral Dataset",
-  "description": "Synthetically generated spiral dataset",
+  "summary": "Synthetically generated spiral dataset",
   "modelCategory": "binary_classification",
   "schemaVersion": 1.0,
   "inputDataFormat": "CSV",

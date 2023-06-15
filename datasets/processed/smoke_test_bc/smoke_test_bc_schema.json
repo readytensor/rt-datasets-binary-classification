@@ -1,6 +1,6 @@
 {
   "title": "Smoke Test BC",
-  "description": "Synthetically generated dataset for smoke-testing",
+  "summary": "Synthetically generated dataset for smoke-testing",
   "modelCategory": "binary_classification",
   "schemaVersion": 1.0,
   "inputDataFormat": "CSV",

@@ -1,6 +1,6 @@
 {
   "title": "Concentric Spheres Dataset",
-  "description": "Synthetically generated concentric spheres dataset",
+  "summary": "Synthetically generated concentric spheres dataset",
   "modelCategory": "binary_classification",
   "schemaVersion": 1.0,
   "inputDataFormat": "CSV",

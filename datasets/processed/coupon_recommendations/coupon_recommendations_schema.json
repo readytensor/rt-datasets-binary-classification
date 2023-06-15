@@ -1,6 +1,6 @@
 {
   "title": "In-vehicle coupon recommendation",
-  "description": "This data studies whether a person will accept the coupon recommended to them in different driving scenarios.",
+  "summary": "This data studies whether a person will accept the coupon recommended to them in different driving scenarios.",
   "modelCategory": "binary_classification",
   "schemaVersion": 1.0,
   "inputDataFormat": "CSV",

@@ -1,6 +1,6 @@
 {
   "title": "Online Shoppers Purchasing Intention ",
-  "description": "Dataset for real-time prediction of online shoppers purchasing intention",
+  "summary": "Dataset for real-time prediction of online shoppers purchasing intention",
   "modelCategory": "binary_classification",
   "schemaVersion": 1.0,
   "inputDataFormat": "CSV",

@@ -1,6 +1,6 @@
 {
   "title": "Mushroom Data Set",
-  "description": "From Audobon Society Field Guide; mushrooms described in terms of physical characteristics; classification: poisonous or edible",
+  "summary": "From Audobon Society Field Guide; mushrooms described in terms of physical characteristics; classification: poisonous or edible",
   "modelCategory": "binary_classification",
   "schemaVersion": 1.0,
   "inputDataFormat": "CSV",

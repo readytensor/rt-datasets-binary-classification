@@ -73,7 +73,7 @@ def generate_schemas(
         print("Creating schema for dataset", dataset_name)
         schema = dict()
         schema["title"] = dataset_row["title"]
-        schema["description"] = dataset_row["description"]
+        schema["summary"] = dataset_row["summary"]
         schema["modelCategory"] = dataset_row["model_category"]
         schema["schemaVersion"] = 1.0
         schema["inputDataFormat"] = "CSV"

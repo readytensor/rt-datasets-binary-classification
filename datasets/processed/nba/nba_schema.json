@@ -1,6 +1,6 @@
 {
   "title": "NBA binary classification dataset from Pycaret",
-  "description": "NBA binary classification dataset from Pycaret",
+  "summary": "NBA binary classification dataset from Pycaret",
   "modelCategory": "binary_classification",
   "schemaVersion": 1.0,
   "inputDataFormat": "CSV",

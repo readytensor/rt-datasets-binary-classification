@@ -1,6 +1,6 @@
 {
   "title": "Telco customer churn",
-  "description": "A fictional telco company's customer churn based on a variety of possible factors. The churn column indicates whether or not the customer left within the last month.",
+  "summary": "A fictional telco company's customer churn based on a variety of possible factors. The churn column indicates whether or not the customer left within the last month.",
   "modelCategory": "binary_classification",
   "schemaVersion": 1.0,
   "inputDataFormat": "CSV",

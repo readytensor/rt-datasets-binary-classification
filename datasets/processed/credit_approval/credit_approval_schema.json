@@ -1,6 +1,6 @@
 {
   "title": "Credit Approval",
-  "description": "This dataset concerns credit card applications.  All attribute names and values have been changed to meaningless symbols to protect confidentiality of the data.",
+  "summary": "This dataset concerns credit card applications.  All attribute names and values have been changed to meaningless symbols to protect confidentiality of the data.",
   "modelCategory": "binary_classification",
   "schemaVersion": 1.0,
   "inputDataFormat": "CSV",

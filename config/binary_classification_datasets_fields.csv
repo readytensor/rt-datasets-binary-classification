@@ -110,7 +110,7 @@ binary_classification,employee_attrition,7,Work_accident,feature,CATEGORICAL,not
 binary_classification,employee_attrition,8,promotion_last_5years,feature,CATEGORICAL,not available
 binary_classification,employee_attrition,9,department,feature,CATEGORICAL,not available
 binary_classification,employee_attrition,10,salary,feature,CATEGORICAL,not available
-binary_classification,employee_attrition,11,left,target,NUMERIC,"attrition (yes = 1, no = 0)"
+binary_classification,employee_attrition,11,left,target,CATEGORICAL,"attrition (yes = 1, no = 0)"
 binary_classification,image_segmentation,1,id,id,TEXT,description not available
 binary_classification,image_segmentation,2,region-centroid-col,feature,NUMERIC,the column of the center pixel of the region.
 binary_classification,image_segmentation,3,region-centroid-row,feature,NUMERIC,the row of the center pixel of the region.
@@ -176,7 +176,7 @@ binary_classification,nba,17,AST,feature,NUMERIC,description not available
 binary_classification,nba,18,STL,feature,NUMERIC,description not available
 binary_classification,nba,19,BLK,feature,NUMERIC,description not available
 binary_classification,nba,20,TOV,feature,NUMERIC,description not available
-binary_classification,nba,21,TARGET_5Yrs,target,NUMERIC,description not available
+binary_classification,nba,21,TARGET_5Yrs,target,CATEGORICAL,description not available
 binary_classification,online_shopping,1,id,id,TEXT,unique identifier
 binary_classification,online_shopping,2,Administrative,feature,NUMERIC,"Number of different ""Administrative"" pages visited in the session"
 binary_classification,online_shopping,3,Administrative_Duration,feature,NUMERIC,"Total time spent on ""Administrative"" pages in the session"
@@ -254,7 +254,7 @@ binary_classification,spambase,55,char_freq_%23,feature,NUMERIC,"Given 'char_fre
 binary_classification,spambase,56,capital_run_length_average,feature,NUMERIC,average length of uninterrupted sequences of capital letters
 binary_classification,spambase,57,capital_run_length_longest,feature,NUMERIC,length of longest uninterrupted sequence of capital letters
 binary_classification,spambase,58,capital_run_length_total,feature,NUMERIC,total number of capital letters in the e-mail
-binary_classification,spambase,59,class,target,NUMERIC,"denotes whether the e-mail was considered spam (1) i.e. an unsolicited commercial e-mail, or not (0)."
+binary_classification,spambase,59,class,target,CATEGORICAL,"denotes whether the e-mail was considered spam (1) i.e. an unsolicited commercial e-mail, or not (0)."
 binary_classification,spiral,1,id,id,TEXT,unique identifier 
 binary_classification,spiral,2,target,target,CATEGORICAL,binary class (0 or 1)
 binary_classification,spiral,3,x,feature,NUMERIC,x coordinate
@@ -280,15 +280,15 @@ binary_classification,telco_churn,18,PaymentMethod,feature,CATEGORICAL,"Indicate
 binary_classification,telco_churn,19,MonthlyCharges,feature,NUMERIC,Indicates the customer's current total monthly charge for all their services from the company.
 binary_classification,telco_churn,20,TotalCharges,feature,NUMERIC,"Indicates the customer's total charges, calculated to the end of the quarter specified above."
 binary_classification,telco_churn,21,Churn,target,CATEGORICAL,Whether customer churned within the last month (Yes) or not (No)
-binary_classification,titanic,1,PassengerId,id,TEXT,Unique passenger identifier
-binary_classification,titanic,2,Survived,target,CATEGORICAL,Whether passenger survived or not
-binary_classification,titanic,3,Pclass,feature,CATEGORICAL,Ticket class
-binary_classification,titanic,4,Sex,feature,CATEGORICAL,gender
-binary_classification,titanic,5,Age,feature,NUMERIC,Age in years
-binary_classification,titanic,6,SibSp,feature,NUMERIC,# of siblings / spouses aboard the Titanic
-binary_classification,titanic,7,Parch,feature,NUMERIC,# of parents / children aboard the Titanic
-binary_classification,titanic,8,Fare,feature,NUMERIC,Passenger fare
-binary_classification,titanic,9,Embarked,feature,CATEGORICAL,Port of embarkation
+binary_classification,titanic,1,pclass,feature,CATEGORICAL,Ticket class
+binary_classification,titanic,2,survived,target,CATEGORICAL,Whether passenger survived or not
+binary_classification,titanic,3,name,id,TEXT,Passenger Name
+binary_classification,titanic,4,sex,feature,CATEGORICAL,Gender
+binary_classification,titanic,5,age,feature,NUMERIC,Age in years
+binary_classification,titanic,6,sibsp,feature,NUMERIC,# of siblings / spouses aboard the Titanic
+binary_classification,titanic,7,parch,feature,NUMERIC,# of parents / children aboard the Titanic
+binary_classification,titanic,8,fare,feature,NUMERIC,Passenger fare
+binary_classification,titanic,9,embarked,feature,CATEGORICAL,Port of embarkation
 binary_classification,xor,1,id,id,TEXT,unique identifier 
 binary_classification,xor,2,target,target,CATEGORICAL,binary class (0 or 1)
 binary_classification,xor,3,x1,feature,NUMERIC,feature 1 of synthetic XOR data

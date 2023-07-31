@@ -350,7 +350,19 @@ https://archive.ics.uci.edu/ml/datasets/Online+Shoppers+Purchasing+Intention+Dat
 
 #### Description
 
-Synthetically generated dataset for binary classification. This dataset is used for smoke testing the binary classification algorithms.
+This is a synthetically generated dataset that is used for smoke testing the binary classification algorithms. The dataset presents a classification problem based on two types of features and a binary target. Each sample in the dataset has a unique identifier, a set of two features (color, number), and a target class label.
+
+The first feature 'color' is a categorical feature, with three possible values: Red, Green, and Blue. These values are evenly and randomly distributed across the dataset.
+
+The second feature 'number' is a continuous feature, with values drawn from a uniform distribution between 1 and 100 inclusive. Each feature value is independent of the others.
+
+The class label for each sample is determined by the combination of both the categorical and numerical features. If the color is 'Red' and the number is greater than 50, the sample is labeled as Class 1, otherwise, it is labeled as Class 0. This forms a classification problem, where the task is to classify samples based on the combination of their color and number features.
+
+The identifiers for the samples are randomly generated alphanumeric strings. They are used to uniquely identify each sample in the dataset.
+
+Additionally, to add complexity to the dataset, approximately 10% of the data points in each feature are replaced with missing values. Furthermore, the first row always contains a missing value in either of the two features randomly, to ensure the presence of missing data even for smaller datasets.
+
+In summary, this dataset presents a binary classification problem, where the task is to classify samples based on the combination of a categorical and numerical feature, while also dealing with missing data. The relationship between the features and target is known, however, the presence of missing values introduces complexity and makes it a challenging task for binary classification algorithms.
 
 #### Dataset characteristics
 

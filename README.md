@@ -77,6 +77,12 @@ Finally, a portion of the values in the dataset is replaced with null values to 
 
 The final dataset includes the x, y, z coordinates, the target class, an id for each data point, three dummy features, and three correlated features with a small percentage of missing values for each of the features.
 
+See plot of generated data:
+
+<div style="text-align:center;">
+  <img src="datasets/processed/concentric_spheres/concentric_spheres.png" alt="Chart Title" width="600">
+</div>
+
 #### Dataset characteristics
 
 - Number of samples = 3,000
@@ -407,7 +413,9 @@ The function first generates a random set of n_points_each distances (radii) fro
 
 See generated data:
 
-![concentric circles](datasets/spiral/processed/spiral.png)
+<div style="text-align:center;">
+  <img src="datasets/processed/spiral/spiral.png" alt="Chart Title" width="600">
+</div>
 
 #### Dataset characteristics
 
@@ -458,11 +466,11 @@ https://www.kaggle.com/datasets/blastchar/telco-customer-churn
 
 #### Description
 
-Dataset regarding attributes of passengers on the Titanic. Data can be used to build a predictive model that answers the question: “what sorts of people were more likely to survive?” using passenger data (ie name, age, gender, socio-economic class, etc).
+Dataset regarding attributes of passengers on the Titanic. Data can be used to build a predictive model that answers the question: “what sorts of people were more likely to survive?” using passenger data (i.e. age, gender, fare, ticket class, port of embarkation, etc).
 
 #### Dataset characteristics
 
-- Number of samples = 891
+- Number of samples = 1309
 - Numberof input features = 7
 - Has categorical features = Yes
 - Has missing values = Yes
@@ -470,7 +478,7 @@ Dataset regarding attributes of passengers on the Titanic. Data can be used to b
 #### Attribution
 
 Sourced from: <br/>
-https://www.kaggle.com/competitions/titanic/data
+https://www.openml.org/search?type=data&status=active&id=40945
 
 ---
 

@@ -4,6 +4,8 @@ from pandas import DataFrame
 from typing import Tuple
 import utils
 
+import paths
+
 def split_dataset(
         dataset: DataFrame, test_size: float = 0.2) -> Tuple[DataFrame, DataFrame]:
     """
@@ -70,18 +72,21 @@ def save_test_key_data(
     test_key_df.to_csv(
         os.path.join(processed_datasets_path, dataset_name, f"{dataset_name}_test_key.csv"), index=False)
 
-def create_train_test_testkey_files() -> None:
+
+def create_train_test_testkey_files(dataset_cfg_path:str, processed_datasets_path:str) -> None:
     """
     Creates train, test, and test key files for each dataset marked for use in the metadata.
     """
-    dataset_cfg_path = "./config/binary_classification_datasets.csv"
-    processed_datasets_path = "./datasets/processed/"
 
     # Load the metadata
     dataset_metadata = utils.load_metadata(dataset_cfg_path)
 
     # Iterate through each dataset marked for use in the metadata
     for _, dataset_row in dataset_metadata[dataset_metadata['use_dataset'] == 1].iterrows():
+
+        if dataset_row["use_dataset"] == 0:
+            continue
+
         dataset_name = dataset_row["name"]
         print("Creating train/test files for dataset:", dataset_name)
 
@@ -103,5 +108,12 @@ def create_train_test_testkey_files() -> None:
             test_df, dataset_row["id_name"], dataset_row["target_name"], dataset_name, processed_datasets_path)
 
 
+def run_train_test_testkey_files_gen():
+    """Creates train, test, and test key files for each dataset marked for use in the metadata."""
+    create_train_test_testkey_files(
+        dataset_cfg_path=paths.dataset_cfg_path,
+        processed_datasets_path=paths.processed_datasets_path
+    )
+
 if __name__ == "__main__":
-    create_train_test_testkey_files()
+    run_train_test_testkey_files_gen()

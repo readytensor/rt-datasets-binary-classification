@@ -1,17 +1,30 @@
 import os
 import json
-import pandas as pd
 import utils
 
-def generate_inference_request_data():
-    dataset_cfg_path = "./config/binary_classification_datasets.csv"
-    processed_datasets_path = "./datasets/processed/"
+import paths
+
+def generate_inference_request_data(
+        dataset_cfg_path:str,
+        processed_datasets_path:str
+    ):
+    """Generates inference request data for each dataset.
+
+    Args:
+        dataset_cfg_path (str): Path to the dataset configuration file.
+        features_cfg_path (str): Path to the features configuration file.
+        processed_datasets_path (str): Path where to save the processed datasets.
+    """
 
     # Load the metadata
     dataset_metadata = utils.load_metadata(dataset_cfg_path)
 
     # Iterate through each dataset marked for use in the metadata
     for _, dataset_row in dataset_metadata[dataset_metadata['use_dataset'] == 1].iterrows():
+
+        if dataset_row["use_dataset"] == 0:
+            continue
+
         dataset_name = dataset_row["name"]
         print("Creating inference request data for dataset:", dataset_name)
 
@@ -37,6 +50,12 @@ def generate_inference_request_data():
             json.dump(inference_request_data, file, indent=2)
 
 
-if __name__ == "__main__":
-    generate_inference_request_data()
+def run_inference_request_data_gen():
+    """Generate inference request data for each dataset."""
+    generate_inference_request_data(
+        dataset_cfg_path=paths.dataset_cfg_path,
+        processed_datasets_path=paths.processed_datasets_path
+    )
 
+if __name__ == "__main__":
+    run_inference_request_data_gen()

@@ -1,17 +1,16 @@
 import os
 import pandas as pd
 import json
-from typing import Dict, List, Tuple
+from typing import Dict, List
 from utils import load_metadata, load_features_config, strip_quotes, JSONEncoder
 
-processed_datasets_path = "./datasets/processed/"
-features_cfg_path = "./config/binary_classification_datasets_fields.csv"
+import paths
 
 
 def create_feature_section(
-        dataset_name: str, 
-        dataset_row: pd.Series, 
-        dataset: pd.DataFrame, 
+        dataset_name: str,
+        dataset_row: pd.Series,
+        dataset: pd.DataFrame,
         features_config: pd.DataFrame) -> List[Dict]:
     """
     Create the feature section of the schema.
@@ -50,8 +49,8 @@ def create_feature_section(
 
 
 def generate_schemas(
-        dataset_metadata: pd.DataFrame, 
-        processed_datasets_path: str, 
+        dataset_metadata: pd.DataFrame,
+        processed_datasets_path: str,
         features_config: pd.DataFrame):
     """
     Generate the schema for each dataset.
@@ -68,6 +67,8 @@ def generate_schemas(
     for _, dataset_row in \
         dataset_metadata[dataset_metadata['use_dataset'] == 1].iterrows():
 
+        if dataset_row["use_dataset"] == 0:
+            continue
 
         dataset_name = dataset_row["name"]
         print("Creating schema for dataset", dataset_name)
@@ -112,12 +113,18 @@ def generate_schemas(
 
 
 def run_schema_gen():
-    dataset_cfg_path = "./config/binary_classification_datasets.csv"
-    dataset_metadata = load_metadata(dataset_cfg_path)
-    features_config = load_features_config(features_cfg_path)
-    features_config = features_config.applymap(strip_quotes)
+    """Generate the schema for each dataset."""
+    dataset_metadata = load_metadata(dataset_cfg_path=paths.dataset_cfg_path)
+    features_config = load_features_config(
+        features_cfg_path=paths.features_cfg_path)\
+            .applymap(strip_quotes)
+
     generate_schemas(
-        dataset_metadata, processed_datasets_path, features_config)
+        dataset_metadata=dataset_metadata,
+        processed_datasets_path=paths.processed_datasets_path,
+        features_config=features_config
+    )
+
 
 if __name__ == "__main__":
     run_schema_gen()

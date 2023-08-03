@@ -169,7 +169,7 @@ UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: Uni
 
 This dataset stems from the local stability analysis of the 4-node star system (electricity producer is in the center) implementing Decentral Smart Grid Control concept.
 The analysis is performed for different sets of input values using the methodology similar to that described in:
-SchÃ¤fer, Benjamin, et al. 'Taming instabilities in power grid networks by decentralized control.' The European Physical Journal Special Topics 225.3 (2016): 569-582.].
+SchÃ¤fer, Benjamin, et al. 'Taming instabilities in power grid networks by decentralized control.' The European Physical Journal Special Topics 225.3 (2016): 569-582.
 
 #### Dataset characteristics
 

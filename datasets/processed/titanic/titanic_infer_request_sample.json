@@ -4,10 +4,10 @@
       "pclass": 1,
       "name": "Allen, Miss. Elisabeth Walton",
       "sex": "female",
-      "age": "29",
+      "age": 29.0,
       "sibsp": 0,
       "parch": 0,
-      "fare": "211.3375",
+      "fare": 211.3375,
       "embarked": "S"
     }
   ]

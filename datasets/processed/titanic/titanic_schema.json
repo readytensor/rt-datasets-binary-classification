@@ -11,29 +11,39 @@
   "target": {
     "name": "survived",
     "description": "A binary variable indicating whether or not the passenger survived (0 = No, 1 = Yes).",
-    "classes": ["0", "1"]
+    "classes": [
+      "0",
+      "1"
+    ]
   },
   "features": [
     {
       "name": "pclass",
       "description": "Ticket class",
       "dataType": "CATEGORICAL",
-      "categories": [1, 2, 3],
+      "categories": [
+        1,
+        2,
+        3
+      ],
       "nullable": false
     },
     {
       "name": "sex",
       "description": "Gender",
       "dataType": "CATEGORICAL",
-      "categories": ["female", "male"],
+      "categories": [
+        "female",
+        "male"
+      ],
       "nullable": false
     },
     {
       "name": "age",
       "description": "Age in years",
       "dataType": "NUMERIC",
-      "example": "29",
-      "nullable": false
+      "example": 29.0,
+      "nullable": true
     },
     {
       "name": "sibsp",
@@ -53,15 +63,19 @@
       "name": "fare",
       "description": "Passenger fare",
       "dataType": "NUMERIC",
-      "example": "211.3375",
-      "nullable": false
+      "example": 211.3375,
+      "nullable": true
     },
     {
       "name": "embarked",
       "description": "Port of embarkation",
       "dataType": "CATEGORICAL",
-      "categories": ["?", "C", "Q", "S"],
-      "nullable": false
+      "categories": [
+        "C",
+        "Q",
+        "S"
+      ],
+      "nullable": true
     }
   ]
 }

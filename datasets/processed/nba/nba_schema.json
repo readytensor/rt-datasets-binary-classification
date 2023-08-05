@@ -1,6 +1,6 @@
 {
   "title": "NBA binary classification dataset from Pycaret",
-  "summary": "NBA binary classification dataset from Pycaret",
+  "summary": "NBA binary classification dataset from Pycaret.",
   "modelCategory": "binary_classification",
   "schemaVersion": 1.0,
   "inputDataFormat": "CSV",
@@ -11,10 +11,7 @@
   "target": {
     "name": "TARGET_5Yrs",
     "description": "Classification of player: play in nba for 5 years+ (1) or not (0)",
-    "classes": [
-      "0",
-      "1"
-    ]
+    "classes": ["0", "1"]
   },
   "features": [
     {

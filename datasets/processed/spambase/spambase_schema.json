@@ -1,6 +1,6 @@
 {
   "title": "Spambase Data Set",
-  "summary": "Classifying Email as Spam or Non-Spam",
+  "summary": "Classifying Email as Spam or Non-Spam.",
   "modelCategory": "binary_classification",
   "schemaVersion": 1.0,
   "inputDataFormat": "CSV",
@@ -11,10 +11,7 @@
   "target": {
     "name": "class",
     "description": "spam (1) or not (0)",
-    "classes": [
-      "0",
-      "1"
-    ]
+    "classes": ["0", "1"]
   },
   "features": [
     {

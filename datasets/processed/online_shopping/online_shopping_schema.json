@@ -1,6 +1,6 @@
 {
   "title": "Online Shoppers Purchasing Intention ",
-  "summary": "Dataset for real-time prediction of online shoppers purchasing intention",
+  "summary": "Dataset for real-time prediction of online shoppers purchasing intention.",
   "modelCategory": "binary_classification",
   "schemaVersion": 1.0,
   "inputDataFormat": "CSV",
@@ -11,10 +11,7 @@
   "target": {
     "name": "Revenue",
     "description": "Binary variable indicating visitor session ending in shopping (1) or not (0)",
-    "classes": [
-      "0",
-      "1"
-    ]
+    "classes": ["0", "1"]
   },
   "features": [
     {
@@ -109,54 +106,21 @@
       "name": "OperatingSystems",
       "description": "Operating system of the visitor",
       "dataType": "CATEGORICAL",
-      "categories": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8
-      ],
+      "categories": [1, 2, 3, 4, 5, 6, 7, 8],
       "nullable": false
     },
     {
       "name": "Browser",
       "description": "Browser type of the visitor",
       "dataType": "CATEGORICAL",
-      "categories": [
-        1,
-        10,
-        11,
-        12,
-        13,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9
-      ],
+      "categories": [1, 10, 11, 12, 13, 2, 3, 4, 5, 6, 7, 8, 9],
       "nullable": false
     },
     {
       "name": "Region",
       "description": "Region of the visitor",
       "dataType": "CATEGORICAL",
-      "categories": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9
-      ],
+      "categories": [1, 2, 3, 4, 5, 6, 7, 8, 9],
       "nullable": false
     },
     {
@@ -164,26 +128,7 @@
       "description": "Traffic type (categories 1 to 20) - information of types not provided in dataset",
       "dataType": "CATEGORICAL",
       "categories": [
-        1,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16,
-        17,
-        18,
-        19,
-        2,
-        20,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9
+        1, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 2, 20, 3, 4, 5, 6, 7, 8, 9
       ],
       "nullable": false
     },
@@ -191,21 +136,14 @@
       "name": "VisitorType",
       "description": "Returning or new visitor",
       "dataType": "CATEGORICAL",
-      "categories": [
-        "New_Visitor",
-        "Other",
-        "Returning_Visitor"
-      ],
+      "categories": ["New_Visitor", "Other", "Returning_Visitor"],
       "nullable": false
     },
     {
       "name": "Weekend",
       "description": "Is the session on weekend or weekday",
       "dataType": "CATEGORICAL",
-      "categories": [
-        0,
-        1
-      ],
+      "categories": [0, 1],
       "nullable": false
     }
   ]

@@ -11,10 +11,7 @@
   "target": {
     "name": "diagnosis",
     "description": "A binary variable indicating the diagnosis of the breast tissue (M = malignant, B = benign).",
-    "classes": [
-      "B",
-      "M"
-    ]
+    "classes": ["B", "M"]
   },
   "features": [
     {

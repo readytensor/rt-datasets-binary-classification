@@ -1,6 +1,6 @@
 {
   "title": "Smoke Test BC",
-  "summary": "Synthetically generated dataset for smoke-testing",
+  "summary": "Synthetically generated dataset for smoke-testing.",
   "modelCategory": "binary_classification",
   "schemaVersion": 1.0,
   "inputDataFormat": "CSV",
@@ -11,21 +11,14 @@
   "target": {
     "name": "target",
     "description": "binary class (0 or 1)",
-    "classes": [
-      "0",
-      "1"
-    ]
+    "classes": ["0", "1"]
   },
   "features": [
     {
       "name": "color",
       "description": "color feature",
       "dataType": "CATEGORICAL",
-      "categories": [
-        "Blue",
-        "Green",
-        "Red"
-      ],
+      "categories": ["Blue", "Green", "Red"],
       "nullable": true
     },
     {

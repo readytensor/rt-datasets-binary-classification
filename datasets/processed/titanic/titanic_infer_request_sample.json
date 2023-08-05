@@ -1,8 +1,8 @@
 {
   "instances": [
     {
+      "id": "0",
       "pclass": 1,
-      "name": "Allen, Miss. Elisabeth Walton",
       "sex": "female",
       "age": 29.0,
       "sibsp": 0,

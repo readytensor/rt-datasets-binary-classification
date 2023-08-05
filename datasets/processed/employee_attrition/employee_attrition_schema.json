@@ -11,10 +11,7 @@
   "target": {
     "name": "left",
     "description": "Binary variable indicating attrition (1) or no attrition (0)",
-    "classes": [
-      "0",
-      "1"
-    ]
+    "classes": ["0", "1"]
   },
   "features": [
     {
@@ -56,20 +53,14 @@
       "name": "Work_accident",
       "description": "not available",
       "dataType": "CATEGORICAL",
-      "categories": [
-        0,
-        1
-      ],
+      "categories": [0, 1],
       "nullable": false
     },
     {
       "name": "promotion_last_5years",
       "description": "not available",
       "dataType": "CATEGORICAL",
-      "categories": [
-        0,
-        1
-      ],
+      "categories": [0, 1],
       "nullable": false
     },
     {
@@ -94,11 +85,7 @@
       "name": "salary",
       "description": "not available",
       "dataType": "CATEGORICAL",
-      "categories": [
-        "high",
-        "low",
-        "medium"
-      ],
+      "categories": ["high", "low", "medium"],
       "nullable": false
     }
   ]

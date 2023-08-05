@@ -282,7 +282,7 @@ binary_classification,telco_churn,20,TotalCharges,feature,NUMERIC,"Indicates the
 binary_classification,telco_churn,21,Churn,target,CATEGORICAL,Whether customer churned within the last month (Yes) or not (No)
 binary_classification,titanic,1,pclass,feature,CATEGORICAL,Ticket class
 binary_classification,titanic,2,survived,target,CATEGORICAL,Whether passenger survived or not
-binary_classification,titanic,3,name,id,TEXT,Passenger Name
+binary_classification,titanic,3,id,id,TEXT,Unique identifier per passenger
 binary_classification,titanic,4,sex,feature,CATEGORICAL,Gender
 binary_classification,titanic,5,age,feature,NUMERIC,Age in years
 binary_classification,titanic,6,sibsp,feature,NUMERIC,# of siblings / spouses aboard the Titanic

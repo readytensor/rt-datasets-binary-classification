@@ -11,10 +11,7 @@
   "target": {
     "name": "stabf",
     "description": "the stability label of the system : stable or unstable",
-    "classes": [
-      "stable",
-      "unstable"
-    ]
+    "classes": ["stable", "unstable"]
   },
   "features": [
     {

@@ -1,6 +1,6 @@
 {
   "title": "Credit Approval",
-  "summary": "This dataset concerns credit card applications.  All attribute names and values have been changed to meaningless symbols to protect confidentiality of the data.",
+  "description": "This dataset concerns credit card applications.  All attribute names and values have been changed to meaningless symbols to protect confidentiality of the data.",
   "modelCategory": "binary_classification",
   "schemaVersion": 1.0,
   "inputDataFormat": "CSV",
@@ -11,14 +11,20 @@
   "target": {
     "name": "A16",
     "description": "good (positive) or bad (negative) credit",
-    "classes": ["positive", "negative"]
+    "classes": [
+      "positive",
+      "negative"
+    ]
   },
   "features": [
     {
       "name": "A1",
       "description": "b, a.",
       "dataType": "CATEGORICAL",
-      "categories": ["a", "b"],
+      "categories": [
+        "a",
+        "b"
+      ],
       "nullable": true
     },
     {
@@ -39,14 +45,22 @@
       "name": "A4",
       "description": "u, y, l, t.",
       "dataType": "CATEGORICAL",
-      "categories": ["l", "u", "y"],
+      "categories": [
+        "l",
+        "u",
+        "y"
+      ],
       "nullable": true
     },
     {
       "name": "A5",
       "description": "g, p, gg.",
       "dataType": "CATEGORICAL",
-      "categories": ["g", "gg", "p"],
+      "categories": [
+        "g",
+        "gg",
+        "p"
+      ],
       "nullable": true
     },
     {
@@ -75,7 +89,17 @@
       "name": "A7",
       "description": "v, h, bb, j, n, z, dd, ff, o.",
       "dataType": "CATEGORICAL",
-      "categories": ["bb", "dd", "ff", "h", "j", "n", "o", "v", "z"],
+      "categories": [
+        "bb",
+        "dd",
+        "ff",
+        "h",
+        "j",
+        "n",
+        "o",
+        "v",
+        "z"
+      ],
       "nullable": true
     },
     {
@@ -89,14 +113,20 @@
       "name": "A9",
       "description": "t, f.",
       "dataType": "CATEGORICAL",
-      "categories": ["f", "t"],
+      "categories": [
+        "f",
+        "t"
+      ],
       "nullable": false
     },
     {
       "name": "A10",
       "description": "t, f.",
       "dataType": "CATEGORICAL",
-      "categories": ["f", "t"],
+      "categories": [
+        "f",
+        "t"
+      ],
       "nullable": false
     },
     {
@@ -110,14 +140,21 @@
       "name": "A12",
       "description": "t, f.",
       "dataType": "CATEGORICAL",
-      "categories": ["f", "t"],
+      "categories": [
+        "f",
+        "t"
+      ],
       "nullable": false
     },
     {
       "name": "A13",
       "description": "g, p, s.",
       "dataType": "CATEGORICAL",
-      "categories": ["g", "p", "s"],
+      "categories": [
+        "g",
+        "p",
+        "s"
+      ],
       "nullable": false
     },
     {

@@ -1,6 +1,6 @@
 {
   "title": "Image Segmentation",
-  "summary": "Image data described by high-level numeric-valued attributes; Original contained 7 classes. The multi-class target feature is converted to a two-class nominal target feature by re-labeling the majority class as positive (P) and all others as negative (N).",
+  "description": "Image data described by high-level numeric-valued attributes; Original contained 7 classes. The multi-class target feature is converted to a two-class nominal target feature by re-labeling the majority class as positive (P) and all others as negative (N).",
   "modelCategory": "binary_classification",
   "schemaVersion": 1.0,
   "inputDataFormat": "CSV",
@@ -11,7 +11,10 @@
   "target": {
     "name": "binaryClass",
     "description": "Positive (P) or negative (N)",
-    "classes": ["N", "P"]
+    "classes": [
+      "N",
+      "P"
+    ]
   },
   "features": [
     {

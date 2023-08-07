@@ -1,6 +1,6 @@
 {
   "title": "Exclusive-Or dataset",
-  "summary": "Synthetically generated 5-dimensional Exclusive-Or (XOR) dataset.",
+  "description": "Synthetically generated 5-dimensional Exclusive-Or (XOR) dataset.",
   "modelCategory": "binary_classification",
   "schemaVersion": 1.0,
   "inputDataFormat": "CSV",

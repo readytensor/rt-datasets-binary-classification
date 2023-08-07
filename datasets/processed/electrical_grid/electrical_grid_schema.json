@@ -1,6 +1,6 @@
 {
   "title": "Electrical Grid Stability Simulated Data Data Set",
-  "summary": "The local stability analysis of the 4-node star system (electricity producer is in the center) implementing Decentral Smart Grid Control concept.",
+  "description": "The local stability analysis of the 4-node star system (electricity producer is in the center) implementing Decentral Smart Grid Control concept.",
   "modelCategory": "binary_classification",
   "schemaVersion": 1.0,
   "inputDataFormat": "CSV",
@@ -11,7 +11,10 @@
   "target": {
     "name": "stabf",
     "description": "the stability label of the system : stable or unstable",
-    "classes": ["stable", "unstable"]
+    "classes": [
+      "stable",
+      "unstable"
+    ]
   },
   "features": [
     {

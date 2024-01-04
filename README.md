@@ -29,7 +29,6 @@ More information about each dataset is provided in the sections below.
 
 The `datasets` folder contains the main data files and the schema files for all the benchmark datasets under Binary Classification category.
 
-- The `raw` folder contains the original data files from the source (see attributions below). The Jupyter notebook file within each dataset folder is used to convert the raw data file for each dataset into the full processed dataset in `raw` folder into the processed form in `processed` folder.
 - `processed` folder contains the processed files. These files are used in algorithm evaluations.
 
   - The CSV file with suffix "\_train.csv" is used for training
@@ -39,15 +38,17 @@ The `datasets` folder contains the main data files and the schema files for all 
   - The json file with the suffix "\_inference_requeest_sample.json" contains a sample JSON object with the data to make an inference request to the /infer endpoint.
   - The CSV file with the dataset name, and no other suffix, is the full data (made of both train and test sets).
 
+- The `raw` folder contains the original data files from the source (see attributions below). The Jupyter notebook file within each dataset folder is used to convert the raw data file for each dataset into the full processed dataset in `raw` folder into the processed form in `processed` folder.
+
 - The folder `config` contains two csv files - one called `binary_classification_datasets_metadata.csv` which contains the dataset level attribute information. The second csv called `binary_classification_datasets_fields.csv` contains information regarding all the fields in each of the datasets.
 - `generate_schemas.py`: contains the code to generate the schema files for each dataset.
 - `create_train_test_key_files.py`: contains the code to generate the train, test, and test-key files for each dataset.
 - `generate_inference_data.py`: contains the code to generate the inference request sample data for each dataset.
 - `run_all.py`: This is used to run the above three scripts in sequence.
 
----
+Note again that the main files for all the datasets are in the `processed` folder.
 
-The following is the list of datasets along with a brief description for each and its attribution:
+The following sections provide more information for each of the datasets.
 
 ---
 

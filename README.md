@@ -1,6 +1,6 @@
 # Datasets for Binary Classification model category on Ready Tensor
 
-This repo contains files related to the datasets used in algorithm evaluation for the **Binary Classification** category. There are a total of 15 benchmarking datasets used in this category. Additionally, there is a 16th dataset for smoke testing of models. The following is the list of datasets:
+This repo contains files related to the datasets used in model benchmarking for the **Binary Classification** category. There are a total of 15 benchmarking datasets used in this category. Additionally, there is a 16th dataset for smoke testing of models. The following is the list of datasets:
 
 | Dataset                                           | Industry                       | Observations | Features | Has Categorical Features? | Has Missing Values? |
 | ------------------------------------------------- | ------------------------------ | :----------: | :------: | :-----------------------: | :-----------------: |

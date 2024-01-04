@@ -1,6 +1,31 @@
 # Datasets for Binary Classification model category on Ready Tensor
 
-This repo contains all files related to the datasets used in algorithm evaluation for the Binary Classification category.
+This repo contains files related to the datasets used in algorithm evaluation for the **Binary Classification** category. There are a total of 15 benchmarking datasets used in this category. Additionally, there is a 16th dataset for smoke testing of models. The following is the list of datasets:
+
+| Dataset                                           | Industry                       | Observations | Features | Has Categorical Features? | Has Missing Values? |
+| ------------------------------------------------- | ------------------------------ | :----------: | :------: | :-----------------------: | :-----------------: |
+| Breast Cancer - Wisconsin                         | Biosciences / Healthcare       |     569      |    32    |            no             |         no          |
+| Concentric Spheres Dataset                        | None (synthetic)               |    3,000     |    9     |            no             |         yes         |
+| Credit Approval                                   | Financial services             |     690      |    15    |            yes            |         yes         |
+| Electrical Grid Stability Simulated Data Data Set | Energy                         |    10,000    |    13    |            no             |         no          |
+| Employee Attrition dataset from PyCaret           | Miscellaneous / Human Resource |    14,999    |    9     |            yes            |         no          |
+| Exclusive-Or dataset                              | None (synthetic)               |    6,000     |    5     |            no             |         no          |
+| Image Segmentation                                | Computer Vision                |    2,310     |    20    |            no             |         no          |
+| In-vehicle coupon recommendation                  | E-commerce                     |    12,684    |    25    |            yes            |         yes         |
+| Mushroom Data Set                                 | Biosciences                    |    8,124     |    22    |            yes            |         yes         |
+| NBA binary classification dataset from Pycaret    | Sports                         |    1,294     |    21    |            no             |         no          |
+| Online Shoppers Purchasing Intention              | E-commerce                     |    12,330    |    17    |            yes            |         no          |
+| Smoke Test BC                                     | None (synthetic)               |     200      |    2     |            yes            |         yes         |
+| Spambase Data Set                                 | Technology / Internet Services |    4,601     |    57    |            no             |         no          |
+| Spiral Dataset                                    | None (synthetic)               |     250      |    2     |            no             |         no          |
+| Telco customer churn                              | Telecom                        |    7,043     |    20    |            no             |         yes         |
+| Titanic Passenger Survival dataset                | Tourism / Transportation       |    1,309     |    10    |            yes            |         yes         |
+
+More information about each dataset is provided in the sections below.
+
+---
+
+## Repository Structure
 
 The `datasets` folder contains the main data files and the schema files for all the benchmark datasets under Binary Classification category.
 
@@ -233,7 +258,7 @@ Image data described by high-level numeric-valued attributes. The task is to pre
 
 #### Dataset characteristics
 
-- Number of samples = 2,210
+- Number of samples = 2,310
 - Number of input features = 19
 - Has categorical features = No
 - Has missing values = No
@@ -287,7 +312,7 @@ Dataset description unavailable.
 
 #### Dataset characteristics
 
-- Number of samples = 1,340
+- Number of samples = 1,294
 - Number of input features = 21
 - Has categorical features = No
 - Has missing values = No
@@ -431,7 +456,7 @@ See generated data:
 
 #### Dataset characteristics
 
-- Number of samples = 400
+- Number of samples = 250
 - Number of input features = 2
 - Has categorical features = No
 - Has missing values = No
@@ -514,7 +539,7 @@ In summary, this dataset presents an n-dimensional XOR problem, where the task i
 
 #### Dataset characteristics
 
-- Number of samples = 600
+- Number of samples = 6000
 - Numberof input features = 5
 - Has categorical features = No
 - Has missing values = Yes

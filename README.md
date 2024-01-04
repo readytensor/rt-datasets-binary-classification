@@ -48,11 +48,15 @@ The `datasets` folder contains the main data files and the schema files for all 
 
 Note again that the main files for all the datasets are in the `./datasets/processed` folder.
 
+---
+
+## Datasets
+
 The following sections provide more information for each of the datasets.
 
 ---
 
-## Breast Cancer - Wisconsin
+### Breast Cancer - Wisconsin
 
 #### Alias (in scorecards): cancer
 
@@ -83,7 +87,7 @@ UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: Uni
 
 ---
 
-## Concentric spheres
+### Concentric spheres
 
 #### Alias (in scorecards): concentric_spheres
 
@@ -122,7 +126,7 @@ Synthetically generated data.
 
 ---
 
-## Credit Card
+### Credit Card
 
 #### Alias (in scorecards): credit_card
 
@@ -156,7 +160,7 @@ UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: Uni
 
 ---
 
-## In-vehicle coupon recommendation
+### In-vehicle coupon recommendation
 
 #### Alias (in scorecards): coupon_recommendations
 
@@ -185,7 +189,7 @@ UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: Uni
 
 ---
 
-## Electrical Grid
+### Electrical Grid
 
 #### Alias (in scorecards): electrical_grid
 
@@ -217,7 +221,7 @@ UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: Uni
 
 ---
 
-## Employee Attrition
+### Employee Attrition
 
 #### Alias (in scorecards): employee_attrition
 
@@ -247,7 +251,7 @@ employee_data = get_data(“employee”)
 
 ---
 
-## Image Segmentation
+### Image Segmentation
 
 #### Alias (in scorecards): image_segmentation
 
@@ -272,7 +276,7 @@ https://www.openml.org/d/958
 
 ---
 
-## Mushroom
+### Mushroom
 
 #### Alias (in scorecards): mushroom
 
@@ -301,7 +305,7 @@ UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: Uni
 
 ---
 
-## NBA
+### NBA
 
 #### Alias (in scorecards): nba
 
@@ -330,7 +334,7 @@ nba_data = get_data(“nba”)
 
 ---
 
-## Online Shoppers Purchasing Intention
+### Online Shoppers Purchasing Intention
 
 #### Alias (in scorecards): online_shopping
 
@@ -368,7 +372,7 @@ https://archive.ics.uci.edu/ml/datasets/Online+Shoppers+Purchasing+Intention+Dat
 
 ---
 
-## Smoke Test - BC Dataset
+### Smoke Test - BC Dataset
 
 #### Alias (in scorecards): smoke_test_bc
 
@@ -403,7 +407,7 @@ This dataset is synthetically generated.
 
 ---
 
-## Spambase
+### Spambase
 
 #### Alias (in scorecards): spambase
 
@@ -433,7 +437,7 @@ UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. Irvine, CA: Uni
 
 ---
 
-## Spiral Dataset
+### Spiral Dataset
 
 #### Alias (in scorecards): spiral
 
@@ -468,7 +472,7 @@ Synthetically generated data
 
 ---
 
-## Telco Churn
+### Telco Churn
 
 #### Alias (in scorecards): telco_churn
 
@@ -496,7 +500,7 @@ https://www.kaggle.com/datasets/blastchar/telco-customer-churn
 
 ---
 
-## Titanic
+### Titanic
 
 #### Alias (in scorecards): titanic
 
@@ -520,7 +524,7 @@ https://www.openml.org/search?type=data&status=active&id=40945
 
 ---
 
-## Exclusive-Or Dataset
+### Exclusive-Or Dataset
 
 #### Alias (in scorecards): xor
 
